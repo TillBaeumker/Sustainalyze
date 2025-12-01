@@ -1,0 +1,293 @@
+{
+  "url": "https://www.fd-stoffe-online.ch/intro",
+  "runs": 10,
+  "reference_run_index": 1,
+  "llm_outputs": [
+    {
+      "institution": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+      "roles_responsibilities": "Herausgeber: Rudolf Probst, Ulrich Weber"
+    },
+    {
+      "institution": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+      "roles_responsibilities": "Herausgeber: Rudolf Probst, Ulrich Weber"
+    },
+    {
+      "institution": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+      "roles_responsibilities": "Herausgeber: Rudolf Probst, Ulrich Weber"
+    },
+    {
+      "institution": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+      "roles_responsibilities": "Herausgeber: Rudolf Probst, Ulrich Weber"
+    },
+    {
+      "institution": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+      "roles_responsibilities": "Herausgeber: Rudolf Probst, Ulrich Weber"
+    },
+    {
+      "institution": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+      "roles_responsibilities": "Herausgeber: Rudolf Probst, Ulrich Weber"
+    },
+    {
+      "institution": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+      "roles_responsibilities": "Herausgeber: Rudolf Probst, Ulrich Weber"
+    },
+    {
+      "institution": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+      "roles_responsibilities": "Herausgeber: Rudolf Probst, Ulrich Weber"
+    },
+    {
+      "institution": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+      "roles_responsibilities": "Herausgeber: Rudolf Probst, Ulrich Weber"
+    },
+    {
+      "institution": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+      "roles_responsibilities": "Herausgeber: Rudolf Probst, Ulrich Weber"
+    }
+  ],
+  "bertscore": {
+    "per_run_vs_reference": [
+      {
+        "run_index": 2,
+        "field_scores": {
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+            "cand_text": "Schweizerisches Literaturarchiv, Diogenes Verlag"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Herausgeber: Rudolf Probst, Ulrich Weber",
+            "cand_text": "Herausgeber: Rudolf Probst, Ulrich Weber"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 3,
+        "field_scores": {
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+            "cand_text": "Schweizerisches Literaturarchiv, Diogenes Verlag"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Herausgeber: Rudolf Probst, Ulrich Weber",
+            "cand_text": "Herausgeber: Rudolf Probst, Ulrich Weber"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 4,
+        "field_scores": {
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+            "cand_text": "Schweizerisches Literaturarchiv, Diogenes Verlag"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Herausgeber: Rudolf Probst, Ulrich Weber",
+            "cand_text": "Herausgeber: Rudolf Probst, Ulrich Weber"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 5,
+        "field_scores": {
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+            "cand_text": "Schweizerisches Literaturarchiv, Diogenes Verlag"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Herausgeber: Rudolf Probst, Ulrich Weber",
+            "cand_text": "Herausgeber: Rudolf Probst, Ulrich Weber"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 6,
+        "field_scores": {
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+            "cand_text": "Schweizerisches Literaturarchiv, Diogenes Verlag"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Herausgeber: Rudolf Probst, Ulrich Weber",
+            "cand_text": "Herausgeber: Rudolf Probst, Ulrich Weber"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 7,
+        "field_scores": {
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+            "cand_text": "Schweizerisches Literaturarchiv, Diogenes Verlag"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Herausgeber: Rudolf Probst, Ulrich Weber",
+            "cand_text": "Herausgeber: Rudolf Probst, Ulrich Weber"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 8,
+        "field_scores": {
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+            "cand_text": "Schweizerisches Literaturarchiv, Diogenes Verlag"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Herausgeber: Rudolf Probst, Ulrich Weber",
+            "cand_text": "Herausgeber: Rudolf Probst, Ulrich Weber"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 9,
+        "field_scores": {
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+            "cand_text": "Schweizerisches Literaturarchiv, Diogenes Verlag"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Herausgeber: Rudolf Probst, Ulrich Weber",
+            "cand_text": "Herausgeber: Rudolf Probst, Ulrich Weber"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 10,
+        "field_scores": {
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Schweizerisches Literaturarchiv, Diogenes Verlag",
+            "cand_text": "Schweizerisches Literaturarchiv, Diogenes Verlag"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Herausgeber: Rudolf Probst, Ulrich Weber",
+            "cand_text": "Herausgeber: Rudolf Probst, Ulrich Weber"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      }
+    ],
+    "field_aggregate": {
+      "institution": {
+        "mean_F1": 0.9999998211860657,
+        "std_F1": 0.0,
+        "mean_P": 0.9999998211860657,
+        "std_P": 0.0,
+        "mean_R": 0.9999998211860657,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "roles_responsibilities": {
+        "mean_F1": 1.0,
+        "std_F1": 0.0,
+        "mean_P": 1.0,
+        "std_P": 0.0,
+        "mean_R": 1.0,
+        "std_R": 0.0,
+        "unique_values": 1
+      }
+    },
+    "global_aggregate": {
+      "mean_F1": 0.9999998807907104,
+      "std_F1": 0.0,
+      "min_F1": 0.9999998807907104,
+      "max_F1": 0.9999998807907104
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{# templates/partials/links_block.html #}
+
+{# neue Felder aus deinem Datenmodell #}
+{% set internal = page.internal_links_all or [] %}
+{% set external = page.external_links_all or [] %}
+{% set total_count = internal|length + external|length %}
+
+{# persistente Links aus intern + extern #}
+{% set all_links = internal + external %}
+{% set persistent = all_links | selectattr('persistent_type') | list %}
+{% set persistent_count = persistent|length %}
+
+<details>
+  <summary>📎 Alle Links ({{ total_count }})</summary>
+
+  {# Interne Links #}
+  <details style="margin-left: 1em;">
+    <summary>📍 Interne Links ({{ internal|length }})</summary>
+    {% if internal %}
+      {% set grouped_int = {} %}
+      {% for link in internal %}
+        {% set key = (link.status|string) if link.status is defined else "—" %}
+        {% set _ = grouped_int.setdefault(key, []).append(link) %}
+      {% endfor %}
+      {% for status, links in grouped_int.items() %}
+        <div class="status-group">
+          <strong>Status {{ status }} ({{ links|length }}):</strong>
+          <ul>
+            {% for l in links %}
+              <li>
+                <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.url }}</a>
+                {% if l.persistent_type %}
+                  <span class="pill">{{ l.persistent_type|upper }}</span>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p class="muted small" style="margin-left: 1em;">Keine Links gefunden.</p>
+    {% endif %}
+  </details>
+
+  {# Externe Links #}
+  <details style="margin-left: 1em;">
+    <summary>🌐 Externe Links ({{ external|length }})</summary>
+    {% if external %}
+      {% set grouped_ext = {} %}
+      {% for link in external %}
+        {% set key = (link.status|string) if link.status is defined else "—" %}
+        {% set _ = grouped_ext.setdefault(key, []).append(link) %}
+      {% endfor %}
+      {% for status, links in grouped_ext.items() %}
+        <div class="status-group">
+          <strong>Status {{ status }} ({{ links|length }}):</strong>
+          <ul>
+            {% for l in links %}
+              <li>
+                <a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.url }}</a>
+                {% if l.persistent_type %}
+                  <span class="pill">{{ l.persistent_type|upper }}</span>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p class="muted small" style="margin-left: 1em;">Keine Links gefunden.</p>
+    {% endif %}
+  </details>
+
+  {# Persistente Links #}
+  <details style="margin-left: 1em;">
+    <summary>📌 Persistente Links ({{ persistent_count }})</summary>
+    {% if persistent_count > 0 %}
+      {% set grouped_pers = {} %}
+      {% for link in persistent %}
+        {% set key = (link.persistent_type|string|upper) if link.persistent_type is defined else "—" %}
+        {% set _ = grouped_pers.setdefault(key, []).append(link) %}
+      {% endfor %}
+      {% for ptype, links in grouped_pers.items() %}
+        <div class="status-group">
+          <strong>{{ ptype }} ({{ links|length }}):</strong>
+          <ul>
+            {% for l in links %}
+              <li><a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.url }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p class="muted small" style="margin-left: 1em;">Keine persistente Links gefunden.</p>
+    {% endif %}
+  </details>
+
+</details>

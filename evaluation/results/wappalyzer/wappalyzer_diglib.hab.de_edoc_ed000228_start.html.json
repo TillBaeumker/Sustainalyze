@@ -1,0 +1,115 @@
+{
+    "url": "https://diglib.hab.de/edoc/ed000228/start.html",
+    "timestamp": "2025-11-23T11:14:18.807669",
+    "raw": {
+        "urls": {
+            "https://diglib.hab.de/edoc/ed000228/start.html": {
+                "status": 200
+            }
+        },
+        "technologies": [
+            {
+                "slug": "php",
+                "name": "PHP",
+                "description": "PHP is a general-purpose scripting language used for web development.",
+                "confidence": 100,
+                "version": "5.6.29",
+                "icon": "PHP.svg",
+                "website": "http://php.net",
+                "cpe": "cpe:2.3:a:php:php:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 27,
+                        "slug": "programming-languages",
+                        "name": "Programming languages"
+                    }
+                ]
+            },
+            {
+                "slug": "windows-server",
+                "name": "Windows Server",
+                "description": "Windows Server is a brand name for a group of server operating systems.",
+                "confidence": 100,
+                "version": null,
+                "icon": "WindowsServer.png",
+                "website": "http://microsoft.com/windowsserver",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 28,
+                        "slug": "operating-systems",
+                        "name": "Operating systems"
+                    }
+                ]
+            },
+            {
+                "slug": "openssl",
+                "name": "OpenSSL",
+                "description": "OpenSSL is a software library for applications that secure communications over computer networks against eavesdropping or need to identify the party at the other end.",
+                "confidence": 100,
+                "version": "1.0.2j",
+                "icon": "OpenSSL.png",
+                "website": "http://openssl.org",
+                "cpe": "cpe:2.3:a:openssl:openssl:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 33,
+                        "slug": "web-server-extensions",
+                        "name": "Web server extensions"
+                    }
+                ]
+            },
+            {
+                "slug": "apache-http-server",
+                "name": "Apache HTTP Server",
+                "description": "Apache is a free and open-source cross-platform web server software.",
+                "confidence": 100,
+                "version": "2.4.25",
+                "icon": "Apache.svg",
+                "website": "https://httpd.apache.org/",
+                "cpe": "cpe:2.3:a:apache:http_server:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 22,
+                        "slug": "web-servers",
+                        "name": "Web servers"
+                    }
+                ]
+            }
+        ]
+    },
+    "parsed": [
+        {
+            "name": "PHP",
+            "version": "5.6.29",
+            "category": "Programming languages",
+            "description": "PHP is a general-purpose scripting language used for web development.",
+            "website": "http://php.net",
+            "oss": null
+        },
+        {
+            "name": "Windows Server",
+            "version": null,
+            "category": "Operating systems",
+            "description": "Windows Server is a brand name for a group of server operating systems.",
+            "website": "http://microsoft.com/windowsserver",
+            "oss": null
+        },
+        {
+            "name": "OpenSSL",
+            "version": "1.0.2j",
+            "category": "Web server extensions",
+            "description": "OpenSSL is a software library for applications that secure communications over computer networks against eavesdropping or need to identify the party at the other end.",
+            "website": "http://openssl.org",
+            "oss": null
+        },
+        {
+            "name": "Apache HTTP Server",
+            "version": "2.4.25",
+            "category": "Web servers",
+            "description": "Apache is a free and open-source cross-platform web server software.",
+            "website": "https://httpd.apache.org/",
+            "oss": null
+        }
+    ]
+}

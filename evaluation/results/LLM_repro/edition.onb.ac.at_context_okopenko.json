@@ -1,0 +1,703 @@
+{
+  "url": "https://edition.onb.ac.at/context:okopenko",
+  "runs": 10,
+  "reference_run_index": 1,
+  "llm_outputs": [
+    {
+      "institution": "Österreichische Nationalbibliothek, Universität Wien",
+      "roles_responsibilities": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+      "funding_information": "gefördert 2019",
+      "contact_info": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Technische Dokumentation",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "api_hint": "IIIF Hinweise"
+    },
+    {
+      "institution": "Österreichische Nationalbibliothek, Universität Wien",
+      "roles_responsibilities": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+      "funding_information": "gefördert 2019",
+      "contact_info": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Technische Dokumentation",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "api_hint": "IIIF Hinweise"
+    },
+    {
+      "institution": "Österreichische Nationalbibliothek, Universität Wien",
+      "roles_responsibilities": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+      "funding_information": "gefördert 2019",
+      "contact_info": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Technische Dokumentation",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "api_hint": "IIIF Hinweise"
+    },
+    {
+      "institution": "Österreichische Nationalbibliothek, Universität Wien",
+      "roles_responsibilities": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+      "funding_information": "gefördert 2019",
+      "contact_info": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Technische Dokumentation",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "api_hint": "IIIF Hinweise"
+    },
+    {
+      "institution": "Österreichische Nationalbibliothek, Universität Wien",
+      "roles_responsibilities": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+      "funding_information": "gefördert 2019",
+      "contact_info": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Technische Dokumentation",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "api_hint": "IIIF Hinweise"
+    },
+    {
+      "institution": "Österreichische Nationalbibliothek, Universität Wien",
+      "roles_responsibilities": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+      "funding_information": "gefördert 2019",
+      "contact_info": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Technische Dokumentation",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "api_hint": "IIIF Hinweise"
+    },
+    {
+      "institution": "Österreichische Nationalbibliothek, Universität Wien",
+      "roles_responsibilities": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+      "funding_information": "gefördert 2019",
+      "contact_info": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Technische Dokumentation",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "api_hint": "IIIF Hinweise"
+    },
+    {
+      "institution": "Österreichische Nationalbibliothek, Universität Wien",
+      "roles_responsibilities": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+      "funding_information": "gefördert 2019",
+      "contact_info": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Technische Dokumentation",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "api_hint": "IIIF endpoint"
+    },
+    {
+      "institution": "Österreichische Nationalbibliothek, Universität Wien",
+      "roles_responsibilities": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+      "funding_information": "gefördert 2019",
+      "contact_info": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Technische Dokumentation",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "api_hint": "IIIF Hinweise"
+    },
+    {
+      "institution": "Österreichische Nationalbibliothek, Universität Wien",
+      "roles_responsibilities": "Editor: Roland Innerhofer, Editor: Bernhard Fetz, Team: Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+      "funding_information": "gefördert 2012",
+      "contact_info": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Technische Dokumentation",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "api_hint": "IIIF endpoint"
+    }
+  ],
+  "bertscore": {
+    "per_run_vs_reference": [
+      {
+        "run_index": 2,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "IIIF Hinweise",
+            "cand_text": "IIIF Hinweise"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Technische Dokumentation",
+            "cand_text": "Technische Dokumentation"
+          },
+          "funding_information": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "gefördert 2019",
+            "cand_text": "gefördert 2019"
+          },
+          "institution": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Österreichische Nationalbibliothek, Universität Wien",
+            "cand_text": "Österreichische Nationalbibliothek, Universität Wien"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+            "cand_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth"
+          },
+          "tei_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI-Hinweis durch sdef:TEI-Links"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 3,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "IIIF Hinweise",
+            "cand_text": "IIIF Hinweise"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Technische Dokumentation",
+            "cand_text": "Technische Dokumentation"
+          },
+          "funding_information": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "gefördert 2019",
+            "cand_text": "gefördert 2019"
+          },
+          "institution": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Österreichische Nationalbibliothek, Universität Wien",
+            "cand_text": "Österreichische Nationalbibliothek, Universität Wien"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+            "cand_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth"
+          },
+          "tei_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI-Hinweis durch sdef:TEI-Links"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 4,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "IIIF Hinweise",
+            "cand_text": "IIIF Hinweise"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Technische Dokumentation",
+            "cand_text": "Technische Dokumentation"
+          },
+          "funding_information": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "gefördert 2019",
+            "cand_text": "gefördert 2019"
+          },
+          "institution": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Österreichische Nationalbibliothek, Universität Wien",
+            "cand_text": "Österreichische Nationalbibliothek, Universität Wien"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+            "cand_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth"
+          },
+          "tei_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI-Hinweis durch sdef:TEI-Links"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 5,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "IIIF Hinweise",
+            "cand_text": "IIIF Hinweise"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Technische Dokumentation",
+            "cand_text": "Technische Dokumentation"
+          },
+          "funding_information": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "gefördert 2019",
+            "cand_text": "gefördert 2019"
+          },
+          "institution": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Österreichische Nationalbibliothek, Universität Wien",
+            "cand_text": "Österreichische Nationalbibliothek, Universität Wien"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+            "cand_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth"
+          },
+          "tei_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI-Hinweis durch sdef:TEI-Links"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 6,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "IIIF Hinweise",
+            "cand_text": "IIIF Hinweise"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Technische Dokumentation",
+            "cand_text": "Technische Dokumentation"
+          },
+          "funding_information": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "gefördert 2019",
+            "cand_text": "gefördert 2019"
+          },
+          "institution": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Österreichische Nationalbibliothek, Universität Wien",
+            "cand_text": "Österreichische Nationalbibliothek, Universität Wien"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+            "cand_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth"
+          },
+          "tei_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI-Hinweis durch sdef:TEI-Links"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 7,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "IIIF Hinweise",
+            "cand_text": "IIIF Hinweise"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Technische Dokumentation",
+            "cand_text": "Technische Dokumentation"
+          },
+          "funding_information": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "gefördert 2019",
+            "cand_text": "gefördert 2019"
+          },
+          "institution": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Österreichische Nationalbibliothek, Universität Wien",
+            "cand_text": "Österreichische Nationalbibliothek, Universität Wien"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+            "cand_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth"
+          },
+          "tei_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI-Hinweis durch sdef:TEI-Links"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 8,
+        "field_scores": {
+          "api_hint": {
+            "P": 0.34440818428993225,
+            "R": 0.37733590602874756,
+            "F1": 0.3616809546947479,
+            "ref_text": "IIIF Hinweise",
+            "cand_text": "IIIF endpoint"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Technische Dokumentation",
+            "cand_text": "Technische Dokumentation"
+          },
+          "funding_information": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "gefördert 2019",
+            "cand_text": "gefördert 2019"
+          },
+          "institution": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Österreichische Nationalbibliothek, Universität Wien",
+            "cand_text": "Österreichische Nationalbibliothek, Universität Wien"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+            "cand_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth"
+          },
+          "tei_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI-Hinweis durch sdef:TEI-Links"
+          }
+        },
+        "global_score": {
+          "P": 0.9063441157341003,
+          "R": 0.9110480546951294,
+          "F1": 0.9088116884231567
+        }
+      },
+      {
+        "run_index": 9,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "IIIF Hinweise",
+            "cand_text": "IIIF Hinweise"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Technische Dokumentation",
+            "cand_text": "Technische Dokumentation"
+          },
+          "funding_information": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "gefördert 2019",
+            "cand_text": "gefördert 2019"
+          },
+          "institution": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Österreichische Nationalbibliothek, Universität Wien",
+            "cand_text": "Österreichische Nationalbibliothek, Universität Wien"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+            "cand_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth"
+          },
+          "tei_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI-Hinweis durch sdef:TEI-Links"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 10,
+        "field_scores": {
+          "api_hint": {
+            "P": 0.34440818428993225,
+            "R": 0.37733590602874756,
+            "F1": 0.3616809546947479,
+            "ref_text": "IIIF Hinweise",
+            "cand_text": "IIIF endpoint"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "germanistik@univie.ac.at, Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Technische Dokumentation",
+            "cand_text": "Technische Dokumentation"
+          },
+          "funding_information": {
+            "P": 0.8023887872695923,
+            "R": 0.8024123907089233,
+            "F1": 0.8026928901672363,
+            "ref_text": "gefördert 2019",
+            "cand_text": "gefördert 2012"
+          },
+          "institution": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Österreichische Nationalbibliothek, Universität Wien",
+            "cand_text": "Österreichische Nationalbibliothek, Universität Wien"
+          },
+          "roles_responsibilities": {
+            "P": 0.802750289440155,
+            "R": 0.8288491368293762,
+            "F1": 0.8160027861595154,
+            "ref_text": "HerausgeberInnen: Roland Innerhofer, Bernhard Fetz, Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth",
+            "cand_text": "Editor: Roland Innerhofer, Editor: Bernhard Fetz, Team: Christian Zolles, Laura Tezarek, Arno Herberth, Desiree Hebenstreit, Holger Englerth"
+          },
+          "tei_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI-Hinweis durch sdef:TEI-Links"
+          }
+        },
+        "global_score": {
+          "P": 0.8499352335929871,
+          "R": 0.8583709597587585,
+          "F1": 0.8543394804000854
+        }
+      }
+    ],
+    "field_aggregate": {
+      "api_hint": {
+        "mean_F1": 0.8581513232654996,
+        "std_F1": 0.2653745745538763,
+        "mean_P": 0.8543129298422072,
+        "std_P": 0.2725555511066795,
+        "mean_R": 0.8616302013397217,
+        "std_R": 0.25886618963182667,
+        "unique_values": 2
+      },
+      "contact_info": {
+        "mean_F1": 1.0,
+        "std_F1": 0.0,
+        "mean_P": 1.0,
+        "std_P": 0.0,
+        "mean_R": 1.0,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "documentation": {
+        "mean_F1": 1.0000005298190646,
+        "std_F1": 1.873193267150846e-07,
+        "mean_P": 1.0000005298190646,
+        "std_P": 1.873193267150846e-07,
+        "mean_R": 1.0000005298190646,
+        "std_R": 1.873193267150846e-07,
+        "unique_values": 1
+      },
+      "funding_information": {
+        "mean_F1": 0.9780775176154243,
+        "std_F1": 0.06200782969224499,
+        "mean_P": 0.9780437284045749,
+        "std_P": 0.062103400012735024,
+        "mean_R": 0.978046351008945,
+        "std_R": 0.06209598216739711,
+        "unique_values": 2
+      },
+      "institution": {
+        "mean_F1": 0.9999994370672438,
+        "std_F1": 9.36596633575423e-08,
+        "mean_P": 0.9999994370672438,
+        "std_P": 9.36596633575423e-08,
+        "mean_R": 0.9999994370672438,
+        "std_R": 9.36596633575423e-08,
+        "unique_values": 1
+      },
+      "roles_responsibilities": {
+        "mean_F1": 0.9795561830202738,
+        "std_F1": 0.05782485800316845,
+        "mean_P": 0.9780836833847893,
+        "std_P": 0.061989715913351645,
+        "mean_R": 0.980983555316925,
+        "std_R": 0.05378763948220892,
+        "unique_values": 2
+      },
+      "tei_hint": {
+        "mean_F1": 1.0,
+        "std_F1": 0.0,
+        "mean_P": 1.0,
+        "std_P": 0.0,
+        "mean_R": 1.0,
+        "std_R": 0.0,
+        "unique_values": 1
+      }
+    },
+    "global_aggregate": {
+      "mean_F1": 0.9736835559209188,
+      "std_F1": 0.05088035866154306,
+      "min_F1": 0.8543394804000854,
+      "max_F1": 1.0000001192092896
+    }
+  }
+}

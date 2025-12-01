@@ -1,0 +1,783 @@
+{
+  "url": "https://www.ldm-digital.de/",
+  "runs": 10,
+  "reference_run_index": 1,
+  "llm_outputs": [
+    {
+      "institution": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+      "roles_responsibilities": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+      "funding_information": "DFG",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Dokumentation",
+      "license": "Creative Commons Lizenzvertrag",
+      "api_hint": "Download/API",
+      "downloads_hint": "Download/API"
+    },
+    {
+      "institution": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+      "roles_responsibilities": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+      "funding_information": "DFG",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Dokumentation",
+      "license": "Creative Commons Lizenzvertrag",
+      "api_hint": "Download/API",
+      "downloads_hint": "Download/API"
+    },
+    {
+      "institution": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+      "funding_information": "DFG",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Dokumentation",
+      "license": "Creative Commons Lizenzvertrag",
+      "api_hint": "Download/API",
+      "downloads_hint": "Download/API"
+    },
+    {
+      "institution": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+      "roles_responsibilities": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+      "funding_information": "DFG",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Dokumentation",
+      "license": "Creative Commons Lizenzvertrag",
+      "api_hint": "Download/API",
+      "downloads_hint": "Download/API"
+    },
+    {
+      "institution": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+      "funding_information": "DFG",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Dokumentation",
+      "license": "Creative Commons Lizenzvertrag",
+      "api_hint": "Download/API",
+      "downloads_hint": "Download/API"
+    },
+    {
+      "institution": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+      "roles_responsibilities": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+      "funding_information": "DFG",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Dokumentation",
+      "license": "Creative Commons Lizenzvertrag",
+      "api_hint": "Download/API",
+      "downloads_hint": "Download/API"
+    },
+    {
+      "institution": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+      "roles_responsibilities": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+      "funding_information": "DFG",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Dokumentation",
+      "license": "Creative Commons Lizenzvertrag",
+      "api_hint": "Download/API",
+      "downloads_hint": "Download/API"
+    },
+    {
+      "institution": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+      "roles_responsibilities": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+      "funding_information": "DFG",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Dokumentation",
+      "license": "Creative Commons Lizenzvertrag",
+      "api_hint": "Download/API",
+      "downloads_hint": "Download/API"
+    },
+    {
+      "institution": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+      "roles_responsibilities": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+      "funding_information": "DFG",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Dokumentation",
+      "license": "Creative Commons Lizenzvertrag",
+      "api_hint": "Download/API",
+      "downloads_hint": "Download/API"
+    },
+    {
+      "institution": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+      "roles_responsibilities": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+      "funding_information": "DFG",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Dokumentation",
+      "license": "Creative Commons Lizenzvertrag",
+      "api_hint": "Download/API",
+      "downloads_hint": "Download/API"
+    }
+  ],
+  "bertscore": {
+    "per_run_vs_reference": [
+      {
+        "run_index": 2,
+        "field_scores": {
+          "api_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Dokumentation",
+            "cand_text": "Dokumentation"
+          },
+          "downloads_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "funding_information": {
+            "P": 0.9999990463256836,
+            "R": 0.9999990463256836,
+            "F1": 0.9999990463256836,
+            "ref_text": "DFG",
+            "cand_text": "DFG"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+            "cand_text": "Universität Erlangen-Nürnberg, Universität Stuttgart"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons Lizenzvertrag",
+            "cand_text": "Creative Commons Lizenzvertrag"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+            "cand_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 3,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Dokumentation",
+            "cand_text": "Dokumentation"
+          },
+          "downloads_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "funding_information": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "DFG",
+            "cand_text": "DFG"
+          },
+          "institution": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+            "cand_text": "Universität Erlangen-Nürnberg, Universität Stuttgart"
+          },
+          "license": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Creative Commons Lizenzvertrag",
+            "cand_text": "Creative Commons Lizenzvertrag"
+          },
+          "roles_responsibilities": {
+            "P": -1.5996181964874268,
+            "R": -1.5993081331253052,
+            "F1": -1.5956180095672607,
+            "ref_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+            "cand_text": ""
+          }
+        },
+        "global_score": {
+          "P": 0.675047755241394,
+          "R": 0.675086498260498,
+          "F1": 0.6755477786064148
+        }
+      },
+      {
+        "run_index": 4,
+        "field_scores": {
+          "api_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Dokumentation",
+            "cand_text": "Dokumentation"
+          },
+          "downloads_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "funding_information": {
+            "P": 0.9999990463256836,
+            "R": 0.9999990463256836,
+            "F1": 0.9999990463256836,
+            "ref_text": "DFG",
+            "cand_text": "DFG"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+            "cand_text": "Universität Erlangen-Nürnberg, Universität Stuttgart"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons Lizenzvertrag",
+            "cand_text": "Creative Commons Lizenzvertrag"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+            "cand_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 5,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Dokumentation",
+            "cand_text": "Dokumentation"
+          },
+          "downloads_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "funding_information": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "DFG",
+            "cand_text": "DFG"
+          },
+          "institution": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+            "cand_text": "Universität Erlangen-Nürnberg, Universität Stuttgart"
+          },
+          "license": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Creative Commons Lizenzvertrag",
+            "cand_text": "Creative Commons Lizenzvertrag"
+          },
+          "roles_responsibilities": {
+            "P": -1.5996181964874268,
+            "R": -1.5993081331253052,
+            "F1": -1.5956180095672607,
+            "ref_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+            "cand_text": ""
+          }
+        },
+        "global_score": {
+          "P": 0.675047755241394,
+          "R": 0.675086498260498,
+          "F1": 0.6755477786064148
+        }
+      },
+      {
+        "run_index": 6,
+        "field_scores": {
+          "api_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Dokumentation",
+            "cand_text": "Dokumentation"
+          },
+          "downloads_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "funding_information": {
+            "P": 0.9999990463256836,
+            "R": 0.9999990463256836,
+            "F1": 0.9999990463256836,
+            "ref_text": "DFG",
+            "cand_text": "DFG"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+            "cand_text": "Universität Erlangen-Nürnberg, Universität Stuttgart"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons Lizenzvertrag",
+            "cand_text": "Creative Commons Lizenzvertrag"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+            "cand_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 7,
+        "field_scores": {
+          "api_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Dokumentation",
+            "cand_text": "Dokumentation"
+          },
+          "downloads_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "funding_information": {
+            "P": 0.9999990463256836,
+            "R": 0.9999990463256836,
+            "F1": 0.9999990463256836,
+            "ref_text": "DFG",
+            "cand_text": "DFG"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+            "cand_text": "Universität Erlangen-Nürnberg, Universität Stuttgart"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons Lizenzvertrag",
+            "cand_text": "Creative Commons Lizenzvertrag"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+            "cand_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 8,
+        "field_scores": {
+          "api_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Dokumentation",
+            "cand_text": "Dokumentation"
+          },
+          "downloads_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "funding_information": {
+            "P": 0.9999990463256836,
+            "R": 0.9999990463256836,
+            "F1": 0.9999990463256836,
+            "ref_text": "DFG",
+            "cand_text": "DFG"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+            "cand_text": "Universität Erlangen-Nürnberg, Universität Stuttgart"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons Lizenzvertrag",
+            "cand_text": "Creative Commons Lizenzvertrag"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+            "cand_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 9,
+        "field_scores": {
+          "api_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Dokumentation",
+            "cand_text": "Dokumentation"
+          },
+          "downloads_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "funding_information": {
+            "P": 0.9999990463256836,
+            "R": 0.9999990463256836,
+            "F1": 0.9999990463256836,
+            "ref_text": "DFG",
+            "cand_text": "DFG"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+            "cand_text": "Universität Erlangen-Nürnberg, Universität Stuttgart"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons Lizenzvertrag",
+            "cand_text": "Creative Commons Lizenzvertrag"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+            "cand_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      },
+      {
+        "run_index": 10,
+        "field_scores": {
+          "api_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Dokumentation",
+            "cand_text": "Dokumentation"
+          },
+          "downloads_hint": {
+            "P": 0.9999994039535522,
+            "R": 0.9999994039535522,
+            "F1": 0.9999994039535522,
+            "ref_text": "Download/API",
+            "cand_text": "Download/API"
+          },
+          "funding_information": {
+            "P": 0.9999990463256836,
+            "R": 0.9999990463256836,
+            "F1": 0.9999990463256836,
+            "ref_text": "DFG",
+            "cand_text": "DFG"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Universität Erlangen-Nürnberg, Universität Stuttgart",
+            "cand_text": "Universität Erlangen-Nürnberg, Universität Stuttgart"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons Lizenzvertrag",
+            "cand_text": "Creative Commons Lizenzvertrag"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl",
+            "cand_text": "Editor: Manuel Braun, Sonja Glauch, Florian Kragl"
+          }
+        },
+        "global_score": {
+          "P": 0.9999998807907104,
+          "R": 0.9999998807907104,
+          "F1": 0.9999998807907104
+        }
+      }
+    ],
+    "field_aggregate": {
+      "api_hint": {
+        "mean_F1": 0.9999996158811781,
+        "std_F1": 3.9648028339533715e-07,
+        "mean_P": 0.9999996158811781,
+        "std_P": 3.9648028339533715e-07,
+        "mean_R": 0.9999996158811781,
+        "std_R": 3.9648028339533715e-07,
+        "unique_values": 1
+      },
+      "contact_info": {
+        "mean_F1": 1.0000004635916815,
+        "std_F1": 2.478001771220857e-07,
+        "mean_P": 1.0000004635916815,
+        "std_P": 2.478001771220857e-07,
+        "mean_R": 1.0000004635916815,
+        "std_R": 2.478001771220857e-07,
+        "unique_values": 1
+      },
+      "documentation": {
+        "mean_F1": 1.000000278155009,
+        "std_F1": 1.4868010627325142e-07,
+        "mean_P": 1.000000278155009,
+        "std_P": 1.4868010627325142e-07,
+        "mean_R": 1.000000278155009,
+        "std_R": 1.4868010627325142e-07,
+        "unique_values": 1
+      },
+      "downloads_hint": {
+        "mean_F1": 0.9999996158811781,
+        "std_F1": 3.9648028339533715e-07,
+        "mean_P": 0.9999996158811781,
+        "std_P": 3.9648028339533715e-07,
+        "mean_R": 0.9999996158811781,
+        "std_R": 3.9648028339533715e-07,
+        "unique_values": 1
+      },
+      "funding_information": {
+        "mean_F1": 0.9999991920259264,
+        "std_F1": 2.725801948342943e-07,
+        "mean_P": 0.9999991920259264,
+        "std_P": 2.725801948342943e-07,
+        "mean_R": 0.9999991920259264,
+        "std_R": 2.725801948342943e-07,
+        "unique_values": 1
+      },
+      "institution": {
+        "mean_F1": 1.000000278155009,
+        "std_F1": 1.4868010627325142e-07,
+        "mean_P": 1.000000278155009,
+        "std_P": 1.4868010627325142e-07,
+        "mean_R": 1.000000278155009,
+        "std_R": 1.4868010627325142e-07,
+        "unique_values": 1
+      },
+      "license": {
+        "mean_F1": 1.000000238418579,
+        "std_F1": 2.2302015940987714e-07,
+        "mean_P": 1.000000238418579,
+        "std_P": 2.2302015940987714e-07,
+        "mean_R": 1.000000238418579,
+        "std_R": 2.2302015940987714e-07,
+        "unique_values": 1
+      },
+      "roles_responsibilities": {
+        "mean_F1": 0.42319585879643756,
+        "std_F1": 1.0791014032978152,
+        "mean_P": 0.42230692836973405,
+        "std_P": 1.080764439846517,
+        "mean_R": 0.4223758313390944,
+        "std_R": 1.080635534194378,
+        "unique_values": 2
+      }
+    },
+    "global_aggregate": {
+      "mean_F1": 0.9278994136386447,
+      "std_F1": 0.13488762275468927,
+      "min_F1": 0.6755477786064148,
+      "max_F1": 0.9999998807907104
+    }
+  }
+}

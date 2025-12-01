@@ -1,0 +1,114 @@
+{# file: app/templates/partials/linked_data.html #}
+{% set fair = page.fair or {} %}
+{% if fair.verdict is defined or fair.scores is defined %}
+  {% set fs = fair %}
+{% else %}
+  {% set fs = fair.summary or {} %}
+{% endif %}
+
+{% set f2a = fair.get('F2A') or {} %}
+{% set f2b = fair.get('F2B') or {} %}
+
+{% set nd = page.normdata or {} %}
+{% set nd_total  = nd.get('total', 0) %}
+{% set nd_counts = nd.get('counts') or {} %}
+{% set nd_items  = nd.get('items') or [] %}
+{% set nd_errors = nd.get('errors') or [] %}
+
+<details>
+  <summary>
+    🔗 Linked Data
+    <span class="muted">• Metadaten:
+      {% if fs.get('has_structured_metadata') is sameas true %}ja
+      {% elif fs.get('has_structured_metadata') is sameas false %}nein
+      {% else %}unbekannt{% endif %}
+    </span>
+    <span class="muted">• Vokabulare:
+      {% if fs.get('uses_shared_vocabularies') is sameas true %}ja
+      {% elif fs.get('uses_shared_vocabularies') is sameas false %}nein
+      {% else %}unklar{% endif %}
+    </span>
+    <span class="muted">• Normdaten:
+      {% if nd_total > 0 %}ja ({{ nd_total }})
+      {% else %}nein{% endif %}
+    </span>
+  </summary>
+
+  {# ---- Details: Metadaten & Vokabulare ---- #}
+  <details style="margin-left: 1em; margin-top:.5rem;">
+    <summary>📑 Details zu Metadaten &amp; Vokabulare</summary>
+    <div style="margin-top:.5rem;">
+      <div><strong>Ergebnis:</strong> {{ fs.get('verdict', '–') }}</div>
+
+      <div style="margin-top:.5rem;">
+        <strong>Log Metadaten:</strong>
+        <pre style="white-space:pre-wrap;margin:.25rem 0;">{{ f2a.get('evidence') or '–' }}</pre>
+        {% if f2a.get('recommendation') %}
+          <div><strong>Empfehlung (Metadaten):</strong>
+            <div class="muted" style="margin-top:.25rem;">{{ f2a.recommendation | striptags }}</div>
+          </div>
+        {% endif %}
+      </div>
+
+      <div style="margin-top:.75rem;">
+        <strong>Log Vokabulare:</strong>
+        <pre style="white-space:pre-wrap;margin:.25rem 0;">{{ f2b.get('evidence') or '–' }}</pre>
+        {% if f2b.get('recommendation') %}
+          <div><strong>Empfehlung (Vokabulare):</strong>
+            <div class="muted" style="margin-top:.25rem;">{{ f2b.recommendation | striptags }}</div>
+          </div>
+        {% endif %}
+      </div>
+
+      {% if fair.error is defined and fair.error %}
+        <div class="muted" style="margin-top:.75rem;">❌ {{ fair.error }}</div>
+      {% endif %}
+    </div>
+  </details>
+
+  {# ---- Details: Normdaten ---- #}
+  <details style="margin-left: 1em; margin-top:.75rem;">
+    <summary>📚 Details zu Normdaten</summary>
+    <div style="margin-top:.5rem;">
+      <div><strong>Übersicht:</strong>
+        {% if nd_counts %}
+          <ul style="margin:.25rem 0;">
+            {% for src, cnt in (nd_counts|dictsort) %}
+              <li><strong>{{ src }}</strong> <span class="muted">({{ cnt }})</span></li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <span class="muted">Keine Normdaten-Links gefunden.</span>
+        {% endif %}
+      </div>
+
+      {% if nd_items %}
+        {% for grp in nd_items|groupby('source') %}
+          <div style="margin-top:.75rem;">
+            <strong>{{ grp.grouper or 'Unbekannt' }}</strong>
+            <ul>
+              {% for it in grp.list %}
+                <li>
+                  <a href="{{ it.url }}" target="_blank" rel="noopener">{{ it.url }}</a>
+                  {% if it.status is not none %}
+                    · <span class="{{ 'ok' if (it.status|string).isdigit() and it.status|int < 400 else 'muted' }}">
+                      HTTP {{ it.status }}
+                    </span>
+                  {% endif %}
+                  {% if it.origin %}
+                    <span class="muted">[Quelle: {{ it.origin }}]</span>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      {% endif %}
+
+      {% if nd_errors %}
+        <div class="muted" style="margin-top:.5rem;">❌ {{ nd_errors|join('; ') }}</div>
+      {% endif %}
+    </div>
+  </details>
+
+</details>

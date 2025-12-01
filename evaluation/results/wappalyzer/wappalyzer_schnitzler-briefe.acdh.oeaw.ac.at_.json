@@ -1,0 +1,404 @@
+{
+    "url": "https://schnitzler-briefe.acdh.oeaw.ac.at/",
+    "timestamp": "2025-11-23T11:13:36.296013",
+    "raw": {
+        "urls": {
+            "https://schnitzler-briefe.acdh.oeaw.ac.at/": {
+                "status": 200
+            }
+        },
+        "technologies": [
+            {
+                "slug": "highcharts",
+                "name": "Highcharts",
+                "description": "Highcharts is a charting library written in pure JavaScript, for adding interactive charts to a website or web application. Highcharts meets accessibility standards and works with Python, Angular, React, iOS, Android, and more.",
+                "confidence": 100,
+                "version": "12.4.0",
+                "icon": "Highcharts.svg",
+                "website": "https://www.highcharts.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 25,
+                        "slug": "javascript-graphics",
+                        "name": "JavaScript graphics"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "bootstrap",
+                "name": "Bootstrap",
+                "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
+                "confidence": 100,
+                "version": "5.3.0",
+                "icon": "Bootstrap.svg",
+                "website": "https://getbootstrap.com",
+                "cpe": "cpe:2.3:a:getbootstrap:bootstrap:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 66,
+                        "slug": "ui-frameworks",
+                        "name": "UI frameworks"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "varnish",
+                "name": "Varnish",
+                "description": "Varnish is a reverse caching proxy.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Varnish.svg",
+                "website": "http://www.varnish-cache.org",
+                "cpe": "cpe:2.3:a:varnish-software:varnich_cache:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 23,
+                        "slug": "caching",
+                        "name": "Caching"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "github-pages",
+                "name": "GitHub Pages",
+                "description": "GitHub Pages is a static site hosting service.",
+                "confidence": 100,
+                "version": null,
+                "icon": "GitHub.svg",
+                "website": "https://pages.github.com/",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 62,
+                        "slug": "paas",
+                        "name": "PaaS"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "cloudflare",
+                "name": "Cloudflare",
+                "description": "Cloudflare is a web-infrastructure and website-security company, providing content-delivery-network services, DDoS mitigation, Internet security, and distributed domain-name-server services.",
+                "confidence": 100,
+                "version": null,
+                "icon": "CloudFlare.svg",
+                "website": "http://www.cloudflare.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 31,
+                        "slug": "cdn",
+                        "name": "CDN"
+                    }
+                ]
+            },
+            {
+                "slug": "jquery-cdn",
+                "name": "jQuery CDN",
+                "description": "jQuery CDN is a way to include jQuery in your website without actually downloading and keeping it your website's folder.",
+                "confidence": 100,
+                "version": null,
+                "icon": "jQuery.svg",
+                "website": "https://code.jquery.com/",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 31,
+                        "slug": "cdn",
+                        "name": "CDN"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "cdnjs",
+                "name": "cdnjs",
+                "description": "cdnjs is a free distributed JS library delivery service.",
+                "confidence": 100,
+                "version": null,
+                "icon": "cdnjs.svg",
+                "website": "https://cdnjs.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 31,
+                        "slug": "cdn",
+                        "name": "CDN"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "matomo-analytics",
+                "name": "Matomo Analytics",
+                "description": "Matomo Analytics is a free and open-source web analytics application, that runs on a PHP/MySQL web-server.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Matomo.svg",
+                "website": "https://matomo.org",
+                "cpe": "cpe:2.3:a:matomo:matomo:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 10,
+                        "slug": "analytics",
+                        "name": "Analytics"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "jquery",
+                "name": "jQuery",
+                "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+                "confidence": 100,
+                "version": "3.6.3",
+                "icon": "jQuery.svg",
+                "website": "https://jquery.com",
+                "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "priority-hints",
+                "name": "Priority Hints",
+                "description": "Priority Hints exposes a mechanism for developers to signal a relative priority for browsers to consider when fetching resources.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Priority Hints.svg",
+                "website": "https://wicg.github.io/priority-hints/",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 92,
+                        "slug": "performance",
+                        "name": "Performance"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "jsdelivr",
+                "name": "jsDelivr",
+                "description": "JSDelivr is a free public CDN for open-source projects. It can serve web files directly from the npm registry and GitHub repositories without any configuration.",
+                "confidence": 100,
+                "version": null,
+                "icon": "jsdelivr-icon.svg",
+                "website": "https://www.jsdelivr.com/",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 31,
+                        "slug": "cdn",
+                        "name": "CDN"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "hsts",
+                "name": "HSTS",
+                "description": "HTTP Strict Transport Security (HSTS) informs browsers that the site should only be accessed using HTTPS.",
+                "confidence": 100,
+                "version": null,
+                "icon": "default.svg",
+                "website": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 16,
+                        "slug": "security",
+                        "name": "Security"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "fastly",
+                "name": "Fastly",
+                "description": "Fastly is a cloud computing services provider. Fastly's cloud platform provides a content delivery network, Internet security services, load balancing, and video & streaming services.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Fastly.svg",
+                "website": "https://www.fastly.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 31,
+                        "slug": "cdn",
+                        "name": "CDN"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "pwa",
+                "name": "PWA",
+                "description": "Progressive Web Apps (PWAs) are web apps built and enhanced with modern APIs to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device, all with a single codebase.",
+                "confidence": 100,
+                "version": null,
+                "icon": "PWA.svg",
+                "website": "https://web.dev/progressive-web-apps/",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 19,
+                        "slug": "miscellaneous",
+                        "name": "Miscellaneous"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "open-graph",
+                "name": "Open Graph",
+                "description": "Open Graph is a protocol that is used to integrate any web page into the social graph.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Open Graph.png",
+                "website": "https://ogp.me",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 19,
+                        "slug": "miscellaneous",
+                        "name": "Miscellaneous"
+                    }
+                ],
+                "rootPath": true
+            }
+        ]
+    },
+    "parsed": [
+        {
+            "name": "Highcharts",
+            "version": "12.4.0",
+            "category": "JavaScript graphics",
+            "description": "Highcharts is a charting library written in pure JavaScript, for adding interactive charts to a website or web application. Highcharts meets accessibility standards and works with Python, Angular, React, iOS, Android, and more.",
+            "website": "https://www.highcharts.com",
+            "oss": null
+        },
+        {
+            "name": "Bootstrap",
+            "version": "5.3.0",
+            "category": "UI frameworks",
+            "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
+            "website": "https://getbootstrap.com",
+            "oss": null
+        },
+        {
+            "name": "Varnish",
+            "version": null,
+            "category": "Caching",
+            "description": "Varnish is a reverse caching proxy.",
+            "website": "http://www.varnish-cache.org",
+            "oss": null
+        },
+        {
+            "name": "GitHub Pages",
+            "version": null,
+            "category": "PaaS",
+            "description": "GitHub Pages is a static site hosting service.",
+            "website": "https://pages.github.com/",
+            "oss": null
+        },
+        {
+            "name": "Cloudflare",
+            "version": null,
+            "category": "CDN",
+            "description": "Cloudflare is a web-infrastructure and website-security company, providing content-delivery-network services, DDoS mitigation, Internet security, and distributed domain-name-server services.",
+            "website": "http://www.cloudflare.com",
+            "oss": null
+        },
+        {
+            "name": "jQuery CDN",
+            "version": null,
+            "category": "CDN",
+            "description": "jQuery CDN is a way to include jQuery in your website without actually downloading and keeping it your website's folder.",
+            "website": "https://code.jquery.com/",
+            "oss": null
+        },
+        {
+            "name": "cdnjs",
+            "version": null,
+            "category": "CDN",
+            "description": "cdnjs is a free distributed JS library delivery service.",
+            "website": "https://cdnjs.com",
+            "oss": null
+        },
+        {
+            "name": "Matomo Analytics",
+            "version": null,
+            "category": "Analytics",
+            "description": "Matomo Analytics is a free and open-source web analytics application, that runs on a PHP/MySQL web-server.",
+            "website": "https://matomo.org",
+            "oss": null
+        },
+        {
+            "name": "jQuery",
+            "version": "3.6.3",
+            "category": "JavaScript libraries",
+            "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+            "website": "https://jquery.com",
+            "oss": null
+        },
+        {
+            "name": "Priority Hints",
+            "version": null,
+            "category": "Performance",
+            "description": "Priority Hints exposes a mechanism for developers to signal a relative priority for browsers to consider when fetching resources.",
+            "website": "https://wicg.github.io/priority-hints/",
+            "oss": null
+        },
+        {
+            "name": "jsDelivr",
+            "version": null,
+            "category": "CDN",
+            "description": "JSDelivr is a free public CDN for open-source projects. It can serve web files directly from the npm registry and GitHub repositories without any configuration.",
+            "website": "https://www.jsdelivr.com/",
+            "oss": null
+        },
+        {
+            "name": "HSTS",
+            "version": null,
+            "category": "Security",
+            "description": "HTTP Strict Transport Security (HSTS) informs browsers that the site should only be accessed using HTTPS.",
+            "website": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1",
+            "oss": null
+        },
+        {
+            "name": "Fastly",
+            "version": null,
+            "category": "CDN",
+            "description": "Fastly is a cloud computing services provider. Fastly's cloud platform provides a content delivery network, Internet security services, load balancing, and video & streaming services.",
+            "website": "https://www.fastly.com",
+            "oss": null
+        },
+        {
+            "name": "PWA",
+            "version": null,
+            "category": "Miscellaneous",
+            "description": "Progressive Web Apps (PWAs) are web apps built and enhanced with modern APIs to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device, all with a single codebase.",
+            "website": "https://web.dev/progressive-web-apps/",
+            "oss": null
+        },
+        {
+            "name": "Open Graph",
+            "version": null,
+            "category": "Miscellaneous",
+            "description": "Open Graph is a protocol that is used to integrate any web page into the social graph.",
+            "website": "https://ogp.me",
+            "oss": null
+        }
+    ]
+}

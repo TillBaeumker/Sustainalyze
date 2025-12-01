@@ -1,0 +1,97 @@
+# ============================================================
+# PYTHON / FASTAPI
+# ============================================================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.dll
+*.so
+*.log
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Alle echten Envs ignorieren…
+.env
+*.env
+.env.*
+
+# …aber .env.example erlauben
+!.env.example
+
+# Build / dist
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+*.manifest
+*.spec
+
+# Cache folders
+.cache/
+pytest_cache/
+.mypy_cache/
+.dmypy.json
+tmp/
+temp/
+
+# ============================================================
+# APP OUTPUT / TEMP DATA
+# ============================================================
+tei_downloads/
+reports/
+app/downloads/
+crawl4ai_cache/
+crawl4ai_output/
+crawl4ai_logs/
+output/
+data/
+tmp_analysis/
+
+# FUJI temp
+fuji/fuji-venv/
+fuji_server/tmp/
+fuji_server/__pycache__/
+
+# ============================================================
+# SHODAN / WAPPALYZER / PLAYWRIGHT
+# ============================================================
+node_modules/
+npm-debug.log
+
+# ⚠️ Wichtig: package-lock.json NICHT ignorieren,
+# da Wappalyzer reproducible builds benötigt
+# package-lock.json
+
+# Playwright browsers
+playwright/.local-browsers/
+
+# ============================================================
+# IDE / OS
+# ============================================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+
+# ============================================================
+# SECRETS
+# ============================================================
+*.key
+*.pem
+*.crt
+*.cfg
+*.conf
+*.ini
+config.json
+config_local.py
+openai_key.txt
+fuji_config.yml

@@ -1,0 +1,455 @@
+{
+  "url": "http://archivio.operaduomo.fi.it/cupola/home.HTML",
+  "runs": 10,
+  "reference_run_index": 1,
+  "llm_outputs": [
+    {
+      "institution": "Opera di Santa Maria del Fiore",
+      "roles_responsibilities": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+      "funding_information": "Con il contributo di The Andrew W. Mellon Foundation",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Opera di Santa Maria del Fiore",
+      "roles_responsibilities": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+      "funding_information": "Con il contributo di The Andrew W. Mellon Foundation",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Opera di Santa Maria del Fiore",
+      "roles_responsibilities": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+      "funding_information": "Con il contributo di The Andrew W. Mellon Foundation",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Opera di Santa Maria del Fiore",
+      "roles_responsibilities": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+      "funding_information": "Con il contributo di The Andrew W. Mellon Foundation",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Opera di Santa Maria del Fiore",
+      "roles_responsibilities": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+      "funding_information": "Con il contributo di The Andrew W. Mellon Foundation",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Opera di Santa Maria del Fiore",
+      "roles_responsibilities": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+      "funding_information": "Con il contributo di The Andrew W. Mellon Foundation",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Opera di Santa Maria del Fiore",
+      "roles_responsibilities": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+      "funding_information": "Con il contributo di The Andrew W. Mellon Foundation",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Opera di Santa Maria del Fiore",
+      "roles_responsibilities": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+      "funding_information": "Con il contributo di The Andrew W. Mellon Foundation"
+    },
+    {
+      "institution": "Opera di Santa Maria del Fiore",
+      "roles_responsibilities": "Editor: Margaret Haines",
+      "funding_information": "Con il contributo di The Andrew W. Mellon Foundation",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Opera di Santa Maria del Fiore",
+      "roles_responsibilities": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+      "funding_information": "Con il contributo di The Andrew W. Mellon Foundation"
+    }
+  ],
+  "bertscore": {
+    "per_run_vs_reference": [
+      {
+        "run_index": 2,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Con il contributo di The Andrew W. Mellon Foundation",
+            "cand_text": "Con il contributo di The Andrew W. Mellon Foundation"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Opera di Santa Maria del Fiore",
+            "cand_text": "Opera di Santa Maria del Fiore"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+            "cand_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner"
+          }
+        },
+        "global_score": {
+          "P": 1.0000004768371582,
+          "R": 1.0000004768371582,
+          "F1": 1.0000004768371582
+        }
+      },
+      {
+        "run_index": 3,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Con il contributo di The Andrew W. Mellon Foundation",
+            "cand_text": "Con il contributo di The Andrew W. Mellon Foundation"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Opera di Santa Maria del Fiore",
+            "cand_text": "Opera di Santa Maria del Fiore"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+            "cand_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner"
+          }
+        },
+        "global_score": {
+          "P": 1.0000004768371582,
+          "R": 1.0000004768371582,
+          "F1": 1.0000004768371582
+        }
+      },
+      {
+        "run_index": 4,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Con il contributo di The Andrew W. Mellon Foundation",
+            "cand_text": "Con il contributo di The Andrew W. Mellon Foundation"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Opera di Santa Maria del Fiore",
+            "cand_text": "Opera di Santa Maria del Fiore"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+            "cand_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner"
+          }
+        },
+        "global_score": {
+          "P": 1.0000004768371582,
+          "R": 1.0000004768371582,
+          "F1": 1.0000004768371582
+        }
+      },
+      {
+        "run_index": 5,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Con il contributo di The Andrew W. Mellon Foundation",
+            "cand_text": "Con il contributo di The Andrew W. Mellon Foundation"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Opera di Santa Maria del Fiore",
+            "cand_text": "Opera di Santa Maria del Fiore"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+            "cand_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner"
+          }
+        },
+        "global_score": {
+          "P": 1.0000004768371582,
+          "R": 1.0000004768371582,
+          "F1": 1.0000004768371582
+        }
+      },
+      {
+        "run_index": 6,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Con il contributo di The Andrew W. Mellon Foundation",
+            "cand_text": "Con il contributo di The Andrew W. Mellon Foundation"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Opera di Santa Maria del Fiore",
+            "cand_text": "Opera di Santa Maria del Fiore"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+            "cand_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner"
+          }
+        },
+        "global_score": {
+          "P": 1.0000004768371582,
+          "R": 1.0000004768371582,
+          "F1": 1.0000004768371582
+        }
+      },
+      {
+        "run_index": 7,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Con il contributo di The Andrew W. Mellon Foundation",
+            "cand_text": "Con il contributo di The Andrew W. Mellon Foundation"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Opera di Santa Maria del Fiore",
+            "cand_text": "Opera di Santa Maria del Fiore"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+            "cand_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner"
+          }
+        },
+        "global_score": {
+          "P": 1.0000004768371582,
+          "R": 1.0000004768371582,
+          "F1": 1.0000004768371582
+        }
+      },
+      {
+        "run_index": 8,
+        "field_scores": {
+          "contact_info": {
+            "P": -1.5996181964874268,
+            "R": -1.5993081331253052,
+            "F1": -1.5956180095672607,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": ""
+          },
+          "funding_information": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Con il contributo di The Andrew W. Mellon Foundation",
+            "cand_text": "Con il contributo di The Andrew W. Mellon Foundation"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Opera di Santa Maria del Fiore",
+            "cand_text": "Opera di Santa Maria del Fiore"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+            "cand_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner"
+          }
+        },
+        "global_score": {
+          "P": 0.3500957190990448,
+          "R": 0.3501732349395752,
+          "F1": 0.3510957658290863
+        }
+      },
+      {
+        "run_index": 9,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Con il contributo di The Andrew W. Mellon Foundation",
+            "cand_text": "Con il contributo di The Andrew W. Mellon Foundation"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Opera di Santa Maria del Fiore",
+            "cand_text": "Opera di Santa Maria del Fiore"
+          },
+          "roles_responsibilities": {
+            "P": 0.757696270942688,
+            "R": 0.4427887797355652,
+            "F1": 0.5895671844482422,
+            "ref_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+            "cand_text": "Editor: Margaret Haines"
+          }
+        },
+        "global_score": {
+          "P": 0.9394242763519287,
+          "R": 0.8606974482536316,
+          "F1": 0.8973920345306396
+        }
+      },
+      {
+        "run_index": 10,
+        "field_scores": {
+          "contact_info": {
+            "P": -1.5996181964874268,
+            "R": -1.5993081331253052,
+            "F1": -1.5956180095672607,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": ""
+          },
+          "funding_information": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Con il contributo di The Andrew W. Mellon Foundation",
+            "cand_text": "Con il contributo di The Andrew W. Mellon Foundation"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Opera di Santa Maria del Fiore",
+            "cand_text": "Opera di Santa Maria del Fiore"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner",
+            "cand_text": "Editor: Margaret Haines\nRappresentazione Internet: Jochen Büttner"
+          }
+        },
+        "global_score": {
+          "P": 0.3500957190990448,
+          "R": 0.3501732349395752,
+          "F1": 0.3510957658290863
+        }
+      }
+    ],
+    "field_aggregate": {
+      "contact_info": {
+        "mean_F1": 0.42319639523824054,
+        "std_F1": 1.079101690038036,
+        "mean_P": 0.422307464811537,
+        "std_P": 1.0807647265867377,
+        "mean_R": 0.4223763677808974,
+        "std_R": 1.0806358209345988,
+        "unique_values": 2
+      },
+      "funding_information": {
+        "mean_F1": 1.0000003576278687,
+        "std_F1": 0.0,
+        "mean_P": 1.0000003576278687,
+        "std_P": 0.0,
+        "mean_R": 1.0000003576278687,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "institution": {
+        "mean_F1": 1.0000003576278687,
+        "std_F1": 0.0,
+        "mean_P": 1.0000003576278687,
+        "std_P": 0.0,
+        "mean_R": 1.0000003576278687,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "roles_responsibilities": {
+        "mean_F1": 0.9543966717190213,
+        "std_F1": 0.12898670221298955,
+        "mean_P": 0.9730776813295152,
+        "std_P": 0.07614882791302413,
+        "mean_R": 0.9380879600842794,
+        "std_R": 0.1751147045703573,
+        "unique_values": 2
+      }
+    },
+    "global_aggregate": {
+      "mean_F1": 0.8443984919124179,
+      "std_F1": 0.2655759654781444,
+      "min_F1": 0.3510957658290863,
+      "max_F1": 1.0000004768371582
+    }
+  }
+}

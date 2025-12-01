@@ -1,0 +1,31 @@
+<section class="page-block">
+  <h3 class="page-title">{{ page.title or page.url }}</h3>
+  <div class="muted small">
+    <a href="{{ page.url }}" target="_blank" rel="noopener">{{ page.url }}</a>
+  </div>
+
+  {# Projektinfos (Partial kümmert sich selbst um "keine Daten") #}
+  {% include "partials/project_info.html" %}
+
+  {# Links (intern/extern + Status + persistent_type) #}
+  {% include "partials/links_block.html" %}
+
+  {# Strukturierte Metadaten (Schemas, FAIR F2A/F2B etc.) #}
+  {% include "partials/structured_metadata.html" %}
+
+  {# Normdaten (GND, VIAF, Wikidata etc.) #}
+  {% include "partials/normdata.html" %}
+
+  {# XML #}
+  {% include "partials/xml_files.html" %}
+
+  {# Repositories (GitHub/GitLab) #}
+  {% include "partials/repos.html" %}
+
+  {# APIs #}
+  {% include "partials/apis.html" %}
+
+  {# Downloads #}
+  {% include "partials/downloads.html" %}
+
+</section>

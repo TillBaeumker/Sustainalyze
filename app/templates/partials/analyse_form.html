@@ -1,0 +1,19 @@
+<h2 class="major">URL eingeben</h2>
+
+<form id="analyseForm" method="post" action="/analyse">
+  <div class="fields">
+    <div class="field">
+      <label for="url">Website URL</label>
+      <input type="text" name="url" id="url" placeholder="https://example.com" required />
+    </div>
+  </div>
+  <ul class="actions">
+    <li><input type="submit" value="Start Analyse" class="primary" /></li>
+  </ul>
+</form>
+
+<!-- Ladeanzeige -->
+<div id="loadingSection">
+  <div class="loader" id="loader"></div>
+  <div id="terminal"></div>
+</div>

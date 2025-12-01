@@ -1,0 +1,99 @@
+<section id="report">
+
+  <!-- HEADER -->
+  <header class="report-header">
+    <h2 class="report-title">Analyse: {{ report.project_name|e }}</h2>
+
+    <div class="report-meta">
+      <span class="badge">📄 <strong>{{ report.valid_pages }}</strong> Seite(n)</span>
+
+      <span class="badge">🧮 Score:
+        <strong>{{ report.total.score if report.total.score is not none else '–' }}</strong>
+        · Band: {{ report.total.band|e }}
+      </span>
+
+      <span class="badge">🌐 Hosting:
+        <strong>{{ report.hosting_country|e }}</strong>
+        ({{ report.hosting_org|e }})
+      </span>
+    </div>
+
+    <div class="report-scorebar" style="--score: {{ report.total.score or 0 }}">
+      <div class="score-line">
+        <span>Gesamtscore</span>
+        <span>{{ report.total.score if report.total.score is not none else 'nicht bewertbar' }}</span>
+      </div>
+
+      <div class="scorebar"></div>
+
+      <p class="score-note">
+        Hinweis: Der Score basiert auf den gecrawlten Seiten und den dort gefundenen Evidenzen.
+      </p>
+    </div>
+  </header>
+
+
+  <!-- TABELLE -->
+  <section class="report-table-section">
+    <div class="table-wrap">
+      <table class="report-table">
+        <thead>
+          <tr>
+            <th>🔍 Was wurde geprüft</th>
+            <th>⭐ Ergebnis</th>
+            <th>📎 Hinweise & Evidenzen</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {% for cluster in report.rows %}
+            <tr class="cluster-row">
+              <td colspan="3">{{ cluster.section }}</td>
+            </tr>
+
+            {% for r in cluster["items"] %}
+              <tr>
+                <td class="label">{{ r.label|e }}</td>
+                <td>{{ r.bewertung|e }}</td>
+                <td>{{ r.hinweise | safe if r.hinweise else '–' }}</td>
+              </tr>
+            {% endfor %}
+          {% endfor %}
+        </tbody>
+
+      </table>
+    </div>
+  </section>
+
+
+  <!-- STÄRKEN -->
+  <section class="report-section">
+    <h3 class="section-title">Stärken</h3>
+    <ul class="section-list">
+      {% for s in report.strengths %}
+        <li>✅ {{ s|e }}</li>
+      {% else %}
+        <li class="muted">–</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- SCHWÄCHEN -->
+  <section class="report-section">
+    <h3 class="section-title">Schwächen</h3>
+    <ul class="section-list">
+      {% for w in report.weaknesses %}
+        <li>⚠️ {{ w|e }}</li>
+      {% else %}
+        <li class="muted">–</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- FAZIT -->
+  <section class="report-section">
+    <h3 class="section-title">Fazit</h3>
+    <p class="muted">{{ report.conclusion|e }}</p>
+  </section>
+
+</section>

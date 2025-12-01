@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    {% include "partials/head.html" %}
+    <link rel="stylesheet" href="/static/assets/css/custom.css">
+</head>
+
+<body class="is-preload">
+<div id="wrapper">
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="logo">
+            <span class="icon fa-globe"></span>
+        </div>
+
+        <div class="content">
+            <div class="inner">
+                <h1>Automatisierte Analyse digitaler Editionen auf digitale Nachhaltigkeit – Sustainalyze</h1>
+
+                <p>Wie nachhaltig ist eine digitale Edition? – Finde es heraus!</p>
+
+                <p style="font-size: 0.9em; margin-top: 1.2rem;">
+                    Dieses Tool macht sichtbar, wie nachhaltig digitale Editionen wirklich sind.
+                    Es verbindet etablierte Nachhaltigkeitsstrategien, FAIR-Kriterien,
+                    Open-Source-Indikatoren und technische Robustheitsmerkmale zu einer automatisierten Bewertung.
+                    <br><br>
+                    Entwickelt von <strong>Till Bäumker</strong>
+                    (<a href="mailto:till.baeumker@gmx.de">till.baeumker@gmx.de</a>).
+                </p>
+            </div>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#analyse">Analyse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <div id="main">
+        <article id="analyse">
+
+            <h2 class="major">URL eingeben</h2>
+
+            <form id="analyseForm" method="post" action="/analyse#analyse">
+                <div class="fields">
+
+                    <div class="field">
+                        <label for="url">Website URL</label>
+                        <input type="text" name="url" id="url"
+                               placeholder="https://example.com" required />
+                    </div>
+
+                    <div class="field">
+                        <label for="max_pages">Maximale Anzahl Seiten</label>
+                        <select name="max_pages" id="max_pages">
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="fair_mode">FAIR-Check</label>
+                        <select name="fair_mode" id="fair_mode">
+                            <option value="start_only" selected>Nur Startseite (FAIR-Checker)</option>
+                            <option value="fuji">Startseite + Datensätze (FUJI)</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <ul class="actions">
+                    <li>
+                        <input type="submit" id="analyseButton"
+                               class="primary action-button"
+                               value="Start Analyse" />
+                    </li>
+                </ul>
+            </form>
+
+            {% if error %}
+                <p style="color: red; margin-top: 1rem;">Fehler: {{ error }}</p>
+            {% endif %}
+
+            <!-- ========================================================= -->
+            <!--   ANALYSERESULTATE                                      -->
+            <!-- ========================================================= -->
+            <div id="analysis-result">
+                {% if result %}
+
+                    <div style="border: 1px solid #444; padding: 10px; margin: 15px 0;
+                                border-radius: 5px; font-size: 0.9em;">
+                        <strong>Analyse speichern oder herunterladen:</strong><br><br>
+                        Strg+P / ⌘+P → „Als PDF speichern“
+                    </div>
+
+                    {% if report %}
+                    <div id="report">
+                        {% include "partials/report.html" %}
+                    </div>
+                    {% endif %}
+
+                    {% include "partials/fuji_results.html" %}
+                    {% include "partials/wappalyzer.html" %}
+                    {% include "partials/shodan_overview.html" %}
+                    {% include "partials/fair_checker.html" %}
+
+                    {% if result.page_sections %}
+                        {% for page in result.page_sections %}
+                            {% include "partials/page_block.html" %}
+                        {% endfor %}
+                    {% endif %}
+
+                {% endif %}
+            </div>
+
+        </article>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <p class="copyright">
+            &copy; Till Bäumker. Design:
+            <a href="https://html5up.net">HTML5 UP</a>.
+        </p>
+    </footer>
+
+</div>
+
+<!-- Custom JS -->
+<script src="/static/assets/js/custom.js"></script>
+
+<!-- HTML5 UP -->
+<script src="/static/assets/js/jquery.min.js"></script>
+<script src="/static/assets/js/browser.min.js"></script>
+<script src="/static/assets/js/breakpoints.min.js"></script>
+<script src="/static/assets/js/util.js"></script>
+<script src="/static/assets/js/main.js"></script>
+
+</body>
+</html>

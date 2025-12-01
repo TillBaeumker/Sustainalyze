@@ -1,0 +1,53 @@
+{# file: app/templates/partials/structured_metadata.html #}
+
+{% set fair = page.fair or {} %}
+{% if fair.verdict is defined or fair.scores is defined %}
+  {% set fs = fair %}
+{% else %}
+  {% set fs = fair.summary or {} %}
+{% endif %}
+
+{% set f2a = fair.get('F2A') or {} %}
+{% set f2b = fair.get('F2B') or {} %}
+
+<details>
+  <summary>
+    📑 Strukturierte Metadaten
+    <span>(
+      Metadaten:
+      {% if fs.get('has_structured_metadata') is sameas true %}ja
+      {% elif fs.get('has_structured_metadata') is sameas false %}nein
+      {% else %}unbekannt{% endif %},
+      Vokabulare:
+      {% if fs.get('uses_shared_vocabularies') is sameas true %}ja
+      {% elif fs.get('uses_shared_vocabularies') is sameas false %}nein
+      {% else %}unklar{% endif %}
+    )</span>
+  </summary>
+
+  <div style="margin-top:.75rem; margin-left:1em;">
+
+    <div><strong>Ergebnis:</strong> {{ fs.get('verdict', '–') }}</div>
+
+    <div style="margin-top:.75rem;">
+      <strong>Metadaten (F2A):</strong>
+      <pre style="white-space:pre-wrap;margin:.25rem 0;">{{ f2a.get('evidence') or '–' }}</pre>
+      {% if f2a.get('recommendation') %}
+        <div class="muted">{{ f2a.recommendation | striptags }}</div>
+      {% endif %}
+    </div>
+
+    <div style="margin-top:.75rem;">
+      <strong>Vokabulare (F2B):</strong>
+      <pre style="white-space:pre-wrap;margin:.25rem 0;">{{ f2b.get('evidence') or '–' }}</pre>
+      {% if f2b.get('recommendation') %}
+        <div class="muted">{{ f2b.recommendation | striptags }}</div>
+      {% endif %}
+    </div>
+
+    {% if fair.error is defined and fair.error %}
+      <div class="muted" style="margin-top:.75rem;">❌ {{ fair.error }}</div>
+    {% endif %}
+
+  </div>
+</details>

@@ -1,0 +1,39 @@
+{# file: app/templates/partials/downloads.html #}
+
+{% set downloads = page.downloads if page.downloads is defined else {} %}
+{% set download_list = downloads.get('items', []) %}
+
+<details class="section">
+  <summary>
+    📥 Downloads
+    <span>({{ download_list|length }})</span>
+  </summary>
+
+  {% if download_list|length > 0 %}
+    <ul>
+      {% for dl in download_list %}
+        <li class="download-item">
+
+          {# Dateiname oder Fallback aus URL #}
+          {% set name = dl.filename or (dl.url.split('?')[0].rsplit('/', 1)[-1]) %}
+          {% if name and name != '' and name != dl.url %}
+            <strong>{{ name }}</strong><br>
+          {% endif %}
+
+          <a href="{{ dl.url }}" target="_blank" rel="noopener">{{ dl.url }}</a>
+
+          {# Zusatzinfo: Content-Type oder Dateiendung #}
+          {% if dl.content_type %}
+            <span class="muted">({{ dl.content_type }})</span>
+          {% elif dl.file_ext %}
+            <span class="muted">({{ dl.file_ext }})</span>
+          {% endif %}
+
+        </li>
+      {% endfor %}
+    </ul>
+
+  {% else %}
+    <div class="muted">Keine Dateien zum Download gefunden.</div>
+  {% endif %}
+</details>

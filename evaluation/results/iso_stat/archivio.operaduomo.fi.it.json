@@ -1,0 +1,15 @@
+{
+  "url": "http://archivio.operaduomo.fi.it/cupola/home.HTML",
+  "staticization": {
+    "static_hits": [],
+    "dynamic_hits": [
+      {
+        "term": "asp.net",
+        "context": null
+      }
+    ]
+  },
+  "isolation": {
+    "iso_hits": []
+  }
+}

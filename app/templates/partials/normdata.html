@@ -1,0 +1,62 @@
+{# file: app/templates/partials/normdata.html #}
+
+{% set nd = page.normdata or {} %}
+{% set nd_total  = nd.get('total', 0) %}
+{% set nd_counts = nd.get('counts') or {} %}
+{% set nd_items  = nd.get('items') or [] %}
+{% set nd_errors = nd.get('errors') or [] %}
+
+<details>
+  <summary>
+    📚 Normdaten
+    <span class="count">({{ nd_total }})</span>
+  </summary>
+
+  <div style="margin-top:.75rem; margin-left:1em;">
+
+    <div><strong>Übersicht:</strong></div>
+
+    {% if nd_counts %}
+      <ul style="margin:.25rem 0;">
+        {% for src, cnt in (nd_counts|dictsort) %}
+          <li>
+            <strong>{{ src }}</strong>
+            <span class="muted">({{ cnt }})</span>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <div class="muted">Keine Normdaten-Links gefunden.</div>
+    {% endif %}
+
+    {% if nd_items %}
+      {% for grp in nd_items|groupby('source') %}
+        <div style="margin-top:.75rem;">
+          <strong>{{ grp.grouper or 'Unbekannt' }}</strong>
+          <ul>
+            {% for it in grp.list %}
+              <li>
+                <a href="{{ it.url }}" target="_blank" rel="noopener">{{ it.url }}</a>
+
+                {% if it.status is not none %}
+                  · <span class="{{ 'ok' if (it.status|string).isdigit() and it.status|int < 400 else 'muted' }}">
+                      HTTP {{ it.status }}
+                    </span>
+                {% endif %}
+
+                {% if it.origin %}
+                  <span class="muted">[Quelle: {{ it.origin }}]</span>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    {% endif %}
+
+    {% if nd_errors %}
+      <div class="muted" style="margin-top:.75rem;">❌ {{ nd_errors|join('; ') }}</div>
+    {% endif %}
+
+  </div>
+</details>

@@ -1,0 +1,375 @@
+{
+  "url": "https://furnaceandfugue.org/",
+  "runs": 10,
+  "reference_run_index": 1,
+  "llm_outputs": [
+    {
+      "institution": "Brown University, Columbia University, Harvard University",
+      "roles_responsibilities": "Editor: Tara Nummedal, Editor: Donna Bilak",
+      "funding_information": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+    },
+    {
+      "institution": "Brown University",
+      "roles_responsibilities": "Editor: Tara Nummedal, Editor: Donna Bilak",
+      "funding_information": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+    },
+    {
+      "institution": "Brown University, Columbia University, Harvard University",
+      "roles_responsibilities": "Editor: Tara Nummedal, Editor: Donna Bilak",
+      "funding_information": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+    },
+    {
+      "institution": "Brown University",
+      "roles_responsibilities": "Editor: Tara Nummedal, Editor: Donna Bilak",
+      "funding_information": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+    },
+    {
+      "institution": "Brown University",
+      "roles_responsibilities": "Editor: Tara Nummedal\nEditor: Donna Bilak",
+      "funding_information": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+    },
+    {
+      "institution": "Brown University, Columbia University, Harvard University",
+      "roles_responsibilities": "Editor: Tara Nummedal, Editor: Donna Bilak",
+      "funding_information": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+    },
+    {
+      "institution": "Brown University",
+      "roles_responsibilities": "Editor: Tara Nummedal, Editor: Donna Bilak",
+      "funding_information": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+    },
+    {
+      "institution": "Brown University",
+      "roles_responsibilities": "Editor: Tara Nummedal\nEditor: Donna Bilak",
+      "funding_information": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+    },
+    {
+      "institution": "Brown University",
+      "roles_responsibilities": "Editor: Tara Nummedal, Editor: Donna Bilak",
+      "funding_information": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+    },
+    {
+      "institution": "Brown University",
+      "roles_responsibilities": "Editor: Tara Nummedal\nEditor: Donna Bilak",
+      "funding_information": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+    }
+  ],
+  "bertscore": {
+    "per_run_vs_reference": [
+      {
+        "run_index": 2,
+        "field_scores": {
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute.",
+            "cand_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+          },
+          "institution": {
+            "P": 0.7084203958511353,
+            "R": 0.49015113711357117,
+            "F1": 0.594460666179657,
+            "ref_text": "Brown University, Columbia University, Harvard University",
+            "cand_text": "Brown University"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Tara Nummedal, Editor: Donna Bilak",
+            "cand_text": "Editor: Tara Nummedal, Editor: Donna Bilak"
+          }
+        },
+        "global_score": {
+          "P": 0.9028067588806152,
+          "R": 0.8300502896308899,
+          "F1": 0.8648201823234558
+        }
+      },
+      {
+        "run_index": 3,
+        "field_scores": {
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute.",
+            "cand_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Brown University, Columbia University, Harvard University",
+            "cand_text": "Brown University, Columbia University, Harvard University"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Tara Nummedal, Editor: Donna Bilak",
+            "cand_text": "Editor: Tara Nummedal, Editor: Donna Bilak"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 4,
+        "field_scores": {
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute.",
+            "cand_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+          },
+          "institution": {
+            "P": 0.7084203958511353,
+            "R": 0.49015113711357117,
+            "F1": 0.594460666179657,
+            "ref_text": "Brown University, Columbia University, Harvard University",
+            "cand_text": "Brown University"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Tara Nummedal, Editor: Donna Bilak",
+            "cand_text": "Editor: Tara Nummedal, Editor: Donna Bilak"
+          }
+        },
+        "global_score": {
+          "P": 0.9028067588806152,
+          "R": 0.8300502896308899,
+          "F1": 0.8648201823234558
+        }
+      },
+      {
+        "run_index": 5,
+        "field_scores": {
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute.",
+            "cand_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+          },
+          "institution": {
+            "P": 0.7084203958511353,
+            "R": 0.49015113711357117,
+            "F1": 0.594460666179657,
+            "ref_text": "Brown University, Columbia University, Harvard University",
+            "cand_text": "Brown University"
+          },
+          "roles_responsibilities": {
+            "P": 0.8947068452835083,
+            "R": 0.8453680276870728,
+            "F1": 0.8699818849563599,
+            "ref_text": "Editor: Tara Nummedal, Editor: Donna Bilak",
+            "cand_text": "Editor: Tara Nummedal\nEditor: Donna Bilak"
+          }
+        },
+        "global_score": {
+          "P": 0.8677091002464294,
+          "R": 0.7785064578056335,
+          "F1": 0.821480929851532
+        }
+      },
+      {
+        "run_index": 6,
+        "field_scores": {
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute.",
+            "cand_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Brown University, Columbia University, Harvard University",
+            "cand_text": "Brown University, Columbia University, Harvard University"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Tara Nummedal, Editor: Donna Bilak",
+            "cand_text": "Editor: Tara Nummedal, Editor: Donna Bilak"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 7,
+        "field_scores": {
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute.",
+            "cand_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+          },
+          "institution": {
+            "P": 0.7084203958511353,
+            "R": 0.49015113711357117,
+            "F1": 0.594460666179657,
+            "ref_text": "Brown University, Columbia University, Harvard University",
+            "cand_text": "Brown University"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Tara Nummedal, Editor: Donna Bilak",
+            "cand_text": "Editor: Tara Nummedal, Editor: Donna Bilak"
+          }
+        },
+        "global_score": {
+          "P": 0.9028067588806152,
+          "R": 0.8300502896308899,
+          "F1": 0.8648201823234558
+        }
+      },
+      {
+        "run_index": 8,
+        "field_scores": {
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute.",
+            "cand_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+          },
+          "institution": {
+            "P": 0.7084203958511353,
+            "R": 0.49015113711357117,
+            "F1": 0.594460666179657,
+            "ref_text": "Brown University, Columbia University, Harvard University",
+            "cand_text": "Brown University"
+          },
+          "roles_responsibilities": {
+            "P": 0.8947068452835083,
+            "R": 0.8453680276870728,
+            "F1": 0.8699818849563599,
+            "ref_text": "Editor: Tara Nummedal, Editor: Donna Bilak",
+            "cand_text": "Editor: Tara Nummedal\nEditor: Donna Bilak"
+          }
+        },
+        "global_score": {
+          "P": 0.8677091002464294,
+          "R": 0.7785064578056335,
+          "F1": 0.821480929851532
+        }
+      },
+      {
+        "run_index": 9,
+        "field_scores": {
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute.",
+            "cand_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+          },
+          "institution": {
+            "P": 0.7084203958511353,
+            "R": 0.49015113711357117,
+            "F1": 0.594460666179657,
+            "ref_text": "Brown University, Columbia University, Harvard University",
+            "cand_text": "Brown University"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Tara Nummedal, Editor: Donna Bilak",
+            "cand_text": "Editor: Tara Nummedal, Editor: Donna Bilak"
+          }
+        },
+        "global_score": {
+          "P": 0.9028067588806152,
+          "R": 0.8300502896308899,
+          "F1": 0.8648201823234558
+        }
+      },
+      {
+        "run_index": 10,
+        "field_scores": {
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute.",
+            "cand_text": "Supported by the Andrew W. Mellon Foundation, the Gladys Krieble Delmas Foundation, and, at Brown University, the Office of the Vice President for Research and the Social Science Research Institute."
+          },
+          "institution": {
+            "P": 0.7084203958511353,
+            "R": 0.49015113711357117,
+            "F1": 0.594460666179657,
+            "ref_text": "Brown University, Columbia University, Harvard University",
+            "cand_text": "Brown University"
+          },
+          "roles_responsibilities": {
+            "P": 0.8947068452835083,
+            "R": 0.8453680276870728,
+            "F1": 0.8699818849563599,
+            "ref_text": "Editor: Tara Nummedal, Editor: Donna Bilak",
+            "cand_text": "Editor: Tara Nummedal\nEditor: Donna Bilak"
+          }
+        },
+        "global_score": {
+          "P": 0.8677091002464294,
+          "R": 0.7785064578056335,
+          "F1": 0.821480929851532
+        }
+      }
+    ],
+    "field_aggregate": {
+      "funding_information": {
+        "mean_F1": 1.0,
+        "std_F1": 0.0,
+        "mean_P": 1.0,
+        "std_P": 0.0,
+        "mean_R": 1.0,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "institution": {
+        "mean_F1": 0.6845805976125929,
+        "std_F1": 0.1685989535708029,
+        "mean_P": 0.7732159429126315,
+        "std_P": 0.1212213686463531,
+        "mean_R": 0.6034509638945261,
+        "std_R": 0.21196456689758414,
+        "unique_values": 2
+      },
+      "roles_responsibilities": {
+        "mean_F1": 0.9566605091094971,
+        "std_F1": 0.061291042922603386,
+        "mean_P": 0.9649021625518799,
+        "std_P": 0.0496355848480067,
+        "mean_R": 0.9484558900197347,
+        "std_R": 0.07289412651345052,
+        "unique_values": 2
+      }
+    },
+    "global_aggregate": {
+      "mean_F1": 0.8804137508074442,
+      "std_F1": 0.06666139036187782,
+      "min_F1": 0.821480929851532,
+      "max_F1": 1.0000001192092896
+    }
+  }
+}

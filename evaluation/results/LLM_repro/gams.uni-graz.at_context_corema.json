@@ -1,0 +1,703 @@
+{
+  "url": "https://gams.uni-graz.at/context:corema",
+  "runs": 10,
+  "reference_run_index": 1,
+  "llm_outputs": [
+    {
+      "institution": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+      "roles_responsibilities": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+      "funding_information": "FWF I 3614, ANR-17-CE27-0019-01",
+      "contact_info": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+      "license": "Creative Commons BY 4.0",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "persistent_identifier_hint": "hdl.handle.net/11471/562.10"
+    },
+    {
+      "institution": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours",
+      "roles_responsibilities": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+      "funding_information": "FWF I 3614, ANR-17-CE27-0019-01",
+      "contact_info": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+      "license": "Creative Commons BY 4.0 except for the manuscript facsimiles (different licences, see manuscript view or TEI/XML)",
+      "tei_hint": "TEI/XML-Hinweise in Metadaten",
+      "persistent_identifier_hint": "hdl.handle.net/11471/562.10"
+    },
+    {
+      "institution": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+      "roles_responsibilities": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+      "funding_information": "FWF I 3614, ANR-17-CE27-0019-01",
+      "contact_info": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+      "license": "Creative Commons BY 4.0",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "persistent_identifier_hint": "hdl.handle.net/11471/562.10"
+    },
+    {
+      "institution": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours",
+      "roles_responsibilities": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+      "funding_information": "FWF I 3614, ANR-17-CE27-0019-01",
+      "contact_info": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+      "license": "Creative Commons BY 4.0 except for the manuscript facsimiles",
+      "tei_hint": "TEI/XML-Hinweise in Metadaten",
+      "persistent_identifier_hint": "hdl.handle.net/11471/562.10"
+    },
+    {
+      "institution": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+      "roles_responsibilities": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+      "funding_information": "FWF I 3614, ANR-17-CE27-0019-01",
+      "contact_info": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+      "license": "Creative Commons BY 4.0",
+      "tei_hint": "TEI-Hinweis durch sdef:TEI-Links",
+      "persistent_identifier_hint": "hdl.handle.net/11471/562.10"
+    },
+    {
+      "institution": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours",
+      "roles_responsibilities": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+      "funding_information": "FWF I 3614, ANR-17-CE27-0019-01",
+      "contact_info": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+      "license": "Creative Commons BY 4.0 except for the manuscript facsimiles (different licences, see manuscript view or TEI/XML)",
+      "tei_hint": "TEI/XML-Hinweise in Metadaten",
+      "persistent_identifier_hint": "hdl.handle.net/11471/562.10"
+    },
+    {
+      "institution": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours",
+      "roles_responsibilities": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+      "funding_information": "FWF I 3614, ANR-17-CE27-0019-01",
+      "contact_info": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+      "license": "Creative Commons BY 4.0 except for the manuscript facsimiles (different licences, see manuscript view or TEI/XML)",
+      "tei_hint": "TEI/XML-Hinweise in Metadaten",
+      "persistent_identifier_hint": "hdl.handle.net/11471/562.10"
+    },
+    {
+      "institution": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours",
+      "roles_responsibilities": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+      "funding_information": "FWF I 3614, ANR-17-CE27-0019-01",
+      "contact_info": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+      "license": "Creative Commons BY 4.0 except for the manuscript facsimiles",
+      "tei_hint": "TEI/XML-Hinweise in Metadaten",
+      "persistent_identifier_hint": "hdl.handle.net/11471/562.10"
+    },
+    {
+      "institution": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours",
+      "roles_responsibilities": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+      "funding_information": "FWF I 3614, ANR-17-CE27-0019-01",
+      "contact_info": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+      "license": "Creative Commons BY 4.0 except for the manuscript facsimiles",
+      "tei_hint": "TEI/XML-Hinweise in Metadaten",
+      "persistent_identifier_hint": "hdl.handle.net/11471/562.10"
+    },
+    {
+      "institution": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours",
+      "roles_responsibilities": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+      "funding_information": "FWF I 3614, ANR-17-CE27-0019-01",
+      "contact_info": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+      "license": "Creative Commons BY 4.0 except for the manuscript facsimiles",
+      "tei_hint": "TEI/XML-Hinweise in Metadaten",
+      "persistent_identifier_hint": "hdl.handle.net/11471/562.10"
+    }
+  ],
+  "bertscore": {
+    "per_run_vs_reference": [
+      {
+        "run_index": 2,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+            "cand_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at"
+          },
+          "funding_information": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "FWF I 3614, ANR-17-CE27-0019-01",
+            "cand_text": "FWF I 3614, ANR-17-CE27-0019-01"
+          },
+          "institution": {
+            "P": 0.6637789011001587,
+            "R": 0.8770182132720947,
+            "F1": 0.7659561634063721,
+            "ref_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+            "cand_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours"
+          },
+          "license": {
+            "P": 0.14740483462810516,
+            "R": 0.7541151642799377,
+            "F1": 0.4067821204662323,
+            "ref_text": "Creative Commons BY 4.0",
+            "cand_text": "Creative Commons BY 4.0 except for the manuscript facsimiles (different licences, see manuscript view or TEI/XML)"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "hdl.handle.net/11471/562.10",
+            "cand_text": "hdl.handle.net/11471/562.10"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+            "cand_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger"
+          },
+          "tei_hint": {
+            "P": 0.4181838929653168,
+            "R": 0.3889487385749817,
+            "F1": 0.4043407738208771,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI/XML-Hinweise in Metadaten"
+          }
+        },
+        "global_score": {
+          "P": 0.7470524907112122,
+          "R": 0.860011637210846,
+          "F1": 0.7967255711555481
+        }
+      },
+      {
+        "run_index": 3,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+            "cand_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at"
+          },
+          "funding_information": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "FWF I 3614, ANR-17-CE27-0019-01",
+            "cand_text": "FWF I 3614, ANR-17-CE27-0019-01"
+          },
+          "institution": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+            "cand_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz"
+          },
+          "license": {
+            "P": 1.0000009536743164,
+            "R": 1.0000009536743164,
+            "F1": 1.0000009536743164,
+            "ref_text": "Creative Commons BY 4.0",
+            "cand_text": "Creative Commons BY 4.0"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "hdl.handle.net/11471/562.10",
+            "cand_text": "hdl.handle.net/11471/562.10"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+            "cand_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger"
+          },
+          "tei_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI-Hinweis durch sdef:TEI-Links"
+          }
+        },
+        "global_score": {
+          "P": 1.0,
+          "R": 1.0,
+          "F1": 1.0
+        }
+      },
+      {
+        "run_index": 4,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+            "cand_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at"
+          },
+          "funding_information": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "FWF I 3614, ANR-17-CE27-0019-01",
+            "cand_text": "FWF I 3614, ANR-17-CE27-0019-01"
+          },
+          "institution": {
+            "P": 0.6637789011001587,
+            "R": 0.8770182132720947,
+            "F1": 0.7659561634063721,
+            "ref_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+            "cand_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours"
+          },
+          "license": {
+            "P": 0.35378074645996094,
+            "R": 0.7142072916030884,
+            "F1": 0.519498884677887,
+            "ref_text": "Creative Commons BY 4.0",
+            "cand_text": "Creative Commons BY 4.0 except for the manuscript facsimiles"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "hdl.handle.net/11471/562.10",
+            "cand_text": "hdl.handle.net/11471/562.10"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+            "cand_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger"
+          },
+          "tei_hint": {
+            "P": 0.4181838929653168,
+            "R": 0.3889487385749817,
+            "F1": 0.4043407738208771,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI/XML-Hinweise in Metadaten"
+          }
+        },
+        "global_score": {
+          "P": 0.7765347361564636,
+          "R": 0.8543105125427246,
+          "F1": 0.8128279447555542
+        }
+      },
+      {
+        "run_index": 5,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+            "cand_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at"
+          },
+          "funding_information": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "FWF I 3614, ANR-17-CE27-0019-01",
+            "cand_text": "FWF I 3614, ANR-17-CE27-0019-01"
+          },
+          "institution": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+            "cand_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz"
+          },
+          "license": {
+            "P": 1.0000009536743164,
+            "R": 1.0000009536743164,
+            "F1": 1.0000009536743164,
+            "ref_text": "Creative Commons BY 4.0",
+            "cand_text": "Creative Commons BY 4.0"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "hdl.handle.net/11471/562.10",
+            "cand_text": "hdl.handle.net/11471/562.10"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+            "cand_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger"
+          },
+          "tei_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI-Hinweis durch sdef:TEI-Links"
+          }
+        },
+        "global_score": {
+          "P": 1.0,
+          "R": 1.0,
+          "F1": 1.0
+        }
+      },
+      {
+        "run_index": 6,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+            "cand_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at"
+          },
+          "funding_information": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "FWF I 3614, ANR-17-CE27-0019-01",
+            "cand_text": "FWF I 3614, ANR-17-CE27-0019-01"
+          },
+          "institution": {
+            "P": 0.6637789011001587,
+            "R": 0.8770182132720947,
+            "F1": 0.7659561634063721,
+            "ref_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+            "cand_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours"
+          },
+          "license": {
+            "P": 0.14740483462810516,
+            "R": 0.7541151642799377,
+            "F1": 0.4067821204662323,
+            "ref_text": "Creative Commons BY 4.0",
+            "cand_text": "Creative Commons BY 4.0 except for the manuscript facsimiles (different licences, see manuscript view or TEI/XML)"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "hdl.handle.net/11471/562.10",
+            "cand_text": "hdl.handle.net/11471/562.10"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+            "cand_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger"
+          },
+          "tei_hint": {
+            "P": 0.4181838929653168,
+            "R": 0.3889487385749817,
+            "F1": 0.4043407738208771,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI/XML-Hinweise in Metadaten"
+          }
+        },
+        "global_score": {
+          "P": 0.7470524907112122,
+          "R": 0.860011637210846,
+          "F1": 0.7967255711555481
+        }
+      },
+      {
+        "run_index": 7,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+            "cand_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at"
+          },
+          "funding_information": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "FWF I 3614, ANR-17-CE27-0019-01",
+            "cand_text": "FWF I 3614, ANR-17-CE27-0019-01"
+          },
+          "institution": {
+            "P": 0.6637789011001587,
+            "R": 0.8770182132720947,
+            "F1": 0.7659561634063721,
+            "ref_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+            "cand_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours"
+          },
+          "license": {
+            "P": 0.14740483462810516,
+            "R": 0.7541151642799377,
+            "F1": 0.4067821204662323,
+            "ref_text": "Creative Commons BY 4.0",
+            "cand_text": "Creative Commons BY 4.0 except for the manuscript facsimiles (different licences, see manuscript view or TEI/XML)"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "hdl.handle.net/11471/562.10",
+            "cand_text": "hdl.handle.net/11471/562.10"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+            "cand_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger"
+          },
+          "tei_hint": {
+            "P": 0.4181838929653168,
+            "R": 0.3889487385749817,
+            "F1": 0.4043407738208771,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI/XML-Hinweise in Metadaten"
+          }
+        },
+        "global_score": {
+          "P": 0.7470524907112122,
+          "R": 0.860011637210846,
+          "F1": 0.7967255711555481
+        }
+      },
+      {
+        "run_index": 8,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+            "cand_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at"
+          },
+          "funding_information": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "FWF I 3614, ANR-17-CE27-0019-01",
+            "cand_text": "FWF I 3614, ANR-17-CE27-0019-01"
+          },
+          "institution": {
+            "P": 0.6637789011001587,
+            "R": 0.8770182132720947,
+            "F1": 0.7659561634063721,
+            "ref_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+            "cand_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours"
+          },
+          "license": {
+            "P": 0.35378074645996094,
+            "R": 0.7142072916030884,
+            "F1": 0.519498884677887,
+            "ref_text": "Creative Commons BY 4.0",
+            "cand_text": "Creative Commons BY 4.0 except for the manuscript facsimiles"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "hdl.handle.net/11471/562.10",
+            "cand_text": "hdl.handle.net/11471/562.10"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+            "cand_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger"
+          },
+          "tei_hint": {
+            "P": 0.4181838929653168,
+            "R": 0.3889487385749817,
+            "F1": 0.4043407738208771,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI/XML-Hinweise in Metadaten"
+          }
+        },
+        "global_score": {
+          "P": 0.7765347361564636,
+          "R": 0.8543105125427246,
+          "F1": 0.8128279447555542
+        }
+      },
+      {
+        "run_index": 9,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+            "cand_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at"
+          },
+          "funding_information": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "FWF I 3614, ANR-17-CE27-0019-01",
+            "cand_text": "FWF I 3614, ANR-17-CE27-0019-01"
+          },
+          "institution": {
+            "P": 0.6637789011001587,
+            "R": 0.8770182132720947,
+            "F1": 0.7659561634063721,
+            "ref_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+            "cand_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours"
+          },
+          "license": {
+            "P": 0.35378074645996094,
+            "R": 0.7142072916030884,
+            "F1": 0.519498884677887,
+            "ref_text": "Creative Commons BY 4.0",
+            "cand_text": "Creative Commons BY 4.0 except for the manuscript facsimiles"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "hdl.handle.net/11471/562.10",
+            "cand_text": "hdl.handle.net/11471/562.10"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+            "cand_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger"
+          },
+          "tei_hint": {
+            "P": 0.4181838929653168,
+            "R": 0.3889487385749817,
+            "F1": 0.4043407738208771,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI/XML-Hinweise in Metadaten"
+          }
+        },
+        "global_score": {
+          "P": 0.7765347361564636,
+          "R": 0.8543105125427246,
+          "F1": 0.8128279447555542
+        }
+      },
+      {
+        "run_index": 10,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at",
+            "cand_text": "Dr. Helmut Werner Klug, helmut.klug@uni-graz.at"
+          },
+          "funding_information": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "FWF I 3614, ANR-17-CE27-0019-01",
+            "cand_text": "FWF I 3614, ANR-17-CE27-0019-01"
+          },
+          "institution": {
+            "P": 0.6637789011001587,
+            "R": 0.8770182132720947,
+            "F1": 0.7659561634063721,
+            "ref_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz",
+            "cand_text": "Zentrum für Informationsmodellierung - Austrian Centre for Digital Humanities, University of Graz, Paris Lodron University Salzburg, University of Tours"
+          },
+          "license": {
+            "P": 0.35378074645996094,
+            "R": 0.7142072916030884,
+            "F1": 0.519498884677887,
+            "ref_text": "Creative Commons BY 4.0",
+            "cand_text": "Creative Commons BY 4.0 except for the manuscript facsimiles"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "hdl.handle.net/11471/562.10",
+            "cand_text": "hdl.handle.net/11471/562.10"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger",
+            "cand_text": "Editor: Helmut W. Klug, Editor: Christian Steiner, Editor: Astrid Böhm, Editor: Julia Eibinger"
+          },
+          "tei_hint": {
+            "P": 0.4181838929653168,
+            "R": 0.3889487385749817,
+            "F1": 0.4043407738208771,
+            "ref_text": "TEI-Hinweis durch sdef:TEI-Links",
+            "cand_text": "TEI/XML-Hinweise in Metadaten"
+          }
+        },
+        "global_score": {
+          "P": 0.7765347361564636,
+          "R": 0.8543105125427246,
+          "F1": 0.8128279447555542
+        }
+      }
+    ],
+    "field_aggregate": {
+      "contact_info": {
+        "mean_F1": 1.0,
+        "std_F1": 0.0,
+        "mean_P": 1.0,
+        "std_P": 0.0,
+        "mean_R": 1.0,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "funding_information": {
+        "mean_F1": 0.9999997019767761,
+        "std_F1": 0.0,
+        "mean_P": 0.9999997019767761,
+        "std_P": 0.0,
+        "mean_R": 0.9999997019767761,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "institution": {
+        "mean_F1": 0.8179658386442397,
+        "std_F1": 0.09730119276874047,
+        "mean_P": 0.7384946346282959,
+        "std_P": 0.139780338131894,
+        "mean_R": 0.9043474329842461,
+        "std_R": 0.05112828840536969,
+        "unique_values": 2
+      },
+      "license": {
+        "mean_F1": 0.5887048674954308,
+        "std_F1": 0.22528364119311572,
+        "mean_P": 0.42859326634142136,
+        "std_P": 0.3184340059308458,
+        "mean_R": 0.7910196185112,
+        "std_R": 0.11305492636550804,
+        "unique_values": 3
+      },
+      "persistent_identifier_hint": {
+        "mean_F1": 1.0000003576278687,
+        "std_F1": 0.0,
+        "mean_P": 1.0000003576278687,
+        "std_P": 0.0,
+        "mean_R": 1.0000003576278687,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "roles_responsibilities": {
+        "mean_F1": 0.9999998211860657,
+        "std_F1": 0.0,
+        "mean_P": 0.9999998211860657,
+        "std_P": 0.0,
+        "mean_R": 0.9999998211860657,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "tei_hint": {
+        "mean_F1": 0.5367094907495711,
+        "std_F1": 0.24763919373701834,
+        "mean_P": 0.5474763611952463,
+        "std_P": 0.24188405940337562,
+        "mean_R": 0.5247379077805413,
+        "std_R": 0.25403827400093937,
+        "unique_values": 2
+      }
+    },
+    "global_aggregate": {
+      "mean_F1": 0.8490542769432068,
+      "std_F1": 0.08098936249875376,
+      "min_F1": 0.7967255711555481,
+      "max_F1": 1.0
+    }
+  }
+}

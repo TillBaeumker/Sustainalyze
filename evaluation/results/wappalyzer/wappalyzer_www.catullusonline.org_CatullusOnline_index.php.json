@@ -1,0 +1,165 @@
+{
+    "url": "http://www.catullusonline.org/CatullusOnline/index.php",
+    "timestamp": "2025-11-23T11:12:59.552598",
+    "raw": {
+        "urls": {
+            "http://www.catullusonline.org/CatullusOnline/index.php": {
+                "status": 200
+            }
+        },
+        "technologies": [
+            {
+                "slug": "php",
+                "name": "PHP",
+                "description": "PHP is a general-purpose scripting language used for web development.",
+                "confidence": 100,
+                "version": "5.2.10",
+                "icon": "PHP.svg",
+                "website": "http://php.net",
+                "cpe": "cpe:2.3:a:php:php:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 27,
+                        "slug": "programming-languages",
+                        "name": "Programming languages"
+                    }
+                ]
+            },
+            {
+                "slug": "ubuntu",
+                "name": "Ubuntu",
+                "description": "Ubuntu is a free and open-source operating system on Linux for the enterprise server, desktop, cloud, and IoT.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Ubuntu.svg",
+                "website": "http://www.ubuntu.com/server",
+                "cpe": "cpe:2.3:o:canonical:ubuntu_linux:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 28,
+                        "slug": "operating-systems",
+                        "name": "Operating systems"
+                    }
+                ]
+            },
+            {
+                "slug": "apache-http-server",
+                "name": "Apache HTTP Server",
+                "description": "Apache is a free and open-source cross-platform web server software.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Apache.svg",
+                "website": "https://httpd.apache.org/",
+                "cpe": "cpe:2.3:a:apache:http_server:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 22,
+                        "slug": "web-servers",
+                        "name": "Web servers"
+                    }
+                ]
+            },
+            {
+                "slug": "google-hosted-libraries",
+                "name": "Google Hosted Libraries",
+                "description": "Google Hosted Libraries is a stable, reliable, high-speed, globally available content distribution network for the most popular, open-source JavaScript libraries.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Google Developers.svg",
+                "website": "https://developers.google.com/speed/libraries",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 31,
+                        "slug": "cdn",
+                        "name": "CDN"
+                    }
+                ]
+            },
+            {
+                "slug": "jquery",
+                "name": "jQuery",
+                "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+                "confidence": 100,
+                "version": "1.7.1",
+                "icon": "jQuery.svg",
+                "website": "https://jquery.com",
+                "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "google-analytics",
+                "name": "Google Analytics",
+                "description": "Google Analytics is a free web analytics service that tracks and reports website traffic.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Google Analytics.svg",
+                "website": "http://google.com/analytics",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 10,
+                        "slug": "analytics",
+                        "name": "Analytics"
+                    }
+                ]
+            }
+        ]
+    },
+    "parsed": [
+        {
+            "name": "PHP",
+            "version": "5.2.10",
+            "category": "Programming languages",
+            "description": "PHP is a general-purpose scripting language used for web development.",
+            "website": "http://php.net",
+            "oss": null
+        },
+        {
+            "name": "Ubuntu",
+            "version": null,
+            "category": "Operating systems",
+            "description": "Ubuntu is a free and open-source operating system on Linux for the enterprise server, desktop, cloud, and IoT.",
+            "website": "http://www.ubuntu.com/server",
+            "oss": null
+        },
+        {
+            "name": "Apache HTTP Server",
+            "version": null,
+            "category": "Web servers",
+            "description": "Apache is a free and open-source cross-platform web server software.",
+            "website": "https://httpd.apache.org/",
+            "oss": null
+        },
+        {
+            "name": "Google Hosted Libraries",
+            "version": null,
+            "category": "CDN",
+            "description": "Google Hosted Libraries is a stable, reliable, high-speed, globally available content distribution network for the most popular, open-source JavaScript libraries.",
+            "website": "https://developers.google.com/speed/libraries",
+            "oss": null
+        },
+        {
+            "name": "jQuery",
+            "version": "1.7.1",
+            "category": "JavaScript libraries",
+            "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+            "website": "https://jquery.com",
+            "oss": null
+        },
+        {
+            "name": "Google Analytics",
+            "version": null,
+            "category": "Analytics",
+            "description": "Google Analytics is a free web analytics service that tracks and reports website traffic.",
+            "website": "http://google.com/analytics",
+            "oss": null
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{% if result.fair_mode == "fuji" and result.fuji_all %}
+<section class="page-block">
+  <h4>🧪 FUJI FAIRNESS – Externe Datensätze</h4>
+
+  {% for ds in result.fuji_all %}
+  {% set s = ds.summary or {} %}
+  {% set metrics = s.metrics_labeled or [] %}
+
+  <details class="fuji-entry">
+    <summary class="fuji-summary">
+      <span class="fuji-summary-title">potentielle Datensätze:</span>
+    </summary>
+
+    <!-- Datensatz-Link -->
+    <div class="fuji-dataset-url">
+      <a href="{{ ds.url }}" target="_blank">{{ ds.url }}</a>
+    </div>
+
+    <!-- Fundstelle -->
+    {% if ds.page_url %}
+    <div class="fuji-found-on">
+      Gefunden auf:<br>
+      <a href="{{ ds.page_url }}" target="_blank">{{ ds.page_url }}</a>
+    </div>
+    {% endif %}
+
+    <!-- FAIR Score oder Fallback -->
+    {% if s.fair_score is number %}
+    <div class="fuji-score-block">
+      <div><strong>FAIR-Score:</strong> {{ s.fair_score | round(1) }} %</div>
+      <div><strong>Reifegrad:</strong> {{ s.maturity or "–" }}</div>
+    </div>
+
+    {% if metrics %}
+    <details class="fuji-metrics">
+      <summary>Metriken</summary>
+      <ul>
+        {% for m in metrics %}
+        <li>
+          {{ m.label }} ({{ m.code }}):
+          {% if m.score is number %}
+            {{ m.score | round(1) }} %
+          {% else %}
+            –
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </details>
+    {% endif %}
+
+    {% else %}
+    <div class="fuji-no-fair">
+      ⚠️ Keine FAIR-Bewertung möglich<br>
+      FUJI konnte für diesen Datensatz keine verwertbaren Metadaten finden.
+    </div>
+    {% endif %}
+
+    <!-- RAW JSON -->
+    {% if s.raw_fuji_json %}
+    <details class="fuji-raw">
+      <summary>RAW FUJI JSON</summary>
+      <pre>{{ s.raw_fuji_json | tojson(indent=2) }}</pre>
+    </details>
+    {% endif %}
+
+  </details>
+  {% endfor %}
+
+</section>
+{% endif %}

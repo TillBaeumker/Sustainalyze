@@ -1,0 +1,20 @@
+{
+  "url": "https://schnitzler-briefe.acdh.oeaw.ac.at/",
+  "staticization": {
+    "static_hits": [
+      {
+        "term": "github pages",
+        "context": null
+      }
+    ],
+    "dynamic_hits": []
+  },
+  "isolation": {
+    "iso_hits": [
+      {
+        "term": "kubernetes",
+        "context": "tlsv1 3 cert subject cn kubernetes ingress controller fake certificate o"
+      }
+    ]
+  }
+}

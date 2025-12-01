@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deep Crawl Analyse</title>
+  <link rel="icon" type="image/png" href="/static/assets/images/favicon.png" />
+  <link rel="stylesheet" href="/static/assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
+  <style>
+    body {
+      background: #1c1c1c;
+      color: #f0f0f0;
+      font-family: sans-serif;
+    }
+    section.page-block {
+      background: #2c2c2c;
+      border: 1px solid #444;
+      border-radius: 8px;
+      padding: 1.5em;
+      margin-bottom: 2em;
+    }
+    .repo-heading {
+      font-weight: bold;
+      color: #fff;
+      margin-top: 1em;
+      margin-bottom: 0.3em;
+    }
+    section.page-block h4,
+    section.page-block h5 {
+      color: #4fc3f7;
+    }
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #4fc3f7;
+      margin-top: 1em;
+    }
+    summary.no-bold {
+      font-weight: normal;
+    }
+    pre {
+      background: #333;
+      color: #eee;
+      padding: 1em;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    a {
+      color: #4fc3f7;
+      text-decoration: none;
+    }
+    .low-score {
+      color: #f44336;
+      font-weight: bold;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+    .status-group {
+      background: #333;
+      padding: 0.5em;
+      border-radius: 5px;
+      margin-top: 1em;
+    }
+    .schema-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6em;
+      margin: 0.5em 0;
+      padding: 0;
+      list-style: none;
+    }
+    .schema-list li {
+      background: #333;
+      border-radius: 4px;
+      padding: 0.2em 0.8em;
+      font-size: 0.98em;
+      color: #80d8ff;
+    }
+    .llm-warning {
+      font-size: 0.95em;
+      color: #ffc107;
+      margin-top: 0.7em;
+    }
+    .llm-summary-content h3,
+    .llm-summary-content h4 {
+      color: #80d8ff;
+      margin-top: 1.2em;
+    }
+    .llm-summary-content ul {
+      padding-left: 1.5em;
+    }
+    .llm-summary-content li {
+      margin-bottom: 0.4em;
+    }
+    .llm-summary-content strong {
+      color: #fff;
+    }
+    .loader {
+      border: 6px solid #2c2c2c;
+      border-top: 6px solid #4fc3f7;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 1em auto;
+      display: none;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    #terminal {
+      background: linear-gradient(to bottom, #000, #111);
+      color: #4fc3f7;
+      font-family: monospace;
+      font-size: 0.9em;
+      padding: 1em;
+      border-radius: 8px;
+      margin: 1em 0;
+      min-height: 100px;
+      box-shadow: 0px 0px 15px #000 inset;
+      display: none;
+      white-space: pre-line;
+    }
+  </style>
+</head>
+<body class="is-preload">
+  <div id="wrapper">
+    <header id="header">
+      <div class="logo"><span class="icon fa-globe"></span></div>
+      <div class="content">
+        <div class="inner">
+          <h1>Deep Crawl Analyse</h1>
+          <p>Digitale Editionen strukturell & nachhaltig prüfen</p>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#analyse">Analyse</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="main">
+      <article id="analyse">
+        <h2 class="major">URL eingeben</h2>
+
+        <form id="analyseForm" method="post" action="/analyse">
+          <div class="fields">
+            <div class="field">
+              <label for="url">Website URL</label>
+              <input type="text" name="url" id="url" placeholder="https://example.com" required>
+            </div>
+          </div>
+          <ul class="actions">
+            <li><input type="submit" value="Start Analyse" class="primary" /></li>
+          </ul>
+        </form>
+
+        <!-- Ladeanzeige -->
+        <div id="loadingSection">
+          <div class="loader" id="loader"></div>
+          <div id="terminal"></div>
+        </div>
+
+        {% if error %}
+          <p style="color: red;">Fehler: {{ error }}</p>
+        {% endif %}
+
+        {% if result %}
+          <h3>Analyseergebnisse</h3>
+
+          {% if llm_summary %}
+            <section class="page-block">
+              <h4>🧠 KI-Zusammenfassung</h4>
+              <div class="llm-summary-content">
+                {{ llm_summary | safe }}
+              </div>
+            </section>
+          {% endif %}
+
+          {% for page in result.page_data %}
+            <section class="page-block">
+              <h4><a href="{{ page.url }}" target="_blank">{{ page.url }}</a></h4>
+
+              {% if page.project_info %}
+                <details>
+                  <summary>🏛️ Allgemeine Projektinformationen</summary>
+                  <ul>
+                    <li><strong>Institution(en):</strong> {{ page.project_info.institution or "-" }}</li>
+                    <li><strong>Herausgeber*innen:</strong> {{ page.project_info.editors | join(", ") if page.project_info.editors else "-" }}</li>
+                    <li><strong>Projektlaufzeit:</strong> {{ page.project_info.project_duration or "-" }}</li>
+                    <li><strong>Sektoren:</strong> {{ page.project_info.sectors | join(", ") if page.project_info.sectors else "-" }}</li>
+                    <li><strong>Community-Beteiligung:</strong> {{ page.project_info.community or "-" }}</li>
+                    <li><strong>Pflege & Wartung:</strong> {{ page.project_info.maintenance or "-" }}</li>
+                    <li><strong>Förderung:</strong> {{ page.project_info.funding or "-" }}</li>
+                    <li><strong>Lizenz(en):</strong>
+                      {% if page.project_info.license %}
+                        {% if page.project_info.license is string %}
+                          {{ page.project_info.license }}
+                        {% else %}
+                          {{ page.project_info.license | join(", ") }}
+                        {% endif %}
+                      {% else %}
+                        -
+                      {% endif %}
+                    </li>
+                  </ul>
+                  <p class="llm-warning">
+                    <strong>Hinweis:</strong> Diese Projektinformationen wurden automatisiert mit einem Language Model (LLM) aus dem HTML-Code der Seite extrahiert. Die Angaben sind ohne Gewähr und können unvollständig oder fehlerhaft sein.
+                  </p>
+                </details>
+              {% set internal_count = page.internal_links | length %}
+{% set external_count = page.external_links | length %}
+{% set total_count = internal_count + external_count %}
+
+{% if total_count > 0 %}
+  <details>
+    <summary>🔗 Alle Links ({{ total_count }})</summary>
+
+    {% if internal_count > 0 %}
+      <details style="margin-left: 1em;">
+        <summary>📍 Interne Links ({{ internal_count }})</summary>
+        {% set grouped = {} %}
+        {% for link in page.internal_links %}
+          {% set _ = grouped.setdefault(link.status|string, []).append(link) %}
+        {% endfor %}
+        {% for status, links in grouped.items() %}
+          <div class="status-group">
+            <strong>Status {{ status }} ({{ links | length }}):</strong>
+            <ul>
+              {% for link in links %}
+                <li><a href="{{ link.url }}" target="_blank">{{ link.url }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </details>
+    {% endif %}
+
+    {% if external_count > 0 %}
+      <details style="margin-left: 1em;">
+        <summary>🌐 Externe Links ({{ external_count }})</summary>
+        {% set grouped_ext = {} %}
+        {% for link in page.external_links %}
+          {% set _ = grouped_ext.setdefault(link.status|string, []).append(link) %}
+        {% endfor %}
+        {% for status, links in grouped_ext.items() %}
+          <div class="status-group">
+            <strong>Status {{ status }} ({{ links | length }}):</strong>
+            <ul>
+              {% for link in links %}
+                <li><a href="{{ link.url }}" target="_blank">{{ link.url }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        {% endfor %}
+      </details>
+    {% endif %}
+  </details>
+{% endif %}
+              <details>
+                <summary>🧩 Linked Data</summary>
+                <ul>
+                  {% if page.normdaten and page.normdaten.items()|selectattr('1')|list %}
+                    <li>
+                      <strong>Normdaten-Links:</strong>
+                      <ul>
+                        {% for source, links in page.normdaten.items() %}
+                          {% for link in links %}
+                            <li><strong>{{ source }}:</strong> <a href="{{ link }}" target="_blank">{{ link }}</a></li>
+                          {% endfor %}
+                        {% endfor %}
+                      </ul>
+                    </li>
+                  {% else %}
+                    <li>Keine Normdaten-Links gefunden.</li>
+                  {% endif %}
+
+                  <li>
+                    <strong>schema.org-Typen:</strong>
+                    {% if page.linked_data_schemas %}
+                      <ul class="schema-list">
+                        {% for schema in page.linked_data_schemas %}
+                          <li>{{ schema }}</li>
+                        {% endfor %}
+                      </ul>
+                    {% else %}
+                      Keine <code>schema.org</code>-Typen gefunden.
+                    {% endif %}
+                  </li>
+
+                  {% if page.other_schemas %}
+                    <li>
+                      <strong>Weitere Schemata:</strong>
+                      <ul class="schema-list">
+                        {% for oschema in page.other_schemas %}
+                          <li>{{ oschema }}</li>
+                        {% endfor %}
+                      </ul>
+                    </li>
+                  {% endif %}
+
+                  {% if page.sdtt_raw_output %}
+                    <li>
+                      <details>
+                        <summary class="no-bold">Raw Structured Data Testing Tool JSON</summary>
+                        <pre>{{ page.sdtt_raw_output }}</pre>
+                      </details>
+                    </li>
+                  {% endif %}
+                </ul>
+              </details>
+
+              {% if page.github_repos or page.gitlab_repos %}
+                <details>
+                  <summary>📦 Repositories</summary>
+
+                  {% if page.github_repos %}
+                    <div class="repo-heading">GitHub</div>
+                    <ul>
+                      {% for repo in page.github_repos %}
+                        <li>
+                          <a href="{{ repo.url }}" target="_blank">{{ repo.name or repo.url }}</a><br>
+                          {% if repo.error %}
+                            <em>Fehler: {{ repo.error }}</em>
+                          {% else %}
+                            Beschreibung: {{ repo.description or "-" }}<br>
+                            Lizenz: {{ repo.license or "-" }}<br>
+                            Sterne: {{ repo.stars if repo.stars is not none else "-" }} |
+                            Forks: {{ repo.forks if repo.forks is not none else "-" }} |
+                            Offene Issues: {{ repo.open_issues if repo.open_issues is not none else "-" }}<br>
+                            Letzter Commit: {{ repo.last_commit or "-" }}<br>
+                            README vorhanden: {{ "✅ Ja" if repo.has_readme else "❌ Nein" if repo.has_readme is not none else "-" }}<br>
+                            Contributing Guide: {{ "✅ Ja" if repo.has_contributing_guide else "❌ Nein" if repo.has_contributing_guide is not none else "-" }}<br>
+                            Mitwirkende: {{ repo.contributors_count if repo.contributors_count is not none else "-" }}<br>
+                            Diskussionen aktiviert: {{ "✅ Ja" if repo.has_discussions else "❌ Nein" if repo.has_discussions is not none else "-" }}<br>
+                          {% endif %}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+
+                  {% if page.gitlab_repos %}
+                    <div class="repo-heading">GitLab</div>
+                    <ul>
+                      {% for repo in page.gitlab_repos %}
+                        <li>
+                          <a href="{{ repo.url }}" target="_blank">{{ repo.name or repo.url }}</a><br>
+                          {% if repo.error %}
+                            <em>Fehler: {{ repo.error }}</em>
+                          {% else %}
+                            Beschreibung: {{ repo.description or "-" }}<br>
+                            Lizenz: {{ repo.license or "-" }}<br>
+                            Sichtbarkeit: {{ repo.visibility or "-" }}<br>
+                            Sterne: {{ repo.stars if repo.stars is not none else "-" }} |
+                            Forks: {{ repo.forks if repo.forks is not none else "-" }}<br>
+                            Offene Issues: {{ repo.open_issues if repo.open_issues is not none else "-" }}<br>
+                            Letzte Aktivität: {{ repo.last_activity or "-" }}<br>
+                            README vorhanden: {{ "✅ Ja" if repo.has_readme else "❌ Nein" if repo.has_readme is not none else "-" }}<br>
+                            Contributing Guide: {{ "✅ Ja" if repo.has_contributing_guide else "❌ Nein" if repo.has_contributing_guide is not none else "-" }}<br>
+                            Mitwirkende: {{ repo.contributors_count if repo.contributors_count is not none else "-" }}<br>
+                            Diskussionen aktiviert: {{ "✅ Ja" if repo.has_discussions else "❌ Nein" if repo.has_discussions is not none else "-" }}<br>
+                          {% endif %}
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  {% endif %}
+                </details>
+              {% endif %}
+              {% if page.xml_links %}
+                <details>
+                  <summary>📄 XML-Dateien</summary>
+                  <ul>
+                    {% for xml in page.xml_links %}
+                      {% set xml_base_url = xml.split('#')[0] %}
+                      {% set xml_info_list = result.xml_scan_results | selectattr("url", "equalto", xml_base_url) | list %}
+                      {% set xml_info = xml_info_list[0] if xml_info_list else None %}
+                      <li>
+                        <a href="{{ xml }}" target="_blank">{{ xml }}</a>
+                        {% if xml_info %}
+                          <ul>
+                            <li><strong>Dateiname:</strong> {{ xml_info.file }}</li>
+                            <li><strong>Gültiges XML:</strong> {{ "✅ Ja" if xml_info.is_valid_xml else "❌ Nein" }}</li>
+                            <li><strong>Root-Element:</strong> {{ xml_info.root_element or "-" }}</li>
+                            <li><strong>Namespace:</strong> {{ xml_info.namespace or "-" }}</li>
+                          </ul>
+                        {% else %}
+                          <br><em>Keine Analyse verfügbar.</em>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </details>
+              {% endif %}
+            </section>
+          {% endfor %}
+
+          {% if result.dataset_links_all %}
+            <section class="page-block">
+              <h4>🧪 FUJI FAIRness</h4>
+              <details>
+                <summary><span class="subheadline">Analyse potentieller Forschungsdatensätze auf FAIRness</span></summary>
+                {% for ds in result.dataset_links_all %}
+                  <details style="margin-left: 1em; margin-top: 0.5em;">
+                    <summary>{{ ds.url }}</summary>
+                    <ul>
+                      {% if ds.fuji_summary %}
+                        <li><strong>FAIR-Score:</strong>
+                          {% if ds.fuji_summary.fair_score is number %}
+                            {{ ds.fuji_summary.fair_score | round(1) }} %
+                          {% else %}
+                            keine Angabe
+                          {% endif %}
+                        </li>
+                        <li><strong>Reifegrad:</strong> {{ ds.fuji_summary.maturity or "-" }}/3</li>
+
+                        {% if ds.fuji_summary.missing_elements %}
+                          <li><strong>Fehlende Elemente:</strong>
+                            <ul>
+                              {% for key, items in ds.fuji_summary.missing_elements.items() %}
+                                <li>{{ key }}: {{ items | join(", ") }}</li>
+                              {% endfor %}
+                            </ul>
+                          </li>
+                        {% endif %}
+
+                        <li><strong>Metriken:</strong>
+                          <ul>
+                            {% for metric in ds.fuji_summary.metrics_labeled %}
+                              <li>
+                                {{ metric.label }} ({{ metric.code }}):
+                                {% if metric.score is not none %}
+                                  {{ metric.score | round(1) }} %
+                                  {% if metric.low_score %}<span class="low-score">(niedrig)</span>{% endif %}
+                                {% else %}
+                                  keine Angabe
+                                {% endif %}
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        </li>
+
+                        <details style="margin-top: 0.5em;"><summary class="no-bold">RAW FUJI JSON</summary>
+                          <pre>{{ ds.fuji_summary.raw_fuji_json | tojson(indent=2) }}</pre>
+                        </details>
+                      {% else %}
+                        <li>Kein FUJI-Resultat.</li>
+                      {% endif %}
+                    </ul>
+                  </details>
+                {% endfor %}
+              </details>
+            </section>
+          {% endif %}
+
+          {% if result.wappalyzer %}
+            <section class="page-block">
+              <h4>🧩 Technologie-Stack</h4>
+              <details>
+                <summary>gefundene Technologien</summary>
+                <ul>
+                  {% for tech in result.wappalyzer %}
+                    <li>
+                      <strong>{{ tech.name }}</strong>{% if tech.version %} ({{ tech.version }}){% endif %} — {{ tech.category or "-" }}<br>
+                      {% if tech.description %}<em>{{ tech.description }}</em><br>{% endif %}
+                      {% if tech.website %}<a href="{{ tech.website }}" target="_blank">{{ tech.website }}</a>{% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              </details>
+            </section>
+          {% endif %}
+
+          {% if result.shodan_overview %}
+            <section class="page-block">
+              <h4>🌐 Server- und Infrastruktur</h4>
+              <details>
+                <summary>Details anzeigen</summary>
+                <ul>
+                  <li><strong>IP:</strong> {{ result.shodan_overview.ip }}</li>
+                  <li><strong>Provider:</strong> {{ result.shodan_overview.isp }}</li>
+                  <li><strong>Organisation:</strong> {{ result.shodan_overview.org }}</li>
+                  <li><strong>Land:</strong> {{ result.shodan_overview.country }}</li>
+                  <li><strong>Stadt:</strong> {{ result.shodan_overview.city }}</li>
+                  <li><strong>Ports:</strong> {{ result.shodan_overview.ports | join(", ") }}</li>
+                  <li><strong>Domains:</strong> {{ result.shodan_overview.domains | join(", ") }}</li>
+                  <li><strong>Tags:</strong> {{ result.shodan_overview.tags | join(", ") }}</li>
+                  <li><strong>Geo:</strong> {{ result.shodan_overview.latitude }}, {{ result.shodan_overview.longitude }}</li>
+                </ul>
+                {% if result.shodan_overview.raw_json %}
+                  <details><summary class="no-bold">RAW Shodan JSON</summary>
+                    <pre>{{ result.shodan_overview.raw_json | tojson(indent=2) }}</pre>
+                  </details>
+                {% endif %}
+              </details>
+            </section>
+          {% endif %}
+        {% endif %}
+      </article>
+    </div>
+
+    <footer id="footer">
+      <p class="copyright">
+        &copy; Dein Analyse-Tool. Design: <a href="https://html5up.net">HTML5 UP</a>.
+      </p>
+    </footer>
+  </div>
+
+
+  <script>
+  let interval = null;
+
+  function showLoader() {
+    document.getElementById("loader").style.display = "block";
+    document.getElementById("terminal").style.display = "block";
+    interval = setInterval(fetchLogs, 1500); // ruft alle 1.5s neue Logs vom Server ab
+  }
+
+  function fetchLogs() {
+    fetch("/status")
+      .then(response => {
+        if (!response.ok) throw new Error("Fehler beim Abrufen der Logs");
+        return response.text();
+      })
+      .then(data => {
+        const terminal = document.getElementById("terminal");
+        terminal.textContent = data || "⏳ Warte auf Log-Daten...";
+      })
+      .catch(error => {
+        console.error("Log-Fehler:", error);
+      });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("analyseForm");
+    if (form) {
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault(); // Standard-Formularverhalten stoppen
+        showLoader();
+
+        const formData = new FormData(form);
+
+        const response = await fetch("/analyse", {
+          method: "POST",
+          body: formData
+        });
+
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, "text/html");
+        const newMain = doc.querySelector("#main");
+
+        if (newMain) {
+          document.getElementById("main").innerHTML = newMain.innerHTML;
+          document.getElementById("main").scrollIntoView({ behavior: "smooth" });
+        }
+
+        clearInterval(interval);
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("terminal").style.display = "none";
+      });
+    }
+  });
+</script>
+
+<script src="/static/assets/js/jquery.min.js"></script>
+<script src="/static/assets/js/browser.min.js"></script>
+<script src="/static/assets/js/breakpoints.min.js"></script>
+<script src="/static/assets/js/util.js"></script>
+<script src="/static/assets/js/main.js"></script>
+</body>
+</html>
+

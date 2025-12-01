@@ -1,0 +1,703 @@
+{
+  "url": "https://dme.mozarteum.at/briefe-dokumente/",
+  "runs": 10,
+  "reference_run_index": 1,
+  "llm_outputs": [
+    {
+      "institution": "Internationale Stiftung Mozarteum",
+      "roles_responsibilities": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+      "funding_information": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+      "continuation_strategy": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte.",
+      "contact_info": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Editionsrichtlinien",
+      "license": "Creative Commons CC BY-NC-SA 4.0 International License."
+    },
+    {
+      "institution": "Internationale Stiftung Mozarteum",
+      "roles_responsibilities": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+      "funding_information": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+      "continuation_strategy": "Die Online-Publikation Schritt für Schritt erweitern.",
+      "contact_info": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Editionsrichtlinien",
+      "license": "Creative Commons CC BY-NC-SA 4.0 International License."
+    },
+    {
+      "institution": "Internationale Stiftung Mozarteum",
+      "roles_responsibilities": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+      "funding_information": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+      "continuation_strategy": "Die Online-Publikation Schritt für Schritt erweitern.",
+      "contact_info": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Editionsrichtlinien",
+      "license": "Creative Commons CC BY-NC-SA 4.0 International License."
+    },
+    {
+      "institution": "Internationale Stiftung Mozarteum",
+      "roles_responsibilities": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+      "funding_information": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+      "continuation_strategy": "Die Online-Publikation Schritt für Schritt erweitern.",
+      "contact_info": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Editionsrichtlinien",
+      "license": "Creative Commons CC BY-NC-SA 4.0 International License."
+    },
+    {
+      "institution": "Internationale Stiftung Mozarteum",
+      "roles_responsibilities": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+      "funding_information": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+      "continuation_strategy": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte.",
+      "contact_info": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Hinweise auf Editionsrichtlinien und Transkriptionsregeln vorhanden.",
+      "license": "Creative Commons CC BY-NC-SA 4.0 International License."
+    },
+    {
+      "institution": "Internationale Stiftung Mozarteum",
+      "roles_responsibilities": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+      "funding_information": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+      "continuation_strategy": "Die Online-Publikation Schritt für Schritt erweitern.",
+      "contact_info": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Editionsrichtlinien",
+      "license": "Creative Commons CC BY-NC-SA 4.0 International License."
+    },
+    {
+      "institution": "Internationale Stiftung Mozarteum",
+      "roles_responsibilities": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+      "funding_information": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+      "continuation_strategy": "Die Online-Publikation Schritt für Schritt erweitern.",
+      "contact_info": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Editionsrichtlinien",
+      "license": "Creative Commons CC BY-NC-SA 4.0 International License."
+    },
+    {
+      "institution": "Internationale Stiftung Mozarteum",
+      "roles_responsibilities": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+      "funding_information": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+      "continuation_strategy": "Die Online-Publikation Schritt für Schritt erweitern.",
+      "contact_info": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Editionsrichtlinien",
+      "license": "Creative Commons CC BY-NC-SA 4.0 International License."
+    },
+    {
+      "institution": "Internationale Stiftung Mozarteum",
+      "roles_responsibilities": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+      "funding_information": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+      "continuation_strategy": "Die Online-Publikation Schritt für Schritt erweitern.",
+      "contact_info": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Editionsrichtlinien",
+      "license": "Creative Commons CC BY-NC-SA 4.0 International License."
+    },
+    {
+      "institution": "Internationale Stiftung Mozarteum",
+      "roles_responsibilities": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+      "funding_information": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+      "continuation_strategy": "Die Online-Publikation Schritt für Schritt erweitern.",
+      "contact_info": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Editionsrichtlinien",
+      "license": "Creative Commons CC BY-NC-SA 4.0 International License."
+    }
+  ],
+  "bertscore": {
+    "per_run_vs_reference": [
+      {
+        "run_index": 2,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "continuation_strategy": {
+            "P": 0.062165357172489166,
+            "R": 0.08987336605787277,
+            "F1": 0.07727360725402832,
+            "ref_text": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte.",
+            "cand_text": "Die Online-Publikation Schritt für Schritt erweitern."
+          },
+          "documentation": {
+            "P": 0.9999992251396179,
+            "R": 0.9999992251396179,
+            "F1": 0.9999992251396179,
+            "ref_text": "Editionsrichtlinien",
+            "cand_text": "Editionsrichtlinien"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+            "cand_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Internationale Stiftung Mozarteum",
+            "cand_text": "Internationale Stiftung Mozarteum"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons CC BY-NC-SA 4.0 International License.",
+            "cand_text": "Creative Commons CC BY-NC-SA 4.0 International License."
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+            "cand_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter"
+          }
+        },
+        "global_score": {
+          "P": 0.866023600101471,
+          "R": 0.8699818849563599,
+          "F1": 0.8681818842887878
+        }
+      },
+      {
+        "run_index": 3,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "continuation_strategy": {
+            "P": 0.062165357172489166,
+            "R": 0.08987336605787277,
+            "F1": 0.07727360725402832,
+            "ref_text": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte.",
+            "cand_text": "Die Online-Publikation Schritt für Schritt erweitern."
+          },
+          "documentation": {
+            "P": 0.9999992251396179,
+            "R": 0.9999992251396179,
+            "F1": 0.9999992251396179,
+            "ref_text": "Editionsrichtlinien",
+            "cand_text": "Editionsrichtlinien"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+            "cand_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Internationale Stiftung Mozarteum",
+            "cand_text": "Internationale Stiftung Mozarteum"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons CC BY-NC-SA 4.0 International License.",
+            "cand_text": "Creative Commons CC BY-NC-SA 4.0 International License."
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+            "cand_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter"
+          }
+        },
+        "global_score": {
+          "P": 0.866023600101471,
+          "R": 0.8699818849563599,
+          "F1": 0.8681818842887878
+        }
+      },
+      {
+        "run_index": 4,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "continuation_strategy": {
+            "P": 0.062165357172489166,
+            "R": 0.08987336605787277,
+            "F1": 0.07727360725402832,
+            "ref_text": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte.",
+            "cand_text": "Die Online-Publikation Schritt für Schritt erweitern."
+          },
+          "documentation": {
+            "P": 0.9999992251396179,
+            "R": 0.9999992251396179,
+            "F1": 0.9999992251396179,
+            "ref_text": "Editionsrichtlinien",
+            "cand_text": "Editionsrichtlinien"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+            "cand_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Internationale Stiftung Mozarteum",
+            "cand_text": "Internationale Stiftung Mozarteum"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons CC BY-NC-SA 4.0 International License.",
+            "cand_text": "Creative Commons CC BY-NC-SA 4.0 International License."
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+            "cand_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter"
+          }
+        },
+        "global_score": {
+          "P": 0.866023600101471,
+          "R": 0.8699818849563599,
+          "F1": 0.8681818842887878
+        }
+      },
+      {
+        "run_index": 5,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "continuation_strategy": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte.",
+            "cand_text": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte."
+          },
+          "documentation": {
+            "P": 0.28344693779945374,
+            "R": 0.6148149967193604,
+            "F1": 0.4365808367729187,
+            "ref_text": "Editionsrichtlinien",
+            "cand_text": "Hinweise auf Editionsrichtlinien und Transkriptionsregeln vorhanden."
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+            "cand_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Internationale Stiftung Mozarteum",
+            "cand_text": "Internationale Stiftung Mozarteum"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons CC BY-NC-SA 4.0 International License.",
+            "cand_text": "Creative Commons CC BY-NC-SA 4.0 International License."
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+            "cand_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter"
+          }
+        },
+        "global_score": {
+          "P": 0.8976354002952576,
+          "R": 0.9449736475944519,
+          "F1": 0.9195116758346558
+        }
+      },
+      {
+        "run_index": 6,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "continuation_strategy": {
+            "P": 0.062165357172489166,
+            "R": 0.08987336605787277,
+            "F1": 0.07727360725402832,
+            "ref_text": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte.",
+            "cand_text": "Die Online-Publikation Schritt für Schritt erweitern."
+          },
+          "documentation": {
+            "P": 0.9999992251396179,
+            "R": 0.9999992251396179,
+            "F1": 0.9999992251396179,
+            "ref_text": "Editionsrichtlinien",
+            "cand_text": "Editionsrichtlinien"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+            "cand_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Internationale Stiftung Mozarteum",
+            "cand_text": "Internationale Stiftung Mozarteum"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons CC BY-NC-SA 4.0 International License.",
+            "cand_text": "Creative Commons CC BY-NC-SA 4.0 International License."
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+            "cand_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter"
+          }
+        },
+        "global_score": {
+          "P": 0.866023600101471,
+          "R": 0.8699818849563599,
+          "F1": 0.8681818842887878
+        }
+      },
+      {
+        "run_index": 7,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "continuation_strategy": {
+            "P": 0.062165357172489166,
+            "R": 0.08987336605787277,
+            "F1": 0.07727360725402832,
+            "ref_text": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte.",
+            "cand_text": "Die Online-Publikation Schritt für Schritt erweitern."
+          },
+          "documentation": {
+            "P": 0.9999992251396179,
+            "R": 0.9999992251396179,
+            "F1": 0.9999992251396179,
+            "ref_text": "Editionsrichtlinien",
+            "cand_text": "Editionsrichtlinien"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+            "cand_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Internationale Stiftung Mozarteum",
+            "cand_text": "Internationale Stiftung Mozarteum"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons CC BY-NC-SA 4.0 International License.",
+            "cand_text": "Creative Commons CC BY-NC-SA 4.0 International License."
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+            "cand_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter"
+          }
+        },
+        "global_score": {
+          "P": 0.866023600101471,
+          "R": 0.8699818849563599,
+          "F1": 0.8681818842887878
+        }
+      },
+      {
+        "run_index": 8,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "continuation_strategy": {
+            "P": 0.062165357172489166,
+            "R": 0.08987336605787277,
+            "F1": 0.07727360725402832,
+            "ref_text": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte.",
+            "cand_text": "Die Online-Publikation Schritt für Schritt erweitern."
+          },
+          "documentation": {
+            "P": 0.9999992251396179,
+            "R": 0.9999992251396179,
+            "F1": 0.9999992251396179,
+            "ref_text": "Editionsrichtlinien",
+            "cand_text": "Editionsrichtlinien"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+            "cand_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Internationale Stiftung Mozarteum",
+            "cand_text": "Internationale Stiftung Mozarteum"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons CC BY-NC-SA 4.0 International License.",
+            "cand_text": "Creative Commons CC BY-NC-SA 4.0 International License."
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+            "cand_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter"
+          }
+        },
+        "global_score": {
+          "P": 0.866023600101471,
+          "R": 0.8699818849563599,
+          "F1": 0.8681818842887878
+        }
+      },
+      {
+        "run_index": 9,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "continuation_strategy": {
+            "P": 0.062165357172489166,
+            "R": 0.08987336605787277,
+            "F1": 0.07727360725402832,
+            "ref_text": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte.",
+            "cand_text": "Die Online-Publikation Schritt für Schritt erweitern."
+          },
+          "documentation": {
+            "P": 0.9999992251396179,
+            "R": 0.9999992251396179,
+            "F1": 0.9999992251396179,
+            "ref_text": "Editionsrichtlinien",
+            "cand_text": "Editionsrichtlinien"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+            "cand_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Internationale Stiftung Mozarteum",
+            "cand_text": "Internationale Stiftung Mozarteum"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons CC BY-NC-SA 4.0 International License.",
+            "cand_text": "Creative Commons CC BY-NC-SA 4.0 International License."
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+            "cand_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter"
+          }
+        },
+        "global_score": {
+          "P": 0.866023600101471,
+          "R": 0.8699818849563599,
+          "F1": 0.8681818842887878
+        }
+      },
+      {
+        "run_index": 10,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "morgenstern@mozarteum.at\nLink mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "continuation_strategy": {
+            "P": 0.062165357172489166,
+            "R": 0.08987336605787277,
+            "F1": 0.07727360725402832,
+            "ref_text": "Die Webseite der Digitalen Mozart-Edition (DME) versteht sich auch als Plattform für Forschungsergebnisse anderer Mozart-Projekte.",
+            "cand_text": "Die Online-Publikation Schritt für Schritt erweitern."
+          },
+          "documentation": {
+            "P": 0.9999992251396179,
+            "R": 0.9999992251396179,
+            "F1": 0.9999992251396179,
+            "ref_text": "Editionsrichtlinien",
+            "cand_text": "Editionsrichtlinien"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien",
+            "cand_text": "Packard Humanities Institute (PHI), Los Altos/Kalifornien"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Internationale Stiftung Mozarteum",
+            "cand_text": "Internationale Stiftung Mozarteum"
+          },
+          "license": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Creative Commons CC BY-NC-SA 4.0 International License.",
+            "cand_text": "Creative Commons CC BY-NC-SA 4.0 International License."
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter",
+            "cand_text": "Projektleitung DME: Ulrich Leisinger\nProjektverantwortung: Anja Morgenstern\nIT-Entwicklung: Franz Kelnreiter"
+          }
+        },
+        "global_score": {
+          "P": 0.866023600101471,
+          "R": 0.8699818849563599,
+          "F1": 0.8681818842887878
+        }
+      }
+    ],
+    "field_aggregate": {
+      "contact_info": {
+        "mean_F1": 1.0,
+        "std_F1": 0.0,
+        "mean_P": 1.0,
+        "std_P": 0.0,
+        "mean_R": 1.0,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "continuation_strategy": {
+        "mean_F1": 0.1797987421353658,
+        "std_F1": 0.2899848724666367,
+        "mean_P": 0.166369186507331,
+        "std_P": 0.29473293739308937,
+        "mean_R": 0.1909985277387831,
+        "std_R": 0.28602515029263076,
+        "unique_values": 2
+      },
+      "documentation": {
+        "mean_F1": 0.9373971819877625,
+        "std_F1": 0.1770653169152395,
+        "mean_P": 0.9203823043240441,
+        "std_P": 0.2251906584235385,
+        "mean_R": 0.9572009775373671,
+        "std_R": 0.12105172440980987,
+        "unique_values": 2
+      },
+      "funding_information": {
+        "mean_F1": 1.0,
+        "std_F1": 0.0,
+        "mean_P": 1.0,
+        "std_P": 0.0,
+        "mean_R": 1.0,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "institution": {
+        "mean_F1": 1.0000003576278687,
+        "std_F1": 0.0,
+        "mean_P": 1.0000003576278687,
+        "std_P": 0.0,
+        "mean_R": 1.0000003576278687,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "license": {
+        "mean_F1": 1.0000003576278687,
+        "std_F1": 0.0,
+        "mean_P": 1.0000003576278687,
+        "std_P": 0.0,
+        "mean_R": 1.0000003576278687,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "roles_responsibilities": {
+        "mean_F1": 1.0,
+        "std_F1": 0.0,
+        "mean_P": 1.0,
+        "std_P": 0.0,
+        "mean_R": 1.0,
+        "std_R": 0.0,
+        "unique_values": 1
+      }
+    },
+    "global_aggregate": {
+      "mean_F1": 0.8738851944605509,
+      "std_F1": 0.01613139719065561,
+      "min_F1": 0.8681818842887878,
+      "max_F1": 0.9195116758346558
+    }
+  }
+}

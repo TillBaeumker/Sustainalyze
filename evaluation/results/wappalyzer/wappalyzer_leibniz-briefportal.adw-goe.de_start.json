@@ -1,0 +1,270 @@
+{
+    "url": "https://leibniz-briefportal.adw-goe.de/start",
+    "timestamp": "2025-11-23T11:13:55.621756",
+    "raw": {
+        "urls": {
+            "https://leibniz-briefportal.adw-goe.de/start": {
+                "status": 304
+            }
+        },
+        "technologies": [
+            {
+                "slug": "node-js",
+                "name": "Node.js",
+                "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Node.js.svg",
+                "website": "http://nodejs.org",
+                "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 27,
+                        "slug": "programming-languages",
+                        "name": "Programming languages"
+                    }
+                ]
+            },
+            {
+                "slug": "mathjax",
+                "name": "MathJax",
+                "description": "MathJax is a cross-browser JavaScript library that displays mathematical notation in web browsers, using MathML, LaTeX and ASCIIMathML markup.",
+                "confidence": 100,
+                "version": "2.7.5",
+                "icon": "MathJax.png",
+                "website": "https://www.mathjax.org",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 25,
+                        "slug": "javascript-graphics",
+                        "name": "JavaScript graphics"
+                    }
+                ]
+            },
+            {
+                "slug": "ember-js",
+                "name": "Ember.js",
+                "description": null,
+                "confidence": 100,
+                "version": "2.6.2",
+                "icon": "Ember.js.png",
+                "website": "http://emberjs.com",
+                "cpe": "cpe:2.3:a:emberjs:ember.js:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 12,
+                        "slug": "javascript-frameworks",
+                        "name": "JavaScript frameworks"
+                    }
+                ]
+            },
+            {
+                "slug": "express",
+                "name": "Express",
+                "description": "Express is a web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Express.svg",
+                "website": "http://expressjs.com",
+                "cpe": "cpe:2.3:a:expressjs:express:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 18,
+                        "slug": "web-frameworks",
+                        "name": "Web frameworks"
+                    },
+                    {
+                        "id": 22,
+                        "slug": "web-servers",
+                        "name": "Web servers"
+                    }
+                ]
+            },
+            {
+                "slug": "cloudflare",
+                "name": "Cloudflare",
+                "description": "Cloudflare is a web-infrastructure and website-security company, providing content-delivery-network services, DDoS mitigation, Internet security, and distributed domain-name-server services.",
+                "confidence": 100,
+                "version": null,
+                "icon": "CloudFlare.svg",
+                "website": "http://www.cloudflare.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 31,
+                        "slug": "cdn",
+                        "name": "CDN"
+                    }
+                ]
+            },
+            {
+                "slug": "cdnjs",
+                "name": "cdnjs",
+                "description": "cdnjs is a free distributed JS library delivery service.",
+                "confidence": 100,
+                "version": null,
+                "icon": "cdnjs.svg",
+                "website": "https://cdnjs.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 31,
+                        "slug": "cdn",
+                        "name": "CDN"
+                    }
+                ]
+            },
+            {
+                "slug": "jquery",
+                "name": "jQuery",
+                "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+                "confidence": 100,
+                "version": "2.2.4",
+                "icon": "jQuery.svg",
+                "website": "https://jquery.com",
+                "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "core-js",
+                "name": "core-js",
+                "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
+                "confidence": 100,
+                "version": "2.5.0",
+                "icon": "core-js.png",
+                "website": "https://github.com/zloirock/core-js",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "sectigo",
+                "name": "Sectigo",
+                "description": "Sectigo provides SSL certificate and computer security products.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Sectigo.svg",
+                "website": "https://sectigo.com/",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 70,
+                        "slug": "ssl-tls-certificate-authorities",
+                        "name": "SSL/TLS certificate authorities"
+                    }
+                ]
+            },
+            {
+                "slug": "babel",
+                "name": "Babel",
+                "description": "Babel is a free and open-source transcompiler for writing next generation JavaScript.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Babel.svg",
+                "website": "https://babeljs.io",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 19,
+                        "slug": "miscellaneous",
+                        "name": "Miscellaneous"
+                    }
+                ]
+            }
+        ]
+    },
+    "parsed": [
+        {
+            "name": "Node.js",
+            "version": null,
+            "category": "Programming languages",
+            "description": "Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.",
+            "website": "http://nodejs.org",
+            "oss": null
+        },
+        {
+            "name": "MathJax",
+            "version": "2.7.5",
+            "category": "JavaScript graphics",
+            "description": "MathJax is a cross-browser JavaScript library that displays mathematical notation in web browsers, using MathML, LaTeX and ASCIIMathML markup.",
+            "website": "https://www.mathjax.org",
+            "oss": null
+        },
+        {
+            "name": "Ember.js",
+            "version": "2.6.2",
+            "category": "JavaScript frameworks",
+            "description": null,
+            "website": "http://emberjs.com",
+            "oss": null
+        },
+        {
+            "name": "Express",
+            "version": null,
+            "category": "Web frameworks",
+            "description": "Express is a web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs.",
+            "website": "http://expressjs.com",
+            "oss": null
+        },
+        {
+            "name": "Cloudflare",
+            "version": null,
+            "category": "CDN",
+            "description": "Cloudflare is a web-infrastructure and website-security company, providing content-delivery-network services, DDoS mitigation, Internet security, and distributed domain-name-server services.",
+            "website": "http://www.cloudflare.com",
+            "oss": null
+        },
+        {
+            "name": "cdnjs",
+            "version": null,
+            "category": "CDN",
+            "description": "cdnjs is a free distributed JS library delivery service.",
+            "website": "https://cdnjs.com",
+            "oss": null
+        },
+        {
+            "name": "jQuery",
+            "version": "2.2.4",
+            "category": "JavaScript libraries",
+            "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+            "website": "https://jquery.com",
+            "oss": null
+        },
+        {
+            "name": "core-js",
+            "version": "2.5.0",
+            "category": "JavaScript libraries",
+            "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
+            "website": "https://github.com/zloirock/core-js",
+            "oss": null
+        },
+        {
+            "name": "Sectigo",
+            "version": null,
+            "category": "SSL/TLS certificate authorities",
+            "description": "Sectigo provides SSL certificate and computer security products.",
+            "website": "https://sectigo.com/",
+            "oss": null
+        },
+        {
+            "name": "Babel",
+            "version": null,
+            "category": "Miscellaneous",
+            "description": "Babel is a free and open-source transcompiler for writing next generation JavaScript.",
+            "website": "https://babeljs.io",
+            "oss": null
+        }
+    ]
+}

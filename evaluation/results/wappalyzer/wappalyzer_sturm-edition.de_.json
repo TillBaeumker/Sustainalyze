@@ -1,0 +1,197 @@
+{
+    "url": "https://sturm-edition.de/",
+    "timestamp": "2025-11-23T11:14:22.942898",
+    "raw": {
+        "urls": {
+            "https://sturm-edition.de/": {
+                "status": 304
+            }
+        },
+        "technologies": [
+            {
+                "slug": "java",
+                "name": "Java",
+                "description": "Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Java.svg",
+                "website": "http://java.com",
+                "cpe": "cpe:2.3:a:oracle:jre:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 27,
+                        "slug": "programming-languages",
+                        "name": "Programming languages"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "jetty",
+                "name": "Jetty",
+                "description": null,
+                "confidence": 100,
+                "version": "9.4.7",
+                "icon": "Jetty.png",
+                "website": "http://www.eclipse.org/jetty",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 22,
+                        "slug": "web-servers",
+                        "name": "Web servers"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "lightbox",
+                "name": "Lightbox",
+                "description": null,
+                "confidence": 100,
+                "version": null,
+                "icon": "Lightbox.png",
+                "website": "http://lokeshdhakar.com/projects/lightbox2/",
+                "cpe": "cpe:2.3:a:lightbox_photo_gallery_project:lightbox_photo_gallery:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "matomo-analytics",
+                "name": "Matomo Analytics",
+                "description": "Matomo Analytics is a free and open-source web analytics application, that runs on a PHP/MySQL web-server.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Matomo.svg",
+                "website": "https://matomo.org",
+                "cpe": "cpe:2.3:a:matomo:matomo:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 10,
+                        "slug": "analytics",
+                        "name": "Analytics"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "jquery",
+                "name": "jQuery",
+                "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+                "confidence": 100,
+                "version": "1.12.4",
+                "icon": "jQuery.svg",
+                "website": "https://jquery.com",
+                "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "highlight-js",
+                "name": "Highlight.js",
+                "description": null,
+                "confidence": 100,
+                "version": null,
+                "icon": "Highlight.js.png",
+                "website": "https://highlightjs.org/",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "google-font-api",
+                "name": "Google Font API",
+                "description": "Google Font API is a web service that supports open-source font files that can be used on your web designs.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Google Font API.svg",
+                "website": "http://google.com/fonts",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 17,
+                        "slug": "font-scripts",
+                        "name": "Font scripts"
+                    }
+                ],
+                "rootPath": true
+            }
+        ]
+    },
+    "parsed": [
+        {
+            "name": "Java",
+            "version": null,
+            "category": "Programming languages",
+            "description": "Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.",
+            "website": "http://java.com",
+            "oss": null
+        },
+        {
+            "name": "Jetty",
+            "version": "9.4.7",
+            "category": "Web servers",
+            "description": null,
+            "website": "http://www.eclipse.org/jetty",
+            "oss": null
+        },
+        {
+            "name": "Lightbox",
+            "version": null,
+            "category": "JavaScript libraries",
+            "description": null,
+            "website": "http://lokeshdhakar.com/projects/lightbox2/",
+            "oss": null
+        },
+        {
+            "name": "Matomo Analytics",
+            "version": null,
+            "category": "Analytics",
+            "description": "Matomo Analytics is a free and open-source web analytics application, that runs on a PHP/MySQL web-server.",
+            "website": "https://matomo.org",
+            "oss": null
+        },
+        {
+            "name": "jQuery",
+            "version": "1.12.4",
+            "category": "JavaScript libraries",
+            "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+            "website": "https://jquery.com",
+            "oss": null
+        },
+        {
+            "name": "Highlight.js",
+            "version": null,
+            "category": "JavaScript libraries",
+            "description": null,
+            "website": "https://highlightjs.org/",
+            "oss": null
+        },
+        {
+            "name": "Google Font API",
+            "version": null,
+            "category": "Font scripts",
+            "description": "Google Font API is a web service that supports open-source font files that can be used on your web designs.",
+            "website": "http://google.com/fonts",
+            "oss": null
+        }
+    ]
+}

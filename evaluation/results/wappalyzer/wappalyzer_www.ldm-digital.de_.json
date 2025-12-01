@@ -1,0 +1,67 @@
+{
+    "url": "https://www.ldm-digital.de/",
+    "timestamp": "2025-11-23T11:13:40.098335",
+    "raw": {
+        "urls": {
+            "https://www.ldm-digital.de/": {
+                "status": 200
+            }
+        },
+        "technologies": [
+            {
+                "slug": "php",
+                "name": "PHP",
+                "description": "PHP is a general-purpose scripting language used for web development.",
+                "confidence": 100,
+                "version": "8.3.26",
+                "icon": "PHP.svg",
+                "website": "http://php.net",
+                "cpe": "cpe:2.3:a:php:php:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 27,
+                        "slug": "programming-languages",
+                        "name": "Programming languages"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "apache-http-server",
+                "name": "Apache HTTP Server",
+                "description": "Apache is a free and open-source cross-platform web server software.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Apache.svg",
+                "website": "https://httpd.apache.org/",
+                "cpe": "cpe:2.3:a:apache:http_server:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 22,
+                        "slug": "web-servers",
+                        "name": "Web servers"
+                    }
+                ],
+                "rootPath": true
+            }
+        ]
+    },
+    "parsed": [
+        {
+            "name": "PHP",
+            "version": "8.3.26",
+            "category": "Programming languages",
+            "description": "PHP is a general-purpose scripting language used for web development.",
+            "website": "http://php.net",
+            "oss": null
+        },
+        {
+            "name": "Apache HTTP Server",
+            "version": null,
+            "category": "Web servers",
+            "description": "Apache is a free and open-source cross-platform web server software.",
+            "website": "https://httpd.apache.org/",
+            "oss": null
+        }
+    ]
+}

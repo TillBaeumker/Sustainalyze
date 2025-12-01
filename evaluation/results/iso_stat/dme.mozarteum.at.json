@@ -1,0 +1,15 @@
+{
+  "url": "https://dme.mozarteum.at/briefe-dokumente/#",
+  "staticization": {
+    "static_hits": [],
+    "dynamic_hits": [
+      {
+        "term": "WordPress",
+        "context": "dokumente status 200 technologies slug wordpress name wordpress description wordpress is"
+      }
+    ]
+  },
+  "isolation": {
+    "iso_hits": []
+  }
+}

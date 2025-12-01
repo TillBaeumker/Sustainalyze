@@ -1,0 +1,119 @@
+{
+    "url": "https://ebeowulf.uky.edu/",
+    "timestamp": "2025-11-23T11:13:04.730873",
+    "raw": {
+        "urls": {
+            "https://ebeowulf.uky.edu/": {
+                "status": 200
+            }
+        },
+        "technologies": [
+            {
+                "slug": "ubuntu",
+                "name": "Ubuntu",
+                "description": "Ubuntu is a free and open-source operating system on Linux for the enterprise server, desktop, cloud, and IoT.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Ubuntu.svg",
+                "website": "http://www.ubuntu.com/server",
+                "cpe": "cpe:2.3:o:canonical:ubuntu_linux:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 28,
+                        "slug": "operating-systems",
+                        "name": "Operating systems"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "apache-http-server",
+                "name": "Apache HTTP Server",
+                "description": "Apache is a free and open-source cross-platform web server software.",
+                "confidence": 100,
+                "version": "2.4.52",
+                "icon": "Apache.svg",
+                "website": "https://httpd.apache.org/",
+                "cpe": "cpe:2.3:a:apache:http_server:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 22,
+                        "slug": "web-servers",
+                        "name": "Web servers"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "jquery",
+                "name": "jQuery",
+                "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+                "confidence": 100,
+                "version": "2.1.0",
+                "icon": "jQuery.svg",
+                "website": "https://jquery.com",
+                "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "google-analytics",
+                "name": "Google Analytics",
+                "description": "Google Analytics is a free web analytics service that tracks and reports website traffic.",
+                "confidence": 100,
+                "version": "GA4",
+                "icon": "Google Analytics.svg",
+                "website": "http://google.com/analytics",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 10,
+                        "slug": "analytics",
+                        "name": "Analytics"
+                    }
+                ],
+                "rootPath": true
+            }
+        ]
+    },
+    "parsed": [
+        {
+            "name": "Ubuntu",
+            "version": null,
+            "category": "Operating systems",
+            "description": "Ubuntu is a free and open-source operating system on Linux for the enterprise server, desktop, cloud, and IoT.",
+            "website": "http://www.ubuntu.com/server",
+            "oss": null
+        },
+        {
+            "name": "Apache HTTP Server",
+            "version": "2.4.52",
+            "category": "Web servers",
+            "description": "Apache is a free and open-source cross-platform web server software.",
+            "website": "https://httpd.apache.org/",
+            "oss": null
+        },
+        {
+            "name": "jQuery",
+            "version": "2.1.0",
+            "category": "JavaScript libraries",
+            "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+            "website": "https://jquery.com",
+            "oss": null
+        },
+        {
+            "name": "Google Analytics",
+            "version": "GA4",
+            "category": "Analytics",
+            "description": "Google Analytics is a free web analytics service that tracks and reports website traffic.",
+            "website": "http://google.com/analytics",
+            "oss": null
+        }
+    ]
+}

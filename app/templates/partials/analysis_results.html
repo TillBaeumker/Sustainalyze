@@ -1,0 +1,27 @@
+{% if error %}
+  <p style="color: red;">Fehler: {{ error }}</p>
+{% endif %}
+
+{% if result %}
+  <h3>Analyseergebnisse</h3>
+
+  {% if llm_summary %}
+    {% include "partials/llm_summary.html" %}
+  {% endif %}
+
+  {% for page in result.page_data %}
+    {% include "partials/page_block.html" %}
+  {% endfor %}
+
+  {% if result.dataset_links_all %}
+    {% include "partials/fuji_block.html" %}
+  {% endif %}
+
+  {% if result.wappalyzer %}
+    {% include "partials/wappalyzer_block.html" %}
+  {% endif %}
+
+  {% if result.shodan_overview %}
+    {% include "partials/shodan_block.html" %}
+  {% endif %}
+{% endif %}

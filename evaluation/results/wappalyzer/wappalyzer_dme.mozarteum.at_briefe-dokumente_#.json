@@ -1,0 +1,675 @@
+{
+    "url": "https://dme.mozarteum.at/briefe-dokumente/#",
+    "timestamp": "2025-11-23T11:14:14.304831",
+    "raw": {
+        "urls": {
+            "https://dme.mozarteum.at/briefe-dokumente/": {
+                "status": 200
+            }
+        },
+        "technologies": [
+            {
+                "slug": "wordpress",
+                "name": "WordPress",
+                "description": "WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system.",
+                "confidence": 100,
+                "version": "6.8",
+                "icon": "WordPress.svg",
+                "website": "https://wordpress.org",
+                "cpe": "cpe:2.3:a:wordpress:wordpress:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 1,
+                        "slug": "cms",
+                        "name": "CMS"
+                    },
+                    {
+                        "id": 11,
+                        "slug": "blogs",
+                        "name": "Blogs"
+                    }
+                ]
+            },
+            {
+                "slug": "mysql",
+                "name": "MySQL",
+                "description": "MySQL is an open-source relational database management system.",
+                "confidence": 100,
+                "version": null,
+                "icon": "MySQL.svg",
+                "website": "http://mysql.com",
+                "cpe": "cpe:2.3:a:mysql:mysql:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 34,
+                        "slug": "databases",
+                        "name": "Databases"
+                    }
+                ]
+            },
+            {
+                "slug": "php",
+                "name": "PHP",
+                "description": "PHP is a general-purpose scripting language used for web development.",
+                "confidence": 100,
+                "version": "7.4.33",
+                "icon": "PHP.svg",
+                "website": "http://php.net",
+                "cpe": "cpe:2.3:a:php:php:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 27,
+                        "slug": "programming-languages",
+                        "name": "Programming languages"
+                    }
+                ]
+            },
+            {
+                "slug": "debian",
+                "name": "Debian",
+                "description": "Debian is a Linux software which is a free open-source software.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Debian.png",
+                "website": "https://debian.org",
+                "cpe": "cpe:2.3:o:debian:debian_linux:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 28,
+                        "slug": "operating-systems",
+                        "name": "Operating systems"
+                    }
+                ]
+            },
+            {
+                "slug": "youtube",
+                "name": "YouTube",
+                "description": "YouTube is a video sharing service where users can create their own profile, upload videos, watch, like and comment on other videos.",
+                "confidence": 100,
+                "version": null,
+                "icon": "YouTube.png",
+                "website": "http://www.youtube.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 14,
+                        "slug": "video-players",
+                        "name": "Video players"
+                    }
+                ]
+            },
+            {
+                "slug": "wpbakery",
+                "name": "wpBakery",
+                "description": "WPBakery is a drag and drop visual page builder plugin for WordPress.",
+                "confidence": 100,
+                "version": null,
+                "icon": "wpBakery.svg",
+                "website": "https://wpbakery.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 51,
+                        "slug": "page-builders",
+                        "name": "Page builders"
+                    },
+                    {
+                        "id": 87,
+                        "slug": "wordpress-plugins",
+                        "name": "WordPress plugins"
+                    }
+                ]
+            },
+            {
+                "slug": "contact-form-7",
+                "name": "Contact Form 7",
+                "description": "Contact Form 7 is an WordPress plugin which can manage multiple contact forms. The form supports Ajax-powered submitting, CAPTCHA, Akismet spam filtering.",
+                "confidence": 100,
+                "version": "6.0.6",
+                "icon": "Contact Form 7.png",
+                "website": "https://contactform7.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 87,
+                        "slug": "wordpress-plugins",
+                        "name": "WordPress plugins"
+                    },
+                    {
+                        "id": 110,
+                        "slug": "form-builders",
+                        "name": "Form builders"
+                    }
+                ]
+            },
+            {
+                "slug": "react",
+                "name": "React",
+                "description": "React is an open-source JavaScript library for building user interfaces or UI components.",
+                "confidence": 100,
+                "version": "18.3.1",
+                "icon": "React.svg",
+                "website": "https://reactjs.org",
+                "cpe": "cpe:2.3:a:facebook:react:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 12,
+                        "slug": "javascript-frameworks",
+                        "name": "JavaScript frameworks"
+                    }
+                ]
+            },
+            {
+                "slug": "apache-http-server",
+                "name": "Apache HTTP Server",
+                "description": "Apache is a free and open-source cross-platform web server software.",
+                "confidence": 100,
+                "version": "2.4.38",
+                "icon": "Apache.svg",
+                "website": "https://httpd.apache.org/",
+                "cpe": "cpe:2.3:a:apache:http_server:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 22,
+                        "slug": "web-servers",
+                        "name": "Web servers"
+                    }
+                ]
+            },
+            {
+                "slug": "polylang",
+                "name": "Polylang",
+                "description": "Polylang is a WordPress plugin which allows you to create multilingual WordPress site.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Polylang.svg",
+                "website": "https://wordpress.org/plugins/polylang",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 87,
+                        "slug": "wordpress-plugins",
+                        "name": "WordPress plugins"
+                    },
+                    {
+                        "id": 89,
+                        "slug": "translation",
+                        "name": "Translation"
+                    }
+                ]
+            },
+            {
+                "slug": "monsterinsights",
+                "name": "MonsterInsights",
+                "description": "MonsterInsights is the most popular Google Analytics plugin for WordPress.",
+                "confidence": 100,
+                "version": "9.4.1",
+                "icon": "MonsterInsights.png",
+                "website": "https://www.monsterinsights.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 87,
+                        "slug": "wordpress-plugins",
+                        "name": "WordPress plugins"
+                    },
+                    {
+                        "id": 10,
+                        "slug": "analytics",
+                        "name": "Analytics"
+                    }
+                ]
+            },
+            {
+                "slug": "lightbox",
+                "name": "Lightbox",
+                "description": null,
+                "confidence": 100,
+                "version": null,
+                "icon": "Lightbox.png",
+                "website": "http://lokeshdhakar.com/projects/lightbox2/",
+                "cpe": "cpe:2.3:a:lightbox_photo_gallery_project:lightbox_photo_gallery:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "cookie-notice",
+                "name": "Cookie Notice",
+                "description": "Cookie Notice provides a simple, customizable website banner that can be used to help your website comply with certain cookie consent requirements under the EU GDPR cookie law and CCPA regulations and includes seamless integration with Cookie Compliance to help your site comply with the latest updates to existing consent laws.",
+                "confidence": 100,
+                "version": "2.5.6",
+                "icon": "Cookie Notice.png",
+                "website": "https://wordpress.org/plugins/cookie-notice",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 67,
+                        "slug": "cookie-compliance",
+                        "name": "Cookie compliance"
+                    },
+                    {
+                        "id": 87,
+                        "slug": "wordpress-plugins",
+                        "name": "WordPress plugins"
+                    }
+                ]
+            },
+            {
+                "slug": "photoswipe",
+                "name": "PhotoSwipe",
+                "description": "PhotoSwipe is an open-source gallery to support JavaScript-based image zooming.",
+                "confidence": 100,
+                "version": null,
+                "icon": "PhotoSwipe.png",
+                "website": "https://photoswipe.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 7,
+                        "slug": "photo-galleries",
+                        "name": "Photo galleries"
+                    },
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "moment-js",
+                "name": "Moment.js",
+                "description": "Moment.js is a free and open-source JavaScript library that removes the need to use the native JavaScript Date object directly.",
+                "confidence": 100,
+                "version": "2.30.1",
+                "icon": "Moment.js.svg",
+                "website": "https://momentjs.com",
+                "cpe": "cpe:2.3:a:momentjs:moment:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "jquery-ui",
+                "name": "jQuery UI",
+                "description": "jQuery UI is a collection of GUI widgets, animated visual effects, and themes implemented with jQuery, Cascading Style Sheets, and HTML.",
+                "confidence": 100,
+                "version": "1.13.3",
+                "icon": "jQuery UI.svg",
+                "website": "http://jqueryui.com",
+                "cpe": "cpe:2.3:a:jquery:jquery_ui:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "jquery-migrate",
+                "name": "jQuery Migrate",
+                "description": "Query Migrate is a javascript library that allows you to preserve the compatibility of your jQuery code developed for versions of jQuery older than 1.9.",
+                "confidence": 100,
+                "version": "3.4.1",
+                "icon": "jQuery.svg",
+                "website": "https://github.com/jquery/jquery-migrate",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "jquery",
+                "name": "jQuery",
+                "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+                "confidence": 100,
+                "version": "3.7.1",
+                "icon": "jQuery.svg",
+                "website": "https://jquery.com",
+                "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "isotope",
+                "name": "Isotope",
+                "description": "Isotope.js is a JavaScript library that makes it easy to sort, filter, and add Masonry layouts to items on a webpage.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Isotope.svg",
+                "website": "https://isotope.metafizzy.co",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "google-analytics",
+                "name": "Google Analytics",
+                "description": "Google Analytics is a free web analytics service that tracks and reports website traffic.",
+                "confidence": 100,
+                "version": "GA4",
+                "icon": "Google Analytics.svg",
+                "website": "http://google.com/analytics",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 10,
+                        "slug": "analytics",
+                        "name": "Analytics"
+                    }
+                ]
+            },
+            {
+                "slug": "core-js",
+                "name": "core-js",
+                "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
+                "confidence": 100,
+                "version": "3.39.0",
+                "icon": "core-js.png",
+                "website": "https://github.com/zloirock/core-js",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "google-font-api",
+                "name": "Google Font API",
+                "description": "Google Font API is a web service that supports open-source font files that can be used on your web designs.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Google Font API.svg",
+                "website": "http://google.com/fonts",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 17,
+                        "slug": "font-scripts",
+                        "name": "Font scripts"
+                    }
+                ]
+            },
+            {
+                "slug": "sectigo",
+                "name": "Sectigo",
+                "description": "Sectigo provides SSL certificate and computer security products.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Sectigo.svg",
+                "website": "https://sectigo.com/",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 70,
+                        "slug": "ssl-tls-certificate-authorities",
+                        "name": "SSL/TLS certificate authorities"
+                    }
+                ]
+            },
+            {
+                "slug": "rss",
+                "name": "RSS",
+                "description": "RSS is a family of web feed formats used to publish frequently updated works—such as blog entries, news headlines, audio, and video—in a standardized format.",
+                "confidence": 100,
+                "version": null,
+                "icon": "RSS.svg",
+                "website": "https://www.rssboard.org/rss-specification",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 19,
+                        "slug": "miscellaneous",
+                        "name": "Miscellaneous"
+                    }
+                ]
+            },
+            {
+                "slug": "open-graph",
+                "name": "Open Graph",
+                "description": "Open Graph is a protocol that is used to integrate any web page into the social graph.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Open Graph.png",
+                "website": "https://ogp.me",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 19,
+                        "slug": "miscellaneous",
+                        "name": "Miscellaneous"
+                    }
+                ]
+            }
+        ]
+    },
+    "parsed": [
+        {
+            "name": "WordPress",
+            "version": "6.8",
+            "category": "CMS",
+            "description": "WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system.",
+            "website": "https://wordpress.org",
+            "oss": null
+        },
+        {
+            "name": "MySQL",
+            "version": null,
+            "category": "Databases",
+            "description": "MySQL is an open-source relational database management system.",
+            "website": "http://mysql.com",
+            "oss": null
+        },
+        {
+            "name": "PHP",
+            "version": "7.4.33",
+            "category": "Programming languages",
+            "description": "PHP is a general-purpose scripting language used for web development.",
+            "website": "http://php.net",
+            "oss": null
+        },
+        {
+            "name": "Debian",
+            "version": null,
+            "category": "Operating systems",
+            "description": "Debian is a Linux software which is a free open-source software.",
+            "website": "https://debian.org",
+            "oss": null
+        },
+        {
+            "name": "YouTube",
+            "version": null,
+            "category": "Video players",
+            "description": "YouTube is a video sharing service where users can create their own profile, upload videos, watch, like and comment on other videos.",
+            "website": "http://www.youtube.com",
+            "oss": null
+        },
+        {
+            "name": "wpBakery",
+            "version": null,
+            "category": "Page builders",
+            "description": "WPBakery is a drag and drop visual page builder plugin for WordPress.",
+            "website": "https://wpbakery.com",
+            "oss": null
+        },
+        {
+            "name": "Contact Form 7",
+            "version": "6.0.6",
+            "category": "WordPress plugins",
+            "description": "Contact Form 7 is an WordPress plugin which can manage multiple contact forms. The form supports Ajax-powered submitting, CAPTCHA, Akismet spam filtering.",
+            "website": "https://contactform7.com",
+            "oss": null
+        },
+        {
+            "name": "React",
+            "version": "18.3.1",
+            "category": "JavaScript frameworks",
+            "description": "React is an open-source JavaScript library for building user interfaces or UI components.",
+            "website": "https://reactjs.org",
+            "oss": null
+        },
+        {
+            "name": "Apache HTTP Server",
+            "version": "2.4.38",
+            "category": "Web servers",
+            "description": "Apache is a free and open-source cross-platform web server software.",
+            "website": "https://httpd.apache.org/",
+            "oss": null
+        },
+        {
+            "name": "Polylang",
+            "version": null,
+            "category": "WordPress plugins",
+            "description": "Polylang is a WordPress plugin which allows you to create multilingual WordPress site.",
+            "website": "https://wordpress.org/plugins/polylang",
+            "oss": null
+        },
+        {
+            "name": "MonsterInsights",
+            "version": "9.4.1",
+            "category": "WordPress plugins",
+            "description": "MonsterInsights is the most popular Google Analytics plugin for WordPress.",
+            "website": "https://www.monsterinsights.com",
+            "oss": null
+        },
+        {
+            "name": "Lightbox",
+            "version": null,
+            "category": "JavaScript libraries",
+            "description": null,
+            "website": "http://lokeshdhakar.com/projects/lightbox2/",
+            "oss": null
+        },
+        {
+            "name": "Cookie Notice",
+            "version": "2.5.6",
+            "category": "Cookie compliance",
+            "description": "Cookie Notice provides a simple, customizable website banner that can be used to help your website comply with certain cookie consent requirements under the EU GDPR cookie law and CCPA regulations and includes seamless integration with Cookie Compliance to help your site comply with the latest updates to existing consent laws.",
+            "website": "https://wordpress.org/plugins/cookie-notice",
+            "oss": null
+        },
+        {
+            "name": "PhotoSwipe",
+            "version": null,
+            "category": "Photo galleries",
+            "description": "PhotoSwipe is an open-source gallery to support JavaScript-based image zooming.",
+            "website": "https://photoswipe.com",
+            "oss": null
+        },
+        {
+            "name": "Moment.js",
+            "version": "2.30.1",
+            "category": "JavaScript libraries",
+            "description": "Moment.js is a free and open-source JavaScript library that removes the need to use the native JavaScript Date object directly.",
+            "website": "https://momentjs.com",
+            "oss": null
+        },
+        {
+            "name": "jQuery UI",
+            "version": "1.13.3",
+            "category": "JavaScript libraries",
+            "description": "jQuery UI is a collection of GUI widgets, animated visual effects, and themes implemented with jQuery, Cascading Style Sheets, and HTML.",
+            "website": "http://jqueryui.com",
+            "oss": null
+        },
+        {
+            "name": "jQuery Migrate",
+            "version": "3.4.1",
+            "category": "JavaScript libraries",
+            "description": "Query Migrate is a javascript library that allows you to preserve the compatibility of your jQuery code developed for versions of jQuery older than 1.9.",
+            "website": "https://github.com/jquery/jquery-migrate",
+            "oss": null
+        },
+        {
+            "name": "jQuery",
+            "version": "3.7.1",
+            "category": "JavaScript libraries",
+            "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+            "website": "https://jquery.com",
+            "oss": null
+        },
+        {
+            "name": "Isotope",
+            "version": null,
+            "category": "JavaScript libraries",
+            "description": "Isotope.js is a JavaScript library that makes it easy to sort, filter, and add Masonry layouts to items on a webpage.",
+            "website": "https://isotope.metafizzy.co",
+            "oss": null
+        },
+        {
+            "name": "Google Analytics",
+            "version": "GA4",
+            "category": "Analytics",
+            "description": "Google Analytics is a free web analytics service that tracks and reports website traffic.",
+            "website": "http://google.com/analytics",
+            "oss": null
+        },
+        {
+            "name": "core-js",
+            "version": "3.39.0",
+            "category": "JavaScript libraries",
+            "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
+            "website": "https://github.com/zloirock/core-js",
+            "oss": null
+        },
+        {
+            "name": "Google Font API",
+            "version": null,
+            "category": "Font scripts",
+            "description": "Google Font API is a web service that supports open-source font files that can be used on your web designs.",
+            "website": "http://google.com/fonts",
+            "oss": null
+        },
+        {
+            "name": "Sectigo",
+            "version": null,
+            "category": "SSL/TLS certificate authorities",
+            "description": "Sectigo provides SSL certificate and computer security products.",
+            "website": "https://sectigo.com/",
+            "oss": null
+        },
+        {
+            "name": "RSS",
+            "version": null,
+            "category": "Miscellaneous",
+            "description": "RSS is a family of web feed formats used to publish frequently updated works—such as blog entries, news headlines, audio, and video—in a standardized format.",
+            "website": "https://www.rssboard.org/rss-specification",
+            "oss": null
+        },
+        {
+            "name": "Open Graph",
+            "version": null,
+            "category": "Miscellaneous",
+            "description": "Open Graph is a protocol that is used to integrate any web page into the social graph.",
+            "website": "https://ogp.me",
+            "oss": null
+        }
+    ]
+}

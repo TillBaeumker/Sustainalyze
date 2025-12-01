@@ -1,0 +1,702 @@
+{
+  "url": "https://schnitzler-briefe.acdh.oeaw.ac.at/",
+  "runs": 10,
+  "reference_run_index": 1,
+  "llm_outputs": [
+    {
+      "institution": "Österreichische Akademie der Wissenschaften",
+      "roles_responsibilities": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+      "funding_information": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+      "contact_info": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+      "documentation": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+      "api_hint": "Hinweise auf API in Quelldaten und API",
+      "repositories_hint": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/"
+    },
+    {
+      "institution": "Österreichische Akademie der Wissenschaften",
+      "roles_responsibilities": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+      "funding_information": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+      "contact_info": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, T: +43 1 51581-2200, Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+      "documentation": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+      "api_hint": "Hinweise auf API in Quelldaten und API",
+      "repositories_hint": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/"
+    },
+    {
+      "institution": "Österreichische Akademie der Wissenschaften",
+      "roles_responsibilities": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+      "funding_information": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+      "contact_info": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, T: +43 1 51581-2200",
+      "documentation": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+      "api_hint": "Hinweise auf API in Quelldaten und API",
+      "repositories_hint": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/"
+    },
+    {
+      "institution": "Österreichische Akademie der Wissenschaften",
+      "roles_responsibilities": "Herausgeber: Martin Anton Müller; Mitwirkende: Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+      "funding_information": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024), 10.55776/PAT1998524 (2025–2029)",
+      "contact_info": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+      "documentation": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+      "api_hint": "Hinweise auf API in Quelldaten und API",
+      "repositories_hint": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-data/"
+    },
+    {
+      "institution": "Österreichische Akademie der Wissenschaften",
+      "roles_responsibilities": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+      "funding_information": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024), 10.55776/PAT1998524 (2025–2029)",
+      "contact_info": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+      "documentation": "Editionsrichtlinien, Arbeitsablauf",
+      "repositories_hint": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/"
+    },
+    {
+      "institution": "Österreichische Akademie der Wissenschaften",
+      "roles_responsibilities": "Herausgeber: Martin Anton Müller; Mitwirkende: Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+      "funding_information": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024), 10.55776/PAT1998524 (2025–2029)",
+      "contact_info": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+      "documentation": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+      "api_hint": "Hinweise auf API in Quelldaten und API",
+      "repositories_hint": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-data/"
+    },
+    {
+      "institution": "Österreichische Akademie der Wissenschaften",
+      "roles_responsibilities": "Herausgeber: Martin Anton Müller; Mitwirkende: Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+      "funding_information": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024), 10.55776/PAT1998524 (2025–2029)",
+      "contact_info": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+      "documentation": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+      "api_hint": "Hinweise auf API in Quelldaten und API",
+      "repositories_hint": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-data/"
+    },
+    {
+      "institution": "Österreichische Akademie der Wissenschaften",
+      "roles_responsibilities": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+      "funding_information": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024), 10.55776/PAT1998524 (2025–2029)",
+      "contact_info": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+      "documentation": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+      "api_hint": "Hinweise auf API in Quelldaten und API",
+      "repositories_hint": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-data/"
+    },
+    {
+      "institution": "Österreichische Akademie der Wissenschaften",
+      "roles_responsibilities": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+      "funding_information": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+      "contact_info": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+      "documentation": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+      "api_hint": "Hinweise auf API in Quelldaten und API",
+      "repositories_hint": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-data/"
+    },
+    {
+      "institution": "Österreichische Akademie der Wissenschaften",
+      "roles_responsibilities": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+      "funding_information": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+      "contact_info": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+      "documentation": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+      "api_hint": "Hinweise auf API in Quelldaten und API",
+      "repositories_hint": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/"
+    }
+  ],
+  "bertscore": {
+    "per_run_vs_reference": [
+      {
+        "run_index": 2,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Hinweise auf API in Quelldaten und API",
+            "cand_text": "Hinweise auf API in Quelldaten und API"
+          },
+          "contact_info": {
+            "P": 0.5264104008674622,
+            "R": 0.8765889406204224,
+            "F1": 0.6886509656906128,
+            "ref_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+            "cand_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, T: +43 1 51581-2200, Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "documentation": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+            "cand_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+            "cand_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)"
+          },
+          "institution": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Österreichische Akademie der Wissenschaften",
+            "cand_text": "Österreichische Akademie der Wissenschaften"
+          },
+          "repositories_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/",
+            "cand_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+            "cand_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke"
+          }
+        },
+        "global_score": {
+          "P": 0.932344377040863,
+          "R": 0.9823698401451111,
+          "F1": 0.9555215835571289
+        }
+      },
+      {
+        "run_index": 3,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Hinweise auf API in Quelldaten und API",
+            "cand_text": "Hinweise auf API in Quelldaten und API"
+          },
+          "contact_info": {
+            "P": 0.7378559708595276,
+            "R": 0.9103419780731201,
+            "F1": 0.8213005661964417,
+            "ref_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+            "cand_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, T: +43 1 51581-2200"
+          },
+          "documentation": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+            "cand_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+            "cand_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)"
+          },
+          "institution": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Österreichische Akademie der Wissenschaften",
+            "cand_text": "Österreichische Akademie der Wissenschaften"
+          },
+          "repositories_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/",
+            "cand_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+            "cand_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke"
+          }
+        },
+        "global_score": {
+          "P": 0.9625508189201355,
+          "R": 0.9871917366981506,
+          "F1": 0.9744715094566345
+        }
+      },
+      {
+        "run_index": 4,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Hinweise auf API in Quelldaten und API",
+            "cand_text": "Hinweise auf API in Quelldaten und API"
+          },
+          "contact_info": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+            "cand_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich"
+          },
+          "documentation": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+            "cand_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API"
+          },
+          "funding_information": {
+            "P": 0.9567015767097473,
+            "R": 0.9561059474945068,
+            "F1": 0.9564682245254517,
+            "ref_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+            "cand_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024), 10.55776/PAT1998524 (2025–2029)"
+          },
+          "institution": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Österreichische Akademie der Wissenschaften",
+            "cand_text": "Österreichische Akademie der Wissenschaften"
+          },
+          "repositories_hint": {
+            "P": 0.9596395492553711,
+            "R": 0.9596443772315979,
+            "F1": 0.959701657295227,
+            "ref_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/",
+            "cand_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-data/"
+          },
+          "roles_responsibilities": {
+            "P": 0.7812202572822571,
+            "R": 0.9134706854820251,
+            "F1": 0.8457914590835571,
+            "ref_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+            "cand_text": "Herausgeber: Martin Anton Müller; Mitwirkende: Gerd-Hermann Susen, Laura Untner, Selma Jahnke"
+          }
+        },
+        "global_score": {
+          "P": 0.9567945599555969,
+          "R": 0.9756031036376953,
+          "F1": 0.9659944772720337
+        }
+      },
+      {
+        "run_index": 5,
+        "field_scores": {
+          "api_hint": {
+            "P": -1.5996181964874268,
+            "R": -1.5993081331253052,
+            "F1": -1.5956180095672607,
+            "ref_text": "Hinweise auf API in Quelldaten und API",
+            "cand_text": ""
+          },
+          "contact_info": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+            "cand_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich"
+          },
+          "documentation": {
+            "P": 0.8280409574508667,
+            "R": 0.6182360053062439,
+            "F1": 0.7188090682029724,
+            "ref_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+            "cand_text": "Editionsrichtlinien, Arbeitsablauf"
+          },
+          "funding_information": {
+            "P": 0.9567015767097473,
+            "R": 0.9561059474945068,
+            "F1": 0.9564682245254517,
+            "ref_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+            "cand_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024), 10.55776/PAT1998524 (2025–2029)"
+          },
+          "institution": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Österreichische Akademie der Wissenschaften",
+            "cand_text": "Österreichische Akademie der Wissenschaften"
+          },
+          "repositories_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/",
+            "cand_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+            "cand_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke"
+          }
+        },
+        "global_score": {
+          "P": 0.5978749394416809,
+          "R": 0.5678619742393494,
+          "F1": 0.5828084945678711
+        }
+      },
+      {
+        "run_index": 6,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Hinweise auf API in Quelldaten und API",
+            "cand_text": "Hinweise auf API in Quelldaten und API"
+          },
+          "contact_info": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+            "cand_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich"
+          },
+          "documentation": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+            "cand_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API"
+          },
+          "funding_information": {
+            "P": 0.9567015767097473,
+            "R": 0.9561059474945068,
+            "F1": 0.9564682245254517,
+            "ref_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+            "cand_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024), 10.55776/PAT1998524 (2025–2029)"
+          },
+          "institution": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Österreichische Akademie der Wissenschaften",
+            "cand_text": "Österreichische Akademie der Wissenschaften"
+          },
+          "repositories_hint": {
+            "P": 0.9596395492553711,
+            "R": 0.9596443772315979,
+            "F1": 0.959701657295227,
+            "ref_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/",
+            "cand_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-data/"
+          },
+          "roles_responsibilities": {
+            "P": 0.7812202572822571,
+            "R": 0.9134706854820251,
+            "F1": 0.8457914590835571,
+            "ref_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+            "cand_text": "Herausgeber: Martin Anton Müller; Mitwirkende: Gerd-Hermann Susen, Laura Untner, Selma Jahnke"
+          }
+        },
+        "global_score": {
+          "P": 0.9567945599555969,
+          "R": 0.9756031036376953,
+          "F1": 0.9659944772720337
+        }
+      },
+      {
+        "run_index": 7,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Hinweise auf API in Quelldaten und API",
+            "cand_text": "Hinweise auf API in Quelldaten und API"
+          },
+          "contact_info": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+            "cand_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich"
+          },
+          "documentation": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+            "cand_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API"
+          },
+          "funding_information": {
+            "P": 0.9567015767097473,
+            "R": 0.9561059474945068,
+            "F1": 0.9564682245254517,
+            "ref_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+            "cand_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024), 10.55776/PAT1998524 (2025–2029)"
+          },
+          "institution": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Österreichische Akademie der Wissenschaften",
+            "cand_text": "Österreichische Akademie der Wissenschaften"
+          },
+          "repositories_hint": {
+            "P": 0.9596395492553711,
+            "R": 0.9596443772315979,
+            "F1": 0.959701657295227,
+            "ref_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/",
+            "cand_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-data/"
+          },
+          "roles_responsibilities": {
+            "P": 0.7812202572822571,
+            "R": 0.9134706854820251,
+            "F1": 0.8457914590835571,
+            "ref_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+            "cand_text": "Herausgeber: Martin Anton Müller; Mitwirkende: Gerd-Hermann Susen, Laura Untner, Selma Jahnke"
+          }
+        },
+        "global_score": {
+          "P": 0.9567945599555969,
+          "R": 0.9756031036376953,
+          "F1": 0.9659944772720337
+        }
+      },
+      {
+        "run_index": 8,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Hinweise auf API in Quelldaten und API",
+            "cand_text": "Hinweise auf API in Quelldaten und API"
+          },
+          "contact_info": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+            "cand_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich"
+          },
+          "documentation": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+            "cand_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API"
+          },
+          "funding_information": {
+            "P": 0.9567015767097473,
+            "R": 0.9561059474945068,
+            "F1": 0.9564682245254517,
+            "ref_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+            "cand_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024), 10.55776/PAT1998524 (2025–2029)"
+          },
+          "institution": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Österreichische Akademie der Wissenschaften",
+            "cand_text": "Österreichische Akademie der Wissenschaften"
+          },
+          "repositories_hint": {
+            "P": 0.9596395492553711,
+            "R": 0.9596443772315979,
+            "F1": 0.959701657295227,
+            "ref_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/",
+            "cand_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-data/"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+            "cand_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke"
+          }
+        },
+        "global_score": {
+          "P": 0.9880487322807312,
+          "R": 0.9879643321037292,
+          "F1": 0.9880242347717285
+        }
+      },
+      {
+        "run_index": 9,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Hinweise auf API in Quelldaten und API",
+            "cand_text": "Hinweise auf API in Quelldaten und API"
+          },
+          "contact_info": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+            "cand_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich"
+          },
+          "documentation": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+            "cand_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+            "cand_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)"
+          },
+          "institution": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Österreichische Akademie der Wissenschaften",
+            "cand_text": "Österreichische Akademie der Wissenschaften"
+          },
+          "repositories_hint": {
+            "P": 0.9596395492553711,
+            "R": 0.9596443772315979,
+            "F1": 0.959701657295227,
+            "ref_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/",
+            "cand_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-data/"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+            "cand_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke"
+          }
+        },
+        "global_score": {
+          "P": 0.9942342042922974,
+          "R": 0.9942349195480347,
+          "F1": 0.9942430853843689
+        }
+      },
+      {
+        "run_index": 10,
+        "field_scores": {
+          "api_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Hinweise auf API in Quelldaten und API",
+            "cand_text": "Hinweise auf API in Quelldaten und API"
+          },
+          "contact_info": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich",
+            "cand_text": "Martin Anton Müller, E-Mail: martin.anton.mueller@encore.at, Adresse: Bäckerstraße 13, 1010 Wien, Österreich"
+          },
+          "documentation": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API",
+            "cand_text": "Editionsrichtlinien, Arbeitsablauf, Quelldaten und API"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)",
+            "cand_text": "Gefördert aus Mitteln des Wissenschaftsfonds FWF, P31277 (2018–2021), P34792 (2021–2024) und 10.55776/PAT1998524 (2025–2029)"
+          },
+          "institution": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Österreichische Akademie der Wissenschaften",
+            "cand_text": "Österreichische Akademie der Wissenschaften"
+          },
+          "repositories_hint": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/",
+            "cand_text": "GitHub: https://github.com/arthur-schnitzler/schnitzler-briefe-static/"
+          },
+          "roles_responsibilities": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke",
+            "cand_text": "Herausgeber: Martin Anton Müller, Gerd-Hermann Susen, Laura Untner, Selma Jahnke"
+          }
+        },
+        "global_score": {
+          "P": 1.0,
+          "R": 1.0,
+          "F1": 1.0
+        }
+      }
+    ],
+    "field_aggregate": {
+      "api_hint": {
+        "mean_F1": 0.7115979989369711,
+        "std_F1": 0.8157240426377507,
+        "mean_P": 0.7111535337236192,
+        "std_P": 0.816981180103201,
+        "mean_R": 0.7111879852082994,
+        "std_R": 0.8168837365894438,
+        "unique_values": 2
+      },
+      "contact_info": {
+        "mean_F1": 0.9455500311321683,
+        "std_F1": 0.10655646224730576,
+        "mean_P": 0.9182516800032722,
+        "std_P": 0.16085242029062122,
+        "mean_R": 0.9763255185551114,
+        "std_R": 0.044999408425858395,
+        "unique_values": 3
+      },
+      "documentation": {
+        "mean_F1": 0.9687565631336637,
+        "std_F1": 0.08836978430304097,
+        "mean_P": 0.980893439716763,
+        "std_P": 0.054041513365705875,
+        "mean_R": 0.9575817783673605,
+        "std_R": 0.11997684864925337,
+        "unique_values": 2
+      },
+      "funding_information": {
+        "mean_F1": 0.9758156802919176,
+        "std_F1": 0.021631113142744057,
+        "mean_P": 0.975945320394304,
+        "std_P": 0.02151515951012558,
+        "mean_R": 0.975614415274726,
+        "std_R": 0.02181113004671726,
+        "unique_values": 2
+      },
+      "institution": {
+        "mean_F1": 1.0000005960464478,
+        "std_F1": 0.0,
+        "mean_P": 1.0000005960464478,
+        "std_P": 0.0,
+        "mean_R": 1.0000005960464478,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "repositories_hint": {
+        "mean_F1": 0.9776120318306817,
+        "std_F1": 0.020024407481878902,
+        "mean_P": 0.9775775273640951,
+        "std_P": 0.02005526921500494,
+        "mean_R": 0.97758020957311,
+        "std_R": 0.02005287017433008,
+        "unique_values": 2
+      },
+      "roles_responsibilities": {
+        "mean_F1": 0.9485969543457031,
+        "std_F1": 0.07269446284310492,
+        "mean_P": 0.9270732204119364,
+        "std_P": 0.10313361928514776,
+        "mean_R": 0.9711566964785258,
+        "std_R": 0.04079016955522736,
+        "unique_values": 2
+      }
+    },
+    "global_aggregate": {
+      "mean_F1": 0.932561371061537,
+      "std_F1": 0.12445113063734338,
+      "min_F1": 0.5828084945678711,
+      "max_F1": 1.0
+    }
+  }
+}

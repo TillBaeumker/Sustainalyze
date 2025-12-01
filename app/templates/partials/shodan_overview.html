@@ -1,0 +1,25 @@
+{% if result.shodan_overview %}
+  <section class="page-block">
+    <h4>🌐 Server- und Infrastruktur</h4>
+    <details>
+      <summary>Details anzeigen</summary>
+      <ul>
+        <li><strong>IP:</strong> {{ result.shodan_overview.ip }}</li>
+        <li><strong>Provider:</strong> {{ result.shodan_overview.isp }}</li>
+        <li><strong>Organisation:</strong> {{ result.shodan_overview.org }}</li>
+        <li><strong>Land:</strong> {{ result.shodan_overview.country }}</li>
+        <li><strong>Stadt:</strong> {{ result.shodan_overview.city }}</li>
+        <li><strong>Ports:</strong> {{ result.shodan_overview.ports | join(", ") }}</li>
+        <li><strong>Domains:</strong> {{ result.shodan_overview.domains | join(", ") }}</li>
+        <li><strong>Tags:</strong> {{ result.shodan_overview.tags | join(", ") }}</li>
+        <li><strong>Geo:</strong> {{ result.shodan_overview.latitude }}, {{ result.shodan_overview.longitude }}</li>
+      </ul>
+      {% if result.shodan_overview.raw_json %}
+        <details>
+          <summary class="no-bold">RAW Shodan JSON</summary>
+          <pre>{{ result.shodan_overview.raw_json | tojson(indent=2) }}</pre>
+        </details>
+      {% endif %}
+    </details>
+  </section>
+{% endif %}

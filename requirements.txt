@@ -1,0 +1,55 @@
+# --- FastAPI / Webserver ---
+fastapi==0.115.12
+uvicorn==0.29.0
+pydantic==2.12.5
+python-multipart==0.0.18
+jinja2==3.1.6
+starlette==0.46.2
+
+# --- Core Utilities ---
+requests==2.32.5
+regex==2025.11.3
+python-dotenv==1.2.1
+aiofiles==25.1.0
+aiohttp==3.13.2
+yarl==1.22.0
+
+# --- Crawler / HTML / Metadata ---
+crawl4ai==0.7.7
+playwright==1.56.0
+patchright==1.56.0
+fake-useragent==2.2.0
+fake-http-header==0.3.5
+tldextract==5.3.0
+beautifulsoup4==4.14.3
+lxml==5.4.0
+extruct==0.17.0
+mf2py==2.0.1
+html_text==0.7.0
+
+# --- LLM ---
+openai==2.8.1
+backoff==2.2.1
+litellm==1.80.7
+
+# --- Repo Analysis ---
+PyGithub==2.7.0
+
+# --- FUJI (GitHub editable install) ---
+-e git+https://github.com/pangaea-data-publisher/fuji.git@a935c66259285d970ed2e2f05d89d0cdef15ca52#egg=fuji
+
+# --- JSON-LD / RDF / Schema ---
+rdflib==7.1.4
+jsonschema==4.25.1
+PyLD==2.0.4
+
+# --- Data / Scoring ---
+numpy==2.3.5
+pandas==2.3.1
+scipy==1.16.3
+
+# --- Misc Utilities ---
+rich==14.2.0
+shodan==1.31.0
+python-dateutil==2.9.0.post0
+pytz==2025.2

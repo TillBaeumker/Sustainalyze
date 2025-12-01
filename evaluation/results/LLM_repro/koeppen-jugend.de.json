@@ -1,0 +1,457 @@
+{
+  "url": "https://koeppen-jugend.de/",
+  "runs": 10,
+  "reference_run_index": 1,
+  "llm_outputs": [
+    {
+      "institution": "Ernst-Moritz-Arndt-Universität Greifswald",
+      "roles_responsibilities": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+      "funding_information": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Ernst-Moritz-Arndt-Universität Greifswald",
+      "roles_responsibilities": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+      "funding_information": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Ernst-Moritz-Arndt-Universität Greifswald",
+      "roles_responsibilities": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+      "funding_information": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Ernst-Moritz-Arndt-Universität Greifswald",
+      "roles_responsibilities": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+      "funding_information": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Ernst-Moritz-Arndt-Universität Greifswald",
+      "roles_responsibilities": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+      "funding_information": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Ernst-Moritz-Arndt-Universität Greifswald",
+      "roles_responsibilities": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+      "funding_information": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Ernst-Moritz-Arndt-Universität Greifswald",
+      "roles_responsibilities": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+      "funding_information": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Ernst-Moritz-Arndt-Universität Greifswald",
+      "roles_responsibilities": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+      "funding_information": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Ernst-Moritz-Arndt-Universität Greifswald",
+      "roles_responsibilities": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+      "funding_information": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    },
+    {
+      "institution": "Ernst-Moritz-Arndt-Universität Greifswald",
+      "roles_responsibilities": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+      "funding_information": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+      "contact_info": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+    }
+  ],
+  "bertscore": {
+    "per_run_vs_reference": [
+      {
+        "run_index": 2,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+            "cand_text": "Gefördert durch: Deutsche Forschungsgemeinschaft"
+          },
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Ernst-Moritz-Arndt-Universität Greifswald",
+            "cand_text": "Ernst-Moritz-Arndt-Universität Greifswald"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+            "cand_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 3,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+            "cand_text": "Gefördert durch: Deutsche Forschungsgemeinschaft"
+          },
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Ernst-Moritz-Arndt-Universität Greifswald",
+            "cand_text": "Ernst-Moritz-Arndt-Universität Greifswald"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+            "cand_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 4,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+            "cand_text": "Gefördert durch: Deutsche Forschungsgemeinschaft"
+          },
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Ernst-Moritz-Arndt-Universität Greifswald",
+            "cand_text": "Ernst-Moritz-Arndt-Universität Greifswald"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+            "cand_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 5,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+            "cand_text": "Gefördert durch: Deutsche Forschungsgemeinschaft"
+          },
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Ernst-Moritz-Arndt-Universität Greifswald",
+            "cand_text": "Ernst-Moritz-Arndt-Universität Greifswald"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+            "cand_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 6,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+            "cand_text": "Gefördert durch: Deutsche Forschungsgemeinschaft"
+          },
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Ernst-Moritz-Arndt-Universität Greifswald",
+            "cand_text": "Ernst-Moritz-Arndt-Universität Greifswald"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+            "cand_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 7,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+            "cand_text": "Gefördert durch: Deutsche Forschungsgemeinschaft"
+          },
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Ernst-Moritz-Arndt-Universität Greifswald",
+            "cand_text": "Ernst-Moritz-Arndt-Universität Greifswald"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+            "cand_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 8,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+            "cand_text": "Gefördert durch: Deutsche Forschungsgemeinschaft"
+          },
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Ernst-Moritz-Arndt-Universität Greifswald",
+            "cand_text": "Ernst-Moritz-Arndt-Universität Greifswald"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+            "cand_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 9,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+            "cand_text": "Gefördert durch: Deutsche Forschungsgemeinschaft"
+          },
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Ernst-Moritz-Arndt-Universität Greifswald",
+            "cand_text": "Ernst-Moritz-Arndt-Universität Greifswald"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+            "cand_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 10,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0000005960464478,
+            "R": 1.0000005960464478,
+            "F1": 1.0000005960464478,
+            "ref_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden",
+            "cand_text": "Link mit Impressumsangaben oder Kontaktinformationen gefunden"
+          },
+          "funding_information": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Gefördert durch: Deutsche Forschungsgemeinschaft",
+            "cand_text": "Gefördert durch: Deutsche Forschungsgemeinschaft"
+          },
+          "institution": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Ernst-Moritz-Arndt-Universität Greifswald",
+            "cand_text": "Ernst-Moritz-Arndt-Universität Greifswald"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher",
+            "cand_text": "Herausgeber: Katharina Krüger, Elisabetta Mengaldo und Eckhard Schumacher"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      }
+    ],
+    "field_aggregate": {
+      "contact_info": {
+        "mean_F1": 1.0000005960464478,
+        "std_F1": 0.0,
+        "mean_P": 1.0000005960464478,
+        "std_P": 0.0,
+        "mean_R": 1.0000005960464478,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "funding_information": {
+        "mean_F1": 1.0,
+        "std_F1": 0.0,
+        "mean_P": 1.0,
+        "std_P": 0.0,
+        "mean_R": 1.0,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "institution": {
+        "mean_F1": 0.9999998211860657,
+        "std_F1": 0.0,
+        "mean_P": 0.9999998211860657,
+        "std_P": 0.0,
+        "mean_R": 0.9999998211860657,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "roles_responsibilities": {
+        "mean_F1": 1.0000003576278687,
+        "std_F1": 0.0,
+        "mean_P": 1.0000003576278687,
+        "std_P": 0.0,
+        "mean_R": 1.0000003576278687,
+        "std_R": 0.0,
+        "unique_values": 1
+      }
+    },
+    "global_aggregate": {
+      "mean_F1": 1.0000001192092896,
+      "std_F1": 0.0,
+      "min_F1": 1.0000001192092896,
+      "max_F1": 1.0000001192092896
+    }
+  }
+}

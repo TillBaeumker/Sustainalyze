@@ -1,0 +1,38 @@
+<details>
+  <summary>🧠 LLM-Analyse der Projektinformationen</summary>
+  <ul>
+    <li><strong>Institution(en):</strong> {{ page.llm_analysis.institution or "-" }}</li>
+    <li><strong>Verantwortlichkeiten / Rollen:</strong> {{ page.llm_analysis.roles_responsibilities or "-" }}</li>
+    <li><strong>Projektlaufzeit:</strong> {{ page.llm_analysis.project_duration or "-" }}</li>
+    <li><strong>Kontakt / Impressum:</strong> {{ page.llm_analysis.contact_info or "-" }}</li>
+    <li><strong>Community / Beteiligung:</strong> {{ page.llm_analysis.community or "-" }}</li>
+    <li><strong>Dokumentation / Richtlinien:</strong> {{ page.llm_analysis.documentation or "-" }}</li>
+    <li><strong>Förderung:</strong> {{ page.llm_analysis.funding or "-" }}</li>
+    <li><strong>Langzeitarchivierung / Fortführung:</strong> {{ page.llm_analysis.continuation_archiving_preservation or "-" }}</li>
+    <li><strong>Lizenz(en):</strong>
+      {% if page.llm_analysis.license %}
+        {% if page.llm_analysis.license is string %}
+          {{ page.llm_analysis.license }}
+        {% else %}
+          {{ page.llm_analysis.license | join(", ") }}
+        {% endif %}
+      {% else %}
+        -
+      {% endif %}
+    </li>
+    <li><strong>TEI-Hinweis:</strong> {{ page.llm_analysis.tei_hint or "-" }}</li>
+    <li><strong>API-Hinweis:</strong> {{ page.llm_analysis.api_hint or "-" }}</li>
+    <li><strong>Downloads:</strong> {{ page.llm_analysis.downloads_hint or "-" }}</li>
+    <li><strong>Repositories:</strong> {{ page.llm_analysis.repositories_hint or "-" }}</li>
+    <li><strong>Normdaten / Linked Data:</strong> {{ page.llm_analysis.normdata_hint or "-" }}</li>
+    <li><strong>Strukturierte Metadaten:</strong> {{ page.llm_analysis.structured_metadata_hint or "-" }}</li>
+    <li><strong>Statisierung:</strong> {{ page.llm_analysis.staticization_hint or "-" }}</li>
+    <li><strong>Isolation:</strong> {{ page.llm_analysis.isolation_hint or "-" }}</li>
+    <li><strong>Open-Source-Hinweis:</strong> {{ page.llm_analysis.open_source_hint or "-" }}</li>
+  </ul>
+
+  <p class="llm-warning">
+    <strong>Hinweis:</strong> Diese Informationen wurden automatisiert durch ein Language Model (LLM) aus dem HTML-Code extrahiert.
+    Die Angaben können unvollständig oder fehlerhaft sein.
+  </p>
+</details>

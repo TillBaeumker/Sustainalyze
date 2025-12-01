@@ -1,0 +1,792 @@
+{
+  "url": "https://sturm-edition.de/",
+  "runs": 10,
+  "reference_run_index": 1,
+  "llm_outputs": [
+    {
+      "institution": "Akademie der Wissenschaften und der Literatur Mainz",
+      "roles_responsibilities": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+      "contact_info": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+      "license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+      "downloads_hint": "frei heruntergeladen",
+      "normdata_hint": "GND erwähnt",
+      "persistent_identifier_hint": "URI: https://sturm-edition.de/id/S.0000001",
+      "open_source_hint": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+    },
+    {
+      "institution": "Akademie der Wissenschaften und der Literatur Mainz",
+      "roles_responsibilities": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+      "contact_info": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+      "license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+      "downloads_hint": "frei heruntergeladen",
+      "normdata_hint": "GND erwähnt",
+      "persistent_identifier_hint": "URI: https://sturm-edition.de/id/S.0000001",
+      "open_source_hint": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+    },
+    {
+      "institution": "Akademie der Wissenschaften und der Literatur Mainz",
+      "roles_responsibilities": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+      "contact_info": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+      "license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+      "downloads_hint": "frei heruntergeladen",
+      "normdata_hint": "GND erwähnt",
+      "persistent_identifier_hint": "URI: https://sturm-edition.de/id/S.0000001",
+      "open_source_hint": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+    },
+    {
+      "institution": "Akademie der Wissenschaften und der Literatur Mainz",
+      "roles_responsibilities": "Editor: Marjam Trautmann, Editor: Torsten Schrade",
+      "contact_info": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+      "license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+      "downloads_hint": "freier Download der Editionssoftware",
+      "normdata_hint": "GND erwähnt",
+      "open_source_hint": "Edition und Forschungsdaten stehen unter CC-BY 4.0"
+    },
+    {
+      "institution": "Akademie der Wissenschaften und der Literatur Mainz",
+      "roles_responsibilities": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+      "contact_info": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+      "community": "Twitter: @SturmEdition",
+      "license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+      "downloads_hint": "frei heruntergeladen",
+      "normdata_hint": "GND erwähnt",
+      "persistent_identifier_hint": "URI: https://sturm-edition.de/id/S.0000001",
+      "open_source_hint": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+    },
+    {
+      "institution": "Akademie der Wissenschaften und der Literatur Mainz",
+      "roles_responsibilities": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+      "contact_info": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+      "license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+      "downloads_hint": "frei heruntergeladen",
+      "normdata_hint": "Gemeinsamen Normdatei der Deutschen Nationalbibliothek erwähnt",
+      "persistent_identifier_hint": "URI: https://sturm-edition.de/id/S.0000001",
+      "open_source_hint": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+    },
+    {
+      "institution": "Akademie der Wissenschaften und der Literatur Mainz",
+      "roles_responsibilities": "Editor: Marjam Trautmann, Editor: Torsten Schrade",
+      "contact_info": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+      "license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+      "downloads_hint": "freier Download der Editionssoftware",
+      "normdata_hint": "GND erwähnt",
+      "persistent_identifier_hint": "URI: https://sturm-edition.de/id/S.0000001",
+      "open_source_hint": "Edition und Forschungsdaten stehen unter CC-BY 4.0"
+    },
+    {
+      "institution": "Akademie der Wissenschaften und der Literatur Mainz",
+      "roles_responsibilities": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+      "contact_info": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+      "license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+      "downloads_hint": "frei heruntergeladen",
+      "normdata_hint": "GND erwähnt",
+      "persistent_identifier_hint": "URI: https://sturm-edition.de/id/S.0000001",
+      "open_source_hint": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+    },
+    {
+      "institution": "Akademie der Wissenschaften und der Literatur Mainz",
+      "roles_responsibilities": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+      "contact_info": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+      "license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+      "downloads_hint": "frei heruntergeladen",
+      "normdata_hint": "GND erwähnt",
+      "persistent_identifier_hint": "URI: https://sturm-edition.de/id/S.0000001",
+      "open_source_hint": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+    },
+    {
+      "institution": "Akademie der Wissenschaften und der Literatur Mainz",
+      "roles_responsibilities": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+      "contact_info": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+      "license": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+      "downloads_hint": "frei heruntergeladen",
+      "normdata_hint": "GND erwähnt",
+      "persistent_identifier_hint": "URI: https://sturm-edition.de/id/S.0000001",
+      "open_source_hint": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+    }
+  ],
+  "bertscore": {
+    "per_run_vs_reference": [
+      {
+        "run_index": 2,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+            "cand_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz"
+          },
+          "downloads_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "frei heruntergeladen",
+            "cand_text": "frei heruntergeladen"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Akademie der Wissenschaften und der Literatur Mainz",
+            "cand_text": "Akademie der Wissenschaften und der Literatur Mainz"
+          },
+          "license": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+            "cand_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+          },
+          "normdata_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "GND erwähnt",
+            "cand_text": "GND erwähnt"
+          },
+          "open_source_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz",
+            "cand_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "URI: https://sturm-edition.de/id/S.0000001",
+            "cand_text": "URI: https://sturm-edition.de/id/S.0000001"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+            "cand_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 3,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+            "cand_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz"
+          },
+          "downloads_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "frei heruntergeladen",
+            "cand_text": "frei heruntergeladen"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Akademie der Wissenschaften und der Literatur Mainz",
+            "cand_text": "Akademie der Wissenschaften und der Literatur Mainz"
+          },
+          "license": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+            "cand_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+          },
+          "normdata_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "GND erwähnt",
+            "cand_text": "GND erwähnt"
+          },
+          "open_source_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz",
+            "cand_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "URI: https://sturm-edition.de/id/S.0000001",
+            "cand_text": "URI: https://sturm-edition.de/id/S.0000001"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+            "cand_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 4,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+            "cand_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz"
+          },
+          "downloads_hint": {
+            "P": 0.12152411788702011,
+            "R": 0.1691846251487732,
+            "F1": 0.14629647135734558,
+            "ref_text": "frei heruntergeladen",
+            "cand_text": "freier Download der Editionssoftware"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Akademie der Wissenschaften und der Literatur Mainz",
+            "cand_text": "Akademie der Wissenschaften und der Literatur Mainz"
+          },
+          "license": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+            "cand_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+          },
+          "normdata_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "GND erwähnt",
+            "cand_text": "GND erwähnt"
+          },
+          "open_source_hint": {
+            "P": 0.5493283271789551,
+            "R": 0.6213648319244385,
+            "F1": 0.5853700041770935,
+            "ref_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz",
+            "cand_text": "Edition und Forschungsdaten stehen unter CC-BY 4.0"
+          },
+          "persistent_identifier_hint": {
+            "P": -1.5996181964874268,
+            "R": -1.5993081331253052,
+            "F1": -1.5956180095672607,
+            "ref_text": "URI: https://sturm-edition.de/id/S.0000001",
+            "cand_text": ""
+          },
+          "roles_responsibilities": {
+            "P": 0.8723773956298828,
+            "R": 0.8723925948143005,
+            "F1": 0.8725737929344177,
+            "ref_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+            "cand_text": "Editor: Marjam Trautmann, Editor: Torsten Schrade"
+          }
+        },
+        "global_score": {
+          "P": 0.49295154213905334,
+          "R": 0.5079543590545654,
+          "F1": 0.5010778903961182
+        }
+      },
+      {
+        "run_index": 5,
+        "field_scores": {
+          "community": {
+            "P": -1.5996181964874268,
+            "R": -1.5993081331253052,
+            "F1": -1.5956180095672607,
+            "ref_text": "",
+            "cand_text": "Twitter: @SturmEdition"
+          },
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+            "cand_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz"
+          },
+          "downloads_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "frei heruntergeladen",
+            "cand_text": "frei heruntergeladen"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Akademie der Wissenschaften und der Literatur Mainz",
+            "cand_text": "Akademie der Wissenschaften und der Literatur Mainz"
+          },
+          "license": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+            "cand_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+          },
+          "normdata_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "GND erwähnt",
+            "cand_text": "GND erwähnt"
+          },
+          "open_source_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz",
+            "cand_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "URI: https://sturm-edition.de/id/S.0000001",
+            "cand_text": "URI: https://sturm-edition.de/id/S.0000001"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+            "cand_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade"
+          }
+        },
+        "global_score": {
+          "P": 0.7111536860466003,
+          "R": 0.7111880779266357,
+          "F1": 0.7115980982780457
+        }
+      },
+      {
+        "run_index": 6,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+            "cand_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz"
+          },
+          "downloads_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "frei heruntergeladen",
+            "cand_text": "frei heruntergeladen"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Akademie der Wissenschaften und der Literatur Mainz",
+            "cand_text": "Akademie der Wissenschaften und der Literatur Mainz"
+          },
+          "license": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+            "cand_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+          },
+          "normdata_hint": {
+            "P": 0.17430667579174042,
+            "R": 0.4773423671722412,
+            "F1": 0.31493040919303894,
+            "ref_text": "GND erwähnt",
+            "cand_text": "Gemeinsamen Normdatei der Deutschen Nationalbibliothek erwähnt"
+          },
+          "open_source_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz",
+            "cand_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "URI: https://sturm-edition.de/id/S.0000001",
+            "cand_text": "URI: https://sturm-edition.de/id/S.0000001"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+            "cand_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade"
+          }
+        },
+        "global_score": {
+          "P": 0.8967883586883545,
+          "R": 0.9346678256988525,
+          "F1": 0.9143663644790649
+        }
+      },
+      {
+        "run_index": 7,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+            "cand_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz"
+          },
+          "downloads_hint": {
+            "P": 0.12152411788702011,
+            "R": 0.1691846251487732,
+            "F1": 0.14629647135734558,
+            "ref_text": "frei heruntergeladen",
+            "cand_text": "freier Download der Editionssoftware"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Akademie der Wissenschaften und der Literatur Mainz",
+            "cand_text": "Akademie der Wissenschaften und der Literatur Mainz"
+          },
+          "license": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+            "cand_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+          },
+          "normdata_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "GND erwähnt",
+            "cand_text": "GND erwähnt"
+          },
+          "open_source_hint": {
+            "P": 0.5493283271789551,
+            "R": 0.6213648319244385,
+            "F1": 0.5853700041770935,
+            "ref_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz",
+            "cand_text": "Edition und Forschungsdaten stehen unter CC-BY 4.0"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "URI: https://sturm-edition.de/id/S.0000001",
+            "cand_text": "URI: https://sturm-edition.de/id/S.0000001"
+          },
+          "roles_responsibilities": {
+            "P": 0.8723773956298828,
+            "R": 0.8723925948143005,
+            "F1": 0.8725737929344177,
+            "ref_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+            "cand_text": "Editor: Marjam Trautmann, Editor: Torsten Schrade"
+          }
+        },
+        "global_score": {
+          "P": 0.8179038763046265,
+          "R": 0.8328678607940674,
+          "F1": 0.8255301713943481
+        }
+      },
+      {
+        "run_index": 8,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+            "cand_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz"
+          },
+          "downloads_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "frei heruntergeladen",
+            "cand_text": "frei heruntergeladen"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Akademie der Wissenschaften und der Literatur Mainz",
+            "cand_text": "Akademie der Wissenschaften und der Literatur Mainz"
+          },
+          "license": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+            "cand_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+          },
+          "normdata_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "GND erwähnt",
+            "cand_text": "GND erwähnt"
+          },
+          "open_source_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz",
+            "cand_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "URI: https://sturm-edition.de/id/S.0000001",
+            "cand_text": "URI: https://sturm-edition.de/id/S.0000001"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+            "cand_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 9,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+            "cand_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz"
+          },
+          "downloads_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "frei heruntergeladen",
+            "cand_text": "frei heruntergeladen"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Akademie der Wissenschaften und der Literatur Mainz",
+            "cand_text": "Akademie der Wissenschaften und der Literatur Mainz"
+          },
+          "license": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+            "cand_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+          },
+          "normdata_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "GND erwähnt",
+            "cand_text": "GND erwähnt"
+          },
+          "open_source_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz",
+            "cand_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "URI: https://sturm-edition.de/id/S.0000001",
+            "cand_text": "URI: https://sturm-edition.de/id/S.0000001"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+            "cand_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      },
+      {
+        "run_index": 10,
+        "field_scores": {
+          "contact_info": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz",
+            "cand_text": "redaktion@sturm-edition.de, Geschwister-Scholl-Str. 2, 55131 Mainz"
+          },
+          "downloads_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "frei heruntergeladen",
+            "cand_text": "frei heruntergeladen"
+          },
+          "institution": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Akademie der Wissenschaften und der Literatur Mainz",
+            "cand_text": "Akademie der Wissenschaften und der Literatur Mainz"
+          },
+          "license": {
+            "P": 0.9999998211860657,
+            "R": 0.9999998211860657,
+            "F1": 0.9999998211860657,
+            "ref_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)",
+            "cand_text": "Creative Commons Attribution 4.0 International (CC-BY 4.0)"
+          },
+          "normdata_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "GND erwähnt",
+            "cand_text": "GND erwähnt"
+          },
+          "open_source_hint": {
+            "P": 0.9999997019767761,
+            "R": 0.9999997019767761,
+            "F1": 0.9999997019767761,
+            "ref_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz",
+            "cand_text": "Edition und Forschungsdaten stehen unter einer Creative Commons Lizenz"
+          },
+          "persistent_identifier_hint": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "URI: https://sturm-edition.de/id/S.0000001",
+            "cand_text": "URI: https://sturm-edition.de/id/S.0000001"
+          },
+          "roles_responsibilities": {
+            "P": 1.0000003576278687,
+            "R": 1.0000003576278687,
+            "F1": 1.0000003576278687,
+            "ref_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade",
+            "cand_text": "Herausgeber: Marjam Trautmann, Herausgeber: Torsten Schrade"
+          }
+        },
+        "global_score": {
+          "P": 1.0000001192092896,
+          "R": 1.0000001192092896,
+          "F1": 1.0000001192092896
+        }
+      }
+    ],
+    "field_aggregate": {
+      "contact_info": {
+        "mean_F1": 1.0,
+        "std_F1": 0.0,
+        "mean_P": 1.0,
+        "std_P": 0.0,
+        "mean_R": 1.0,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "downloads_hint": {
+        "mean_F1": 0.810287872950236,
+        "std_F1": 0.35491833321777444,
+        "mean_P": 0.8047829055123858,
+        "std_P": 0.3652171842566654,
+        "mean_R": 0.815374129348331,
+        "std_R": 0.3454028188062952,
+        "unique_values": 2
+      },
+      "institution": {
+        "mean_F1": 1.0000003576278687,
+        "std_F1": 0.0,
+        "mean_P": 1.0000003576278687,
+        "std_P": 0.0,
+        "mean_R": 1.0000003576278687,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "license": {
+        "mean_F1": 0.9999998211860657,
+        "std_F1": 0.0,
+        "mean_P": 0.9999998211860657,
+        "std_P": 0.0,
+        "mean_R": 0.9999998211860657,
+        "std_R": 0.0,
+        "unique_values": 1
+      },
+      "normdata_hint": {
+        "mean_F1": 0.9238814744684432,
+        "std_F1": 0.21529671383350513,
+        "mean_P": 0.9082566152016321,
+        "std_P": 0.2594904896040951,
+        "mean_R": 0.9419272475772433,
+        "std_R": 0.1642555596855591,
+        "unique_values": 2
+      },
+      "open_source_hint": {
+        "mean_F1": 0.9078597691324022,
+        "std_F1": 0.1723780301720033,
+        "mean_P": 0.8998505075772604,
+        "std_P": 0.18736198650220384,
+        "mean_R": 0.9158586197429233,
+        "std_R": 0.1574135509357245,
+        "unique_values": 2
+      },
+      "persistent_identifier_hint": {
+        "mean_F1": 0.7115983168284098,
+        "std_F1": 0.8157241550293467,
+        "mean_P": 0.7111538516150581,
+        "std_P": 0.816981292494797,
+        "mean_R": 0.7111883030997382,
+        "std_R": 0.8168838489810398,
+        "unique_values": 2
+      },
+      "roles_responsibilities": {
+        "mean_F1": 0.9716833432515463,
+        "std_F1": 0.052976283006275354,
+        "mean_P": 0.9716396994060941,
+        "std_P": 0.05305793316463708,
+        "mean_R": 0.9716430770026313,
+        "std_R": 0.05305161426012047,
+        "unique_values": 2
+      }
+    },
+    "global_aggregate": {
+      "mean_F1": 0.8836192356215583,
+      "std_F1": 0.16598909875146867,
+      "min_F1": 0.5010778903961182,
+      "max_F1": 1.0000001192092896
+    }
+  }
+}

@@ -1,0 +1,145 @@
+{
+    "url": "https://koeppen-jugend.de/",
+    "timestamp": "2025-11-23T11:14:00.668665",
+    "raw": {
+        "urls": {
+            "https://koeppen-jugend.de/": {
+                "status": 200
+            }
+        },
+        "technologies": [
+            {
+                "slug": "ubuntu",
+                "name": "Ubuntu",
+                "description": "Ubuntu is a free and open-source operating system on Linux for the enterprise server, desktop, cloud, and IoT.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Ubuntu.svg",
+                "website": "http://www.ubuntu.com/server",
+                "cpe": "cpe:2.3:o:canonical:ubuntu_linux:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 28,
+                        "slug": "operating-systems",
+                        "name": "Operating systems"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "bootstrap",
+                "name": "Bootstrap",
+                "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
+                "confidence": 100,
+                "version": "3.2.0",
+                "icon": "Bootstrap.svg",
+                "website": "https://getbootstrap.com",
+                "cpe": "cpe:2.3:a:getbootstrap:bootstrap:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 66,
+                        "slug": "ui-frameworks",
+                        "name": "UI frameworks"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "apache-http-server",
+                "name": "Apache HTTP Server",
+                "description": "Apache is a free and open-source cross-platform web server software.",
+                "confidence": 100,
+                "version": "2.4.41",
+                "icon": "Apache.svg",
+                "website": "https://httpd.apache.org/",
+                "cpe": "cpe:2.3:a:apache:http_server:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 22,
+                        "slug": "web-servers",
+                        "name": "Web servers"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "matomo-analytics",
+                "name": "Matomo Analytics",
+                "description": "Matomo Analytics is a free and open-source web analytics application, that runs on a PHP/MySQL web-server.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Matomo.svg",
+                "website": "https://matomo.org",
+                "cpe": "cpe:2.3:a:matomo:matomo:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 10,
+                        "slug": "analytics",
+                        "name": "Analytics"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "jquery",
+                "name": "jQuery",
+                "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+                "confidence": 100,
+                "version": "1.10.2",
+                "icon": "jQuery.svg",
+                "website": "https://jquery.com",
+                "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ],
+                "rootPath": true
+            }
+        ]
+    },
+    "parsed": [
+        {
+            "name": "Ubuntu",
+            "version": null,
+            "category": "Operating systems",
+            "description": "Ubuntu is a free and open-source operating system on Linux for the enterprise server, desktop, cloud, and IoT.",
+            "website": "http://www.ubuntu.com/server",
+            "oss": null
+        },
+        {
+            "name": "Bootstrap",
+            "version": "3.2.0",
+            "category": "UI frameworks",
+            "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
+            "website": "https://getbootstrap.com",
+            "oss": null
+        },
+        {
+            "name": "Apache HTTP Server",
+            "version": "2.4.41",
+            "category": "Web servers",
+            "description": "Apache is a free and open-source cross-platform web server software.",
+            "website": "https://httpd.apache.org/",
+            "oss": null
+        },
+        {
+            "name": "Matomo Analytics",
+            "version": null,
+            "category": "Analytics",
+            "description": "Matomo Analytics is a free and open-source web analytics application, that runs on a PHP/MySQL web-server.",
+            "website": "https://matomo.org",
+            "oss": null
+        },
+        {
+            "name": "jQuery",
+            "version": "1.10.2",
+            "category": "JavaScript libraries",
+            "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+            "website": "https://jquery.com",
+            "oss": null
+        }
+    ]
+}

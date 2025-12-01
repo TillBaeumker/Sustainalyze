@@ -1,0 +1,32 @@
+{% set tei_entries = (page.xml_scan or []) | selectattr("is_tei") | list %}
+{% set tei_count = tei_entries | length %}
+
+<details>
+  <summary>📄 TEI-XML ({{ tei_count }})</summary>
+
+  <details style="margin-left: 1em; margin-top:.5rem;">
+    <summary>📂 TEI-XML Downloads ({{ tei_count }})</summary>
+
+    {% if tei_count > 0 %}
+      <ul>
+        {% for tei in tei_entries %}
+          <li>
+            <a href="{{ tei.url }}" target="_blank">
+              {{ tei.file or tei.url }}
+            </a>
+            <ul>
+              <li><strong>Root-Element:</strong> {{ tei.root_element or "-" }}</li>
+              <li><strong>Namespace:</strong> {{ tei.namespace or "-" }}</li>
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="muted small" style="margin-left:1em;">
+        Keine TEI-XML-Dateien gefunden.
+      </p>
+    {% endif %}
+  </details>
+
+</details>
+

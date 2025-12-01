@@ -1,0 +1,92 @@
+{
+  "url": "https://www.blakearchive.org/",
+  "runs": 10,
+  "rdf_counts": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "vocab_results": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "raw_runs": [
+    {
+      "rdf_count": null,
+      "uses_vocabulary": null,
+      "score_f2a": null,
+      "score_f2b": null
+    },
+    {
+      "rdf_count": null,
+      "uses_vocabulary": null,
+      "score_f2a": null,
+      "score_f2b": null
+    },
+    {
+      "rdf_count": null,
+      "uses_vocabulary": null,
+      "score_f2a": null,
+      "score_f2b": null
+    },
+    {
+      "rdf_count": null,
+      "uses_vocabulary": null,
+      "score_f2a": null,
+      "score_f2b": null
+    },
+    {
+      "rdf_count": null,
+      "uses_vocabulary": null,
+      "score_f2a": null,
+      "score_f2b": null
+    },
+    {
+      "rdf_count": null,
+      "uses_vocabulary": null,
+      "score_f2a": null,
+      "score_f2b": null
+    },
+    {
+      "rdf_count": null,
+      "uses_vocabulary": null,
+      "score_f2a": null,
+      "score_f2b": null
+    },
+    {
+      "rdf_count": null,
+      "uses_vocabulary": null,
+      "score_f2a": null,
+      "score_f2b": null
+    },
+    {
+      "rdf_count": null,
+      "uses_vocabulary": null,
+      "score_f2a": null,
+      "score_f2b": null
+    },
+    {
+      "rdf_count": null,
+      "uses_vocabulary": null,
+      "score_f2a": null,
+      "score_f2b": null
+    }
+  ],
+  "rdf_stddev": 0.0,
+  "vocab_consistent": true
+}

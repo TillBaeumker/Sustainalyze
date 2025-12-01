@@ -1,0 +1,34 @@
+{# templates/partials/apis.html #}
+{% set api_list = page.api_interfaces if page.api_interfaces is defined else [] %}
+{% set total_count = api_list|length %}
+
+<details class="section">
+  <summary>🧩 APIs ({{ total_count }})</summary>
+
+  {% if total_count > 0 %}
+    <details style="margin-left: 1em;">
+      <summary>🔧 Technisch erkannte APIs ({{ api_list|length }})</summary>
+      {% if api_list|length > 0 %}
+        <ul class="api-list">
+          {% for api in api_list %}
+            <li class="api-item">
+              <a href="{{ api.url }}" target="_blank" rel="noopener">{{ api.url }}</a>
+              {% if api.evidence %}
+                <div class="muted small" style="margin-top:.25rem;">
+                  {{ api.evidence|join(' • ') }}
+                </div>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="muted small" style="margin-left: 1em;">Keine technisch erkannten APIs gefunden.</p>
+      {% endif %}
+    </details>
+  {% else %}
+    <p class="muted small" style="margin-left: .8rem; margin-top:.6rem;">
+      Keine API gefunden.
+    </p>
+  {% endif %}
+</details>
+

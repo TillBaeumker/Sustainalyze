@@ -1,0 +1,92 @@
+{
+  "url": "https://ebeowulf.uky.edu/",
+  "runs": 10,
+  "rdf_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "vocab_results": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "raw_runs": [
+    {
+      "rdf_count": 0,
+      "uses_vocabulary": false,
+      "score_f2a": 0,
+      "score_f2b": 0
+    },
+    {
+      "rdf_count": 0,
+      "uses_vocabulary": false,
+      "score_f2a": 0,
+      "score_f2b": 0
+    },
+    {
+      "rdf_count": 0,
+      "uses_vocabulary": false,
+      "score_f2a": 0,
+      "score_f2b": 0
+    },
+    {
+      "rdf_count": 0,
+      "uses_vocabulary": false,
+      "score_f2a": 0,
+      "score_f2b": 0
+    },
+    {
+      "rdf_count": 0,
+      "uses_vocabulary": false,
+      "score_f2a": 0,
+      "score_f2b": 0
+    },
+    {
+      "rdf_count": 0,
+      "uses_vocabulary": false,
+      "score_f2a": 0,
+      "score_f2b": 0
+    },
+    {
+      "rdf_count": 0,
+      "uses_vocabulary": false,
+      "score_f2a": 0,
+      "score_f2b": 0
+    },
+    {
+      "rdf_count": 0,
+      "uses_vocabulary": false,
+      "score_f2a": 0,
+      "score_f2b": 0
+    },
+    {
+      "rdf_count": 0,
+      "uses_vocabulary": false,
+      "score_f2a": 0,
+      "score_f2b": 0
+    },
+    {
+      "rdf_count": 0,
+      "uses_vocabulary": false,
+      "score_f2a": 0,
+      "score_f2b": 0
+    }
+  ],
+  "rdf_stddev": 0.0,
+  "vocab_consistent": true
+}

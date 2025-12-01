@@ -1,0 +1,43 @@
+{% if result.wappalyzer %}
+  <section class="page-block">
+    <h4>🧩 Technologie-Stack</h4>
+
+    <details>
+      <summary>gefundene Technologien</summary>
+
+      <ul>
+        {% for tech in result.wappalyzer %}
+          <li>
+            <strong>{{ tech.name }}</strong>
+            {% if tech.version %} ({{ tech.version }}){% endif %}
+            — {{ tech.category or "-" }}<br>
+
+            {% if tech.description %}
+              <em>{{ tech.description }}</em><br>
+            {% endif %}
+
+            {% if tech.website %}
+              🔗 <a href="{{ tech.website }}" target="_blank">{{ tech.website }}</a><br>
+            {% endif %}
+
+            {# ----------------------------------------- #}
+            {# OSS-Flag anzeigen, wenn von Wappalyzer geliefert #}
+            {# tech.oss kann True, False oder None sein         #}
+            {# Anzeige NUR bei True oder False, nie bei None   #}
+            {# ----------------------------------------- #}
+
+            {% if tech.oss is not none %}
+                {% if tech.oss %}
+                    🟩 <strong>Open Source</strong><br>
+                {% else %}
+                    🟥 <strong>Kein Open Source</strong><br>
+                {% endif %}
+            {% endif %}
+
+          </li>
+        {% endfor %}
+      </ul>
+
+    </details>
+  </section>
+{% endif %}

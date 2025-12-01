@@ -1,0 +1,320 @@
+{
+    "url": "https://edition.onb.ac.at/context:okopenko",
+    "timestamp": "2025-11-23T11:13:46.025045",
+    "raw": {
+        "urls": {
+            "https://edition.onb.ac.at/context:okopenko": {
+                "status": 200
+            }
+        },
+        "technologies": [
+            {
+                "slug": "leaflet",
+                "name": "Leaflet",
+                "description": "Leaflet is the open-source JavaScript library for mobile-friendly interactive maps.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Leaflet.png",
+                "website": "http://leafletjs.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 35,
+                        "slug": "maps",
+                        "name": "Maps"
+                    }
+                ]
+            },
+            {
+                "slug": "bootstrap",
+                "name": "Bootstrap",
+                "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
+                "confidence": 100,
+                "version": "4.1.3",
+                "icon": "Bootstrap.svg",
+                "website": "https://getbootstrap.com",
+                "cpe": "cpe:2.3:a:getbootstrap:bootstrap:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 66,
+                        "slug": "ui-frameworks",
+                        "name": "UI frameworks"
+                    }
+                ]
+            },
+            {
+                "slug": "nginx",
+                "name": "Nginx",
+                "description": "Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Nginx.svg",
+                "website": "http://nginx.org/en",
+                "cpe": "cpe:2.3:a:f5:nginx:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 22,
+                        "slug": "web-servers",
+                        "name": "Web servers"
+                    },
+                    {
+                        "id": 64,
+                        "slug": "reverse-proxies",
+                        "name": "Reverse proxies"
+                    }
+                ]
+            },
+            {
+                "slug": "glider-js",
+                "name": "Glider.js",
+                "description": "Glider.js is a fast, lightweight, responsive, dependency-free scrollable list with customisable paging controls.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Glider.js.svg",
+                "website": "https://nickpiscitelli.github.io/Glider.js",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "livefyre",
+                "name": "Livefyre",
+                "description": "Livefyre is a platform that integrates with the social web to boost social interaction.",
+                "confidence": 0,
+                "version": null,
+                "icon": "Livefyre.png",
+                "website": "http://livefyre.com",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 15,
+                        "slug": "comment-systems",
+                        "name": "Comment systems"
+                    }
+                ]
+            },
+            {
+                "slug": "jquery",
+                "name": "jQuery",
+                "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+                "confidence": 100,
+                "version": "3.3.1",
+                "icon": "jQuery.svg",
+                "website": "https://jquery.com",
+                "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "highlight-js",
+                "name": "Highlight.js",
+                "description": null,
+                "confidence": 100,
+                "version": null,
+                "icon": "Highlight.js.png",
+                "website": "https://highlightjs.org/",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "datatables",
+                "name": "DataTables",
+                "description": "DataTables is a plug-in for the jQuery Javascript library adding advanced features like pagination, instant search, themes, and more to any HTML table.",
+                "confidence": 100,
+                "version": "1.10.19",
+                "icon": "DataTables.png",
+                "website": "http://datatables.net",
+                "cpe": "cpe:2.3:a:datatables:datatables.net:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "core-js",
+                "name": "core-js",
+                "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
+                "confidence": 100,
+                "version": "2.5.3",
+                "icon": "core-js.png",
+                "website": "https://github.com/zloirock/core-js",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 59,
+                        "slug": "javascript-libraries",
+                        "name": "JavaScript libraries"
+                    }
+                ]
+            },
+            {
+                "slug": "google-font-api",
+                "name": "Google Font API",
+                "description": "Google Font API is a web service that supports open-source font files that can be used on your web designs.",
+                "confidence": 100,
+                "version": null,
+                "icon": "Google Font API.svg",
+                "website": "http://google.com/fonts",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 17,
+                        "slug": "font-scripts",
+                        "name": "Font scripts"
+                    }
+                ]
+            },
+            {
+                "slug": "hsts",
+                "name": "HSTS",
+                "description": "HTTP Strict Transport Security (HSTS) informs browsers that the site should only be accessed using HTTPS.",
+                "confidence": 100,
+                "version": null,
+                "icon": "default.svg",
+                "website": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 16,
+                        "slug": "security",
+                        "name": "Security"
+                    }
+                ]
+            },
+            {
+                "slug": "pwa",
+                "name": "PWA",
+                "description": "Progressive Web Apps (PWAs) are web apps built and enhanced with modern APIs to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device, all with a single codebase.",
+                "confidence": 100,
+                "version": null,
+                "icon": "PWA.svg",
+                "website": "https://web.dev/progressive-web-apps/",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 19,
+                        "slug": "miscellaneous",
+                        "name": "Miscellaneous"
+                    }
+                ]
+            }
+        ]
+    },
+    "parsed": [
+        {
+            "name": "Leaflet",
+            "version": null,
+            "category": "Maps",
+            "description": "Leaflet is the open-source JavaScript library for mobile-friendly interactive maps.",
+            "website": "http://leafletjs.com",
+            "oss": null
+        },
+        {
+            "name": "Bootstrap",
+            "version": "4.1.3",
+            "category": "UI frameworks",
+            "description": "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
+            "website": "https://getbootstrap.com",
+            "oss": null
+        },
+        {
+            "name": "Nginx",
+            "version": null,
+            "category": "Web servers",
+            "description": "Nginx is a web server that can also be used as a reverse proxy, load balancer, mail proxy and HTTP cache.",
+            "website": "http://nginx.org/en",
+            "oss": null
+        },
+        {
+            "name": "Glider.js",
+            "version": null,
+            "category": "JavaScript libraries",
+            "description": "Glider.js is a fast, lightweight, responsive, dependency-free scrollable list with customisable paging controls.",
+            "website": "https://nickpiscitelli.github.io/Glider.js",
+            "oss": null
+        },
+        {
+            "name": "Livefyre",
+            "version": null,
+            "category": "Comment systems",
+            "description": "Livefyre is a platform that integrates with the social web to boost social interaction.",
+            "website": "http://livefyre.com",
+            "oss": null
+        },
+        {
+            "name": "jQuery",
+            "version": "3.3.1",
+            "category": "JavaScript libraries",
+            "description": "jQuery is a JavaScript library which is a free, open-source software designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.",
+            "website": "https://jquery.com",
+            "oss": null
+        },
+        {
+            "name": "Highlight.js",
+            "version": null,
+            "category": "JavaScript libraries",
+            "description": null,
+            "website": "https://highlightjs.org/",
+            "oss": null
+        },
+        {
+            "name": "DataTables",
+            "version": "1.10.19",
+            "category": "JavaScript libraries",
+            "description": "DataTables is a plug-in for the jQuery Javascript library adding advanced features like pagination, instant search, themes, and more to any HTML table.",
+            "website": "http://datatables.net",
+            "oss": null
+        },
+        {
+            "name": "core-js",
+            "version": "2.5.3",
+            "category": "JavaScript libraries",
+            "description": "core-js is a modular standard library for JavaScript, with polyfills for cutting-edge ECMAScript features.",
+            "website": "https://github.com/zloirock/core-js",
+            "oss": null
+        },
+        {
+            "name": "Google Font API",
+            "version": null,
+            "category": "Font scripts",
+            "description": "Google Font API is a web service that supports open-source font files that can be used on your web designs.",
+            "website": "http://google.com/fonts",
+            "oss": null
+        },
+        {
+            "name": "HSTS",
+            "version": null,
+            "category": "Security",
+            "description": "HTTP Strict Transport Security (HSTS) informs browsers that the site should only be accessed using HTTPS.",
+            "website": "https://www.rfc-editor.org/rfc/rfc6797#section-6.1",
+            "oss": null
+        },
+        {
+            "name": "PWA",
+            "version": null,
+            "category": "Miscellaneous",
+            "description": "Progressive Web Apps (PWAs) are web apps built and enhanced with modern APIs to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device, all with a single codebase.",
+            "website": "https://web.dev/progressive-web-apps/",
+            "oss": null
+        }
+    ]
+}

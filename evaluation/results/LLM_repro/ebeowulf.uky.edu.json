@@ -1,0 +1,292 @@
+{
+  "url": "https://ebeowulf.uky.edu/",
+  "runs": 10,
+  "reference_run_index": 1,
+  "llm_outputs": [
+    {
+      "institution": "Electronic Beowulf",
+      "roles_responsibilities": "Editor: Kevin Kiernan"
+    },
+    {
+      "institution": "Electronic Beowulf",
+      "roles_responsibilities": "Editor: Kevin Kiernan"
+    },
+    {
+      "institution": "Electronic Beowulf",
+      "roles_responsibilities": "Editor: Kevin Kiernan"
+    },
+    {
+      "institution": "Electronic Beowulf",
+      "roles_responsibilities": "Editor: Kevin Kiernan"
+    },
+    {
+      "roles_responsibilities": "Editor: Kevin Kiernan"
+    },
+    {
+      "institution": "Electronic Beowulf",
+      "roles_responsibilities": "Editor: Kevin Kiernan"
+    },
+    {
+      "institution": "Electronic Beowulf",
+      "roles_responsibilities": "Editor: Kevin Kiernan"
+    },
+    {
+      "institution": "Electronic Beowulf",
+      "roles_responsibilities": "Editor: Kevin Kiernan"
+    },
+    {
+      "institution": "Electronic Beowulf",
+      "roles_responsibilities": "Editor: Kevin Kiernan"
+    },
+    {
+      "institution": "Electronic Beowulf",
+      "roles_responsibilities": "Editor: Kevin Kiernan"
+    }
+  ],
+  "bertscore": {
+    "per_run_vs_reference": [
+      {
+        "run_index": 2,
+        "field_scores": {
+          "institution": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Electronic Beowulf",
+            "cand_text": "Electronic Beowulf"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editor: Kevin Kiernan",
+            "cand_text": "Editor: Kevin Kiernan"
+          }
+        },
+        "global_score": {
+          "P": 1.0,
+          "R": 1.0,
+          "F1": 1.0
+        }
+      },
+      {
+        "run_index": 3,
+        "field_scores": {
+          "institution": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Electronic Beowulf",
+            "cand_text": "Electronic Beowulf"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editor: Kevin Kiernan",
+            "cand_text": "Editor: Kevin Kiernan"
+          }
+        },
+        "global_score": {
+          "P": 1.0,
+          "R": 1.0,
+          "F1": 1.0
+        }
+      },
+      {
+        "run_index": 4,
+        "field_scores": {
+          "institution": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Electronic Beowulf",
+            "cand_text": "Electronic Beowulf"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editor: Kevin Kiernan",
+            "cand_text": "Editor: Kevin Kiernan"
+          }
+        },
+        "global_score": {
+          "P": 1.0,
+          "R": 1.0,
+          "F1": 1.0
+        }
+      },
+      {
+        "run_index": 5,
+        "field_scores": {
+          "institution": {
+            "P": -1.5996181964874268,
+            "R": -1.5993081331253052,
+            "F1": -1.5956180095672607,
+            "ref_text": "Electronic Beowulf",
+            "cand_text": ""
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editor: Kevin Kiernan",
+            "cand_text": "Editor: Kevin Kiernan"
+          }
+        },
+        "global_score": {
+          "P": -0.2998090982437134,
+          "R": -0.2996540665626526,
+          "F1": -0.29780900478363037
+        }
+      },
+      {
+        "run_index": 6,
+        "field_scores": {
+          "institution": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Electronic Beowulf",
+            "cand_text": "Electronic Beowulf"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editor: Kevin Kiernan",
+            "cand_text": "Editor: Kevin Kiernan"
+          }
+        },
+        "global_score": {
+          "P": 1.0,
+          "R": 1.0,
+          "F1": 1.0
+        }
+      },
+      {
+        "run_index": 7,
+        "field_scores": {
+          "institution": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Electronic Beowulf",
+            "cand_text": "Electronic Beowulf"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editor: Kevin Kiernan",
+            "cand_text": "Editor: Kevin Kiernan"
+          }
+        },
+        "global_score": {
+          "P": 1.0,
+          "R": 1.0,
+          "F1": 1.0
+        }
+      },
+      {
+        "run_index": 8,
+        "field_scores": {
+          "institution": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Electronic Beowulf",
+            "cand_text": "Electronic Beowulf"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editor: Kevin Kiernan",
+            "cand_text": "Editor: Kevin Kiernan"
+          }
+        },
+        "global_score": {
+          "P": 1.0,
+          "R": 1.0,
+          "F1": 1.0
+        }
+      },
+      {
+        "run_index": 9,
+        "field_scores": {
+          "institution": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Electronic Beowulf",
+            "cand_text": "Electronic Beowulf"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editor: Kevin Kiernan",
+            "cand_text": "Editor: Kevin Kiernan"
+          }
+        },
+        "global_score": {
+          "P": 1.0,
+          "R": 1.0,
+          "F1": 1.0
+        }
+      },
+      {
+        "run_index": 10,
+        "field_scores": {
+          "institution": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Electronic Beowulf",
+            "cand_text": "Electronic Beowulf"
+          },
+          "roles_responsibilities": {
+            "P": 1.0,
+            "R": 1.0,
+            "F1": 1.0,
+            "ref_text": "Editor: Kevin Kiernan",
+            "cand_text": "Editor: Kevin Kiernan"
+          }
+        },
+        "global_score": {
+          "P": 1.0,
+          "R": 1.0,
+          "F1": 1.0
+        }
+      }
+    ],
+    "field_aggregate": {
+      "institution": {
+        "mean_F1": 0.7115979989369711,
+        "std_F1": 0.8157240426377507,
+        "mean_P": 0.7111535337236192,
+        "std_P": 0.816981180103201,
+        "mean_R": 0.7111879852082994,
+        "std_R": 0.8168837365894438,
+        "unique_values": 2
+      },
+      "roles_responsibilities": {
+        "mean_F1": 1.0,
+        "std_F1": 0.0,
+        "mean_P": 1.0,
+        "std_P": 0.0,
+        "mean_R": 1.0,
+        "std_R": 0.0,
+        "unique_values": 1
+      }
+    },
+    "global_aggregate": {
+      "mean_F1": 0.8557989994684855,
+      "std_F1": 0.40786202131887533,
+      "min_F1": -0.29780900478363037,
+      "max_F1": 1.0
+    }
+  }
+}

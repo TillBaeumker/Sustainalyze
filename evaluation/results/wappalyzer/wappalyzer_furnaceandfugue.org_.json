@@ -1,0 +1,171 @@
+{
+    "url": "https://furnaceandfugue.org/",
+    "timestamp": "2025-11-23T11:13:24.716848",
+    "raw": {
+        "urls": {
+            "https://furnaceandfugue.org/": {
+                "status": 200
+            }
+        },
+        "technologies": [
+            {
+                "slug": "php",
+                "name": "PHP",
+                "description": "PHP is a general-purpose scripting language used for web development.",
+                "confidence": 100,
+                "version": "5.4.16",
+                "icon": "PHP.svg",
+                "website": "http://php.net",
+                "cpe": "cpe:2.3:a:php:php:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 27,
+                        "slug": "programming-languages",
+                        "name": "Programming languages"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "centos",
+                "name": "CentOS",
+                "description": "CentOS is a Linux distribution that provides a free, community-supported computing platform functionally compatible with its upstream source, Red Hat Enterprise Linux (RHEL).",
+                "confidence": 100,
+                "version": null,
+                "icon": "CentOS.svg",
+                "website": "http://centos.org",
+                "cpe": "cpe:2.3:o:centos:centos:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 28,
+                        "slug": "operating-systems",
+                        "name": "Operating systems"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "openssl",
+                "name": "OpenSSL",
+                "description": "OpenSSL is a software library for applications that secure communications over computer networks against eavesdropping or need to identify the party at the other end.",
+                "confidence": 100,
+                "version": "1.0.2k",
+                "icon": "OpenSSL.png",
+                "website": "http://openssl.org",
+                "cpe": "cpe:2.3:a:openssl:openssl:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 33,
+                        "slug": "web-server-extensions",
+                        "name": "Web server extensions"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "apache-http-server",
+                "name": "Apache HTTP Server",
+                "description": "Apache is a free and open-source cross-platform web server software.",
+                "confidence": 100,
+                "version": "2.4.6",
+                "icon": "Apache.svg",
+                "website": "https://httpd.apache.org/",
+                "cpe": "cpe:2.3:a:apache:http_server:*:*:*:*:*:*:*:*",
+                "categories": [
+                    {
+                        "id": 22,
+                        "slug": "web-servers",
+                        "name": "Web servers"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "google-analytics",
+                "name": "Google Analytics",
+                "description": "Google Analytics is a free web analytics service that tracks and reports website traffic.",
+                "confidence": 100,
+                "version": "UA",
+                "icon": "Google Analytics.svg",
+                "website": "http://google.com/analytics",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 10,
+                        "slug": "analytics",
+                        "name": "Analytics"
+                    }
+                ],
+                "rootPath": true
+            },
+            {
+                "slug": "pwa",
+                "name": "PWA",
+                "description": "Progressive Web Apps (PWAs) are web apps built and enhanced with modern APIs to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device, all with a single codebase.",
+                "confidence": 100,
+                "version": null,
+                "icon": "PWA.svg",
+                "website": "https://web.dev/progressive-web-apps/",
+                "cpe": null,
+                "categories": [
+                    {
+                        "id": 19,
+                        "slug": "miscellaneous",
+                        "name": "Miscellaneous"
+                    }
+                ],
+                "rootPath": true
+            }
+        ]
+    },
+    "parsed": [
+        {
+            "name": "PHP",
+            "version": "5.4.16",
+            "category": "Programming languages",
+            "description": "PHP is a general-purpose scripting language used for web development.",
+            "website": "http://php.net",
+            "oss": null
+        },
+        {
+            "name": "CentOS",
+            "version": null,
+            "category": "Operating systems",
+            "description": "CentOS is a Linux distribution that provides a free, community-supported computing platform functionally compatible with its upstream source, Red Hat Enterprise Linux (RHEL).",
+            "website": "http://centos.org",
+            "oss": null
+        },
+        {
+            "name": "OpenSSL",
+            "version": "1.0.2k",
+            "category": "Web server extensions",
+            "description": "OpenSSL is a software library for applications that secure communications over computer networks against eavesdropping or need to identify the party at the other end.",
+            "website": "http://openssl.org",
+            "oss": null
+        },
+        {
+            "name": "Apache HTTP Server",
+            "version": "2.4.6",
+            "category": "Web servers",
+            "description": "Apache is a free and open-source cross-platform web server software.",
+            "website": "https://httpd.apache.org/",
+            "oss": null
+        },
+        {
+            "name": "Google Analytics",
+            "version": "UA",
+            "category": "Analytics",
+            "description": "Google Analytics is a free web analytics service that tracks and reports website traffic.",
+            "website": "http://google.com/analytics",
+            "oss": null
+        },
+        {
+            "name": "PWA",
+            "version": null,
+            "category": "Miscellaneous",
+            "description": "Progressive Web Apps (PWAs) are web apps built and enhanced with modern APIs to deliver enhanced capabilities, reliability, and installability while reaching anyone, anywhere, on any device, all with a single codebase.",
+            "website": "https://web.dev/progressive-web-apps/",
+            "oss": null
+        }
+    ]
+}

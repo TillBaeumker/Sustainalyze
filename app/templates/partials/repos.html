@@ -1,0 +1,90 @@
+{# templates/partials/repos.html #}
+
+{% set gh = page.github_repos or [] %}
+{% set gl = page.gitlab_repos or [] %}
+{% set gh_count = gh|length %}
+{% set gl_count = gl|length %}
+{% set total_count = gh_count + gl_count %}
+
+<details>
+  <summary>📦 Repositories ({{ total_count }})</summary>
+
+  {% if total_count == 0 %}
+    <p class="muted small" style="margin-left:1em; margin-top:.5rem;">
+      Keine Repositories gefunden.
+    </p>
+  {% else %}
+
+    {# --- GitHub --- #}
+    {% if gh_count > 0 %}
+      <details style="margin-left:1em; margin-top:.5rem;">
+        <summary>🐙 GitHub ({{ gh_count }})</summary>
+        <ul class="small list">
+          {% for repo in gh %}
+            <li style="margin-bottom:.75rem;">
+              <a href="{{ (repo.html_url or repo.url)|e }}" target="_blank" rel="noopener">
+                {{ repo.full_name or repo.name or repo.html_url or repo.url }}
+              </a><br>
+
+              {% if repo.error %}
+                <em>Fehler: {{ repo.error }}</em>
+              {% else %}
+                Beschreibung: {{ repo.description or "-" }}<br>
+                Lizenz: {{ repo.license or "-" }}<br>
+                Sterne: {{ repo.stars if repo.stars is not none else "-" }} |
+                Forks: {{ repo.forks if repo.forks is not none else "-" }} |
+                Offene Issues: {{ repo.open_issues if repo.open_issues is not none else "-" }}<br>
+                Letzter Commit: {{ repo.last_commit or "-" }}<br>
+
+                README: {{ "✅ Ja" if repo.readme else "❌ Nein" }}<br>
+                Contributing Guide: {{ "✅ Ja" if repo.contributing else "❌ Nein" }}<br>
+
+                Mitwirkende: {{ repo.contributors_count if repo.contributors_count is not none else "-" }}<br>
+                Diskussionen: {{ "✅ Ja" if repo.discussions else "❌ Nein" }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endif %}
+
+    {# --- GitLab --- #}
+    {% if gl_count > 0 %}
+      <details style="margin-left:1em; margin-top:.5rem;">
+        <summary>🦊 GitLab ({{ gl_count }})</summary>
+        <ul class="small list">
+          {% for repo in gl %}
+            <li style="margin-bottom:.75rem;">
+              <a href="{{ (repo.web_url or repo.url)|e }}" target="_blank" rel="noopener">
+                {{ repo.full_name or repo.path_with_namespace or repo.name or repo.web_url or repo.url }}
+              </a><br>
+
+              {% if repo.error %}
+                <em>Fehler: {{ repo.error }}</em>
+              {% else %}
+                Beschreibung: {{ repo.description or "-" }}<br>
+                Lizenz: {{ repo.license or "-" }}<br>
+                Sichtbarkeit: {{ repo.visibility or "-" }}<br>
+
+                Sterne: {{ repo.stars if repo.stars is not none else "-" }} |
+                Forks: {{ repo.forks if repo.forks is not none else "-" }}<br>
+
+                Offene Issues: {{ repo.open_issues if repo.open_issues is not none else "-" }}<br>
+
+                Letzte Aktivität:
+                  {{ repo.last_activity_at or repo.last_activity or "-" }}<br>
+
+                README: {{ "✅ Ja" if repo.readme else "❌ Nein" }}<br>
+                Contributing Guide: {{ "✅ Ja" if repo.contributing else "❌ Nein" }}<br>
+
+                Mitwirkende: {{ repo.contributors_count if repo.contributors_count is not none else "-" }}<br>
+                Diskussionen: {{ "✅ Ja" if repo.discussions else "❌ Nein" }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endif %}
+
+  {% endif %}
+</details>
