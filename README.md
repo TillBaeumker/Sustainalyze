@@ -1,141 +1,175 @@
-# Sustainalyze 🌿
-
+# Sustainalyze 🌿  
 Automated Sustainability Analysis for Digital Scholarly Editions
 
-Sustainalyze crawlt und analysiert digitale Editionswebseiten im Hinblick auf technische und semantische Nachhaltigkeit. Es kombiniert Deep Crawling, FAIR-Analysen, FUJI, Repository-Auswertung, Normdaten-Erkennung, XML/TEI-Analyse sowie LLM-basierte Zusammenfassungen.
+Sustainalyze crawlt und analysiert digitale Editionswebseiten im Hinblick auf technische, strukturelle und semantische Nachhaltigkeit.  
+Es kombiniert Deep Crawling, FAIR-Analysen, FUJI, Repository-Auswertung, Normdaten-Erkennung, XML/TEI-Analyse sowie LLM-basierte Zusammenfassungen.
 
 ---
 
-## ⚙️ Installation (lokal)
+# ⚙️ Installation (lokal, WSL/Ubuntu & Linux)
 
-### Voraussetzungen
+Sustainalyze enthält alles, was benötigt wird – inklusive **lokalem FUJI-Server** und **lokalem Wappalyzer**.  
+Keine Submodules. Kein manuelles Setup. Vollständig reproduzierbar.
 
-- Python 3.8+
-- Git
+## 🧩 Voraussetzungen
 
-### Schritt-für-Schritt Installation
+- Linux oder WSL2 mit Ubuntu 22.04/24.04  
+- Python **3.12**  
+- Git  
+- Node.js (wird automatisch installiert)  
+- Chromium / Playwright (wird durch Setup geprüft)
 
-1. **Repository klonen (mit Submodules)**
+---
+
+# 🚀 Schnellstart (empfohlen)
 
 ```bash
-git clone --recurse-submodules https://github.com/TillBaeumker/Sustainalyze.git
+git clone https://github.com/TillBaeumker/Sustainalyze.git
 cd Sustainalyze
 ```
 
-2. **Virtuelle Umgebung erstellen**
+### 🛠 1. Shell-Skripte nutzbar machen (CRLF → LF + executable)
+
+Falls du das Repo **unter Windows** heruntergeladen hast:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate  # Unter Windows: venv\Scripts\activate
+sed -i 's/\r$//' *.sh
+chmod +x *.sh
 ```
 
-3. **Dependencies installieren**
+ODER allgemeiner:
 
 ```bash
-pip install -r requirements.txt
+sed -i 's/\r$//' setup.sh start_all.sh reset_all.sh status.sh
+chmod +x setup.sh start_all.sh reset_all.sh status.sh
 ```
 
-### 🔐 Environment Variables
+### ⚙️ 2. Setup installieren
 
-Erstelle eine `.env`-Datei im Projektverzeichnis:
+```bash
+./setup.sh
+```
+
+Das Setup installiert:
+
+- Python venv  
+- Crawl4AI  
+- FUJI (lokal aus dem Repo, kein pip fetch!)  
+- Wappalyzer (lokal)  
+- Node/Yarn dependencies  
+- Playwright-Unterstützung  
+
+### 🔐 3. Environment-Datei einrichten
 
 ```bash
 cp .env.example .env
+nano .env
 ```
 
-Füge folgende Variablen ein:
+Trage deine Keys ein:
 
 ```ini
-OPENAI_API_KEY=your_key_here
-SHODAN_API_KEY=your_key_here
-WAPPALYZER_API_KEY=your_key_here
-FUJI_USERNAME=your_username
-FUJI_PASSWORD=your_password
+OPENAI_API_KEY=dein_key
+SHODAN_API_KEY=optional
+FUJI_USERNAME=admin
+FUJI_PASSWORD=admin
 FUJI_URL=http://127.0.0.1:1071/fuji/api/v1/evaluate
 ```
 
-### ▶️ Anwendung starten (lokal)
+---
+
+# ▶️ Anwendung starten
 
 ```bash
-uvicorn app.main:app --reload --port 8000
+./start_all.sh
 ```
 
-Öffne dann im Browser: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+Dies startet:
+
+- **lokalen FUJI-Server** (Port 1071)
+- **FastAPI Backend** (Port 8000)
+
+Öffne im Browser:
+
+👉 http://127.0.0.1:8000
 
 ---
 
-## 🚀 Deployment (Server / CCeH)
+# 🧪 FUJI-Modus
 
-### 1. Repository klonen
+Wenn im Frontend der „FUJI-Modus“ aktiviert ist:
+
+- Alle externen Datensatz-URLs werden dedupliziert  
+- FUJI wird für jeden Datensatz exakt **einmal** ausgeführt  
+- Ergebnisse erscheinen im Abschnitt **„FUJI FAIRNESS – Externe Datensätze“**
+
+---
+
+# 📖 Funktionsumfang
+
+Sustainalyze analysiert digitale Editionen anhand von mehr als **40 Einzelindikatoren**:
+
+### 🔍 Crawler  
+- Deep Crawling (Crawl4AI BFS)  
+- Linkstatus + tote Links  
+- externe Links, Domains, Ressourcen  
+
+### 📦 Dateien & Formate  
+- XML/TEI-Erkennung  
+- Downloadbare Ressourcen  
+- Metadatenformate  
+
+### 💾 Repositories  
+- GitHub/GitLab Analyse  
+- Commits, README, Lizenz, Contributors, Issues  
+- Entwicklungsaktivität  
+
+### 🧪 FAIR-Analyse  
+- FUJI FAIR Data Evaluation Framework  
+- Interne FAIR-Eigenschaften (Struktur, PIDs, Lizenz, Metadaten)  
+- externe Datensätze (FUJI)  
+
+### 🧠 LLM-basierte Zusammenfassungen  
+- Projektbeschreibung  
+- Institutionen  
+- Rollen & Verantwortlichkeiten  
+- nachhaltigkeitsbezogene Bewertung  
+
+---
+
+# ⛓ Shellskripte unter Linux/WSL ausführbar machen
+
+Falls du das Repo unter Windows ausgecheckt hast, haben `.sh` Dateien oft **CRLF**  
+→ Linux kann sie nicht ausführen.
+
+Fix:
 
 ```bash
-git clone --recurse-submodules https://github.com/TillBaeumker/Sustainalyze.git
-cd Sustainalyze
+sed -i 's/\r$//' *.sh
+chmod +x *.sh
 ```
 
-### 2. Environment konfigurieren
+oder vollständig:
 
 ```bash
-cp .env.example .env
-# .env-Datei mit deinen API-Keys editieren
-```
-
-### 3. Setup ausführen
-
-```bash
-bash setup.sh
-```
-
-### 4. Mit systemd starten (optional)
-
-```bash
-systemctl start sustainalyze
-systemctl enable sustainalyze  # Auto-Start beim Booten
+sed -i 's/\r$//' setup.sh start_all.sh status.sh reset_all.sh
+chmod +x setup.sh start_all.sh status.sh reset_all.sh
 ```
 
 ---
 
-## 🧪 FUJI-Modus
+# 🤝 Contributing
 
-Wenn im Frontend der "FUJI-Modus" aktiviert ist:
-
-- Alle Datensatz-Links werden global dedupliziert
-- FUJI wird nur einmal pro Datensatz ausgeführt
-- Ergebnisse erscheinen im Abschnitt "FUJI FAIRNESS – Externe Datensätze"
+Pull Requests sind willkommen!  
+Bitte immer eigenes Feature-Branch + klaren Commit.
 
 ---
 
-## 📖 Funktionalität
+# 📄 Lizenz & Kontakt
 
-Sustainalyze bietet folgende Analyse-Features:
+Masterarbeit Digital Humanities / Computerlinguistik  
+Universität zu Köln
 
-- **Deep Crawling**: Umfassende Website-Analyse
-- **FAIR-Bewertung**: Findability, Accessibility, Interoperability, Reusability
-- **FUJI-Integration**: Externe Fairness-Evaluierung
-- **Repository-Analyse**: Datenquellen und Verfügbarkeit
-- **Normdaten-Erkennung**: Authority Files und Linked Data
-- **XML/TEI-Analyse**: Struktur und Standards
-- **LLM-Zusammenfassungen**: Automatische Report-Generierung
-
----
-
-## 📝 Lizenz & Kontakt
-
-Masterarbeit im Studiengang Digital Humanities / Computerlinguistik, Universität zu Köln.
-
-**Kontakt:**
-
-Till Bäumker  
+Kontakt:  
+**Till Bäumker**  
 [tbaeumke@smail.uni-koeln.de](mailto:tbaeumke@smail.uni-koeln.de)
-
----
-
-## 🤝 Contributing
-
-Contributions sind willkommen! Bitte erstelle einen Fork und öffne einen Pull Request mit deinen Verbesserungen.
-
----
-
-## ⚠️ Lizenz
-
-Bitte siehe die LICENSE-Datei für weitere Informationen.
