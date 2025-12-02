@@ -9,31 +9,22 @@
     {% if fc.score_overall is not defined or fc.score_overall is none %}
       <p>Kein Ergebnis{% if fc.reason %} ({{ fc.reason }}){% endif %}</p>
     {% else %}
-      <p>
-        <strong>FAIR-Gesamt:</strong> {{ fc.score_overall|round(1) }} %
-      </p>
+      <p><strong>FAIR-Gesamt:</strong> {{ fc.score_overall|round(1) }} %</p>
 
       {% if fc.metrics %}
-        <table class="alt" style="margin-top: 1em;">
-          <thead>
-            <tr>
-              <th style="width: 25%">Metrik</th>
-              <th style="width: 15%">Punkte</th>
-              <th style="width: 60%">Bewertung</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% set labels = {0:"nicht erfüllt", 1:"teilweise erfüllt", 2:"vollständig erfüllt"} %}
-            {% for m in fc.metrics %}
-              {% set group = m.metric[0] if m.metric and m.metric[0] in ["F","A","I","R"] else "?" %}
-              <tr>
-                <td><strong>{{ m.metric }}</strong> ({{ group }})</td>
-                <td>{{ m.score }}/2</td>
-                <td>{{ labels.get(m.score, m.score) }}</td>
-              </tr>
-            {% endfor %}
-          </tbody>
-        </table>
+        <div class="fair-list" style="margin-top: 1em;">
+          {% set labels = {0:"nicht erfüllt", 1:"teilweise erfüllt", 2:"vollständig erfüllt"} %}
+
+          {% for m in fc.metrics %}
+            {% set group = m.metric[0] if m.metric and m.metric[0] in ["F","A","I","R"] else "?" %}
+
+            <div class="fair-item" style="margin-bottom: 0.75em; padding-bottom: 0.75em; border-bottom: 1px solid rgba(255,255,255,0.2);">
+              <div><strong>{{ m.metric }}</strong> ({{ group }})</div>
+              <div>Punkte: {{ m.score }}/2</div>
+              <div>Bewertung: {{ labels.get(m.score, m.score) }}</div>
+            </div>
+          {% endfor %}
+        </div>
       {% else %}
         <p>Keine einzelnen FAIR-Metriken verfügbar.</p>
       {% endif %}
@@ -47,3 +38,4 @@
   </details>
 </section>
 {% endif %}
+
