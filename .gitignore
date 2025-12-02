@@ -12,17 +12,15 @@ __pycache__/
 # Virtual environments
 .venv/
 venv/
-ENV/
 env/
+ENV/
 env.bak/
 venv.bak/
 
-# Alle echten Envs ignorieren…
+# Environment files
 .env
 *.env
 .env.*
-
-# …aber .env.example erlauben
 !.env.example
 
 # Build / dist
@@ -34,7 +32,7 @@ dist/
 *.manifest
 *.spec
 
-# Cache folders
+# Caches
 .cache/
 pytest_cache/
 .mypy_cache/
@@ -55,22 +53,21 @@ output/
 data/
 tmp_analysis/
 
-# FUJI temp
+# ============================================================
+# FUJI – IGNORIERE NUR TEMP-DATEN, NICHT DEN CODE
+# ============================================================
 fuji/fuji-venv/
-fuji_server/tmp/
-fuji_server/__pycache__/
+fuji/fuji_server/tmp/
+fuji/fuji_server/__pycache__/
+fuji/fuji_server/logs/
 
 # ============================================================
-# SHODAN / WAPPALYZER / PLAYWRIGHT
+# NODE / WAPPALYZER / PLAYWRIGHT
 # ============================================================
 node_modules/
 npm-debug.log
 
-# ⚠️ Wichtig: package-lock.json NICHT ignorieren,
-# da Wappalyzer reproducible builds benötigt
-# package-lock.json
-
-# Playwright browsers
+# Playwright Browser Downloads
 playwright/.local-browsers/
 
 # ============================================================
@@ -83,14 +80,13 @@ Thumbs.db
 .ipynb_checkpoints/
 
 # ============================================================
-# SECRETS
+# SECRETS (nur lokale Konfigurationen)
 # ============================================================
 *.key
 *.pem
 *.crt
 *.cfg
 *.conf
-*.ini
 config.json
 config_local.py
 openai_key.txt

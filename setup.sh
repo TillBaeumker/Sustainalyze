@@ -7,6 +7,7 @@ echo "🚀 Starte Sustainalyze Setup (lokale FUJI + Wappalyzer)"
 echo "=============================================================="
 echo
 
+# Stelle sicher, dass wir im Projekt root sind
 cd "$(dirname "$0")"
 PROJECT_ROOT="$(pwd)"
 echo "📁 Projektverzeichnis: $PROJECT_ROOT"
@@ -28,7 +29,7 @@ echo "✔ Python gefunden: $($PY --version)"
 echo
 
 # ------------------------------------------------------------
-# 2) Systempakete
+# 2) Systempakete installieren
 # ------------------------------------------------------------
 echo "==> Installiere Systempakete..."
 sudo apt-get install -y \
@@ -42,7 +43,7 @@ echo "✔ Systempakete OK"
 echo
 
 # ------------------------------------------------------------
-# 3) Node.js + Yarn
+# 3) Node.js + Yarn sicherstellen
 # ------------------------------------------------------------
 echo "==> Prüfe Node.js"
 if ! command -v node &>/dev/null; then
@@ -61,7 +62,7 @@ echo "Yarn: $(yarn -v)"
 echo
 
 # ------------------------------------------------------------
-# 4) Python venv + Hauptdependencies
+# 4) Python venv + Dependencies
 # ------------------------------------------------------------
 echo "==> Baue Python venv..."
 
@@ -86,7 +87,7 @@ echo "✔ Python venv OK"
 echo
 
 # ------------------------------------------------------------
-# 5) FUJI (lokal, kein Submodul, kein clone)
+# 5) FUJI prüfen
 # ------------------------------------------------------------
 echo "==> Prüfe FUJI..."
 
@@ -95,6 +96,12 @@ if [ -d "$PROJECT_ROOT/fuji" ]; then
 else
     echo "❌ FEHLER: Ordner 'fuji/' fehlt!"
     exit 1
+fi
+
+# Prüfe Konfiguration
+if [ ! -f "$PROJECT_ROOT/fuji/fuji_server/config/server.ini" ]; then
+    echo "⚠️ WARNUNG: FUJI-Konfiguration fehlt (server.ini)"
+    echo "    Bitte server.ini hinzufügen, sonst startet FUJI nicht."
 fi
 
 echo "✔ FUJI OK"
@@ -112,14 +119,20 @@ if [ ! -d "$PROJECT_ROOT/wappalyzer" ]; then
 fi
 
 cd "$PROJECT_ROOT/wappalyzer"
+
+# Entferne kaputte yarn.lock
+rm -f yarn.lock
+
+# Installiere Node-Abhängigkeiten
 yarn install --ignore-engines
+
 cd "$PROJECT_ROOT"
 
 echo "✔ Wappalyzer OK"
 echo
 
 # ------------------------------------------------------------
-# 7) Chromium prüfen (für Playwright)
+# 7) Chromium prüfen
 # ------------------------------------------------------------
 CHROME_PATH="$(command -v chromium-browser || command -v chromium || true)"
 if [[ -n "$CHROME_PATH" ]]; then
