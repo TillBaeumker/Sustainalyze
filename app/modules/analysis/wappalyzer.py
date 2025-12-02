@@ -23,36 +23,27 @@ Funktionen:
 
 import subprocess
 import json
+import os
 from typing import Optional, Dict, List
 
 
 def analyze_technologies_with_wappalyzer(
     url: str,
-    wappalyzer_path: str = "/home/till/sustainability_checker/wappalyzer",
     max_retries: int = 3,
 ) -> Optional[Dict]:
     """
     Führt eine stabile Technologieanalyse mit der Wappalyzer-CLI durch.
-
-    Ablauf:
-    -------
-    1. Build des CLI-Pfads (cli.js)
-    2. Mehrfache Ausführung von:
-            xvfb-run node <cli_path> <url>
-    3. JSON-Parsing der Wappalyzer-Ausgabe
-    4. Erfolgsabbruch, sobald Technologien erkannt werden
-    5. Rückgabe des originalen Datenobjekts
-
-    Fehlerfälle:
-    ------------
-    - leere Ausgabe → erneute Versuche
-    - ungültiges JSON → erneute Versuche
-    - Timeout / subprocess.CalledProcessError → Logging + Retry
+    Nutzt einen CLI-Pfad aus der Umgebungsvariable WAPPALYZER_CLI_PATH.
     """
-    cli_path = f"{wappalyzer_path}/src/drivers/npm/cli.js"
+
+    cli_path = os.getenv("WAPPALYZER_CLI_PATH")
+    if not cli_path:
+        raise RuntimeError(
+            "WAPPALYZER_CLI_PATH fehlt! Bitte in der .env korrekt setzen."
+        )
 
     print(f"🧪 [Wappalyzer] Starte Technologieanalyse für URL: {url}")
-    print(f"🔄 [Wappalyzer] Verwende CLI-Pfad: {cli_path}")
+    print(f"🔄 [Wappalyzer] CLI-Pfad: {cli_path}")
 
     for attempt in range(1, max_retries + 1):
         try:
@@ -61,7 +52,6 @@ def analyze_technologies_with_wappalyzer(
                 capture_output=True,
                 text=True,
                 check=True,
-                cwd=wappalyzer_path,
                 timeout=100,
             )
 
@@ -100,12 +90,6 @@ def analyze_technologies_with_wappalyzer(
 def parse_wappalyzer_result(result: Dict) -> List[Dict]:
     """
     Formatiert die rohe Wappalyzer-Ausgabe für das Scoring/Frontend.
-
-    Liefert:
-        [
-            {name, version, category, description, website, oss},
-            ...
-        ]
     """
     parsed: List[Dict] = []
     for tech in result.get("technologies", []):

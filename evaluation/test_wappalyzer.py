@@ -18,7 +18,10 @@ from app.modules.analysis.wappalyzer import (
     parse_wappalyzer_result
 )
 # Ergebnisordner
-RESULTS_DIR = "/home/till/sustainability_checker/app/evaluation/results/wappalyzer"
+RESULTS_DIR = os.getenv(
+    "TEST_WAPPALYZER_OUTPUT_DIR",
+    "app/evaluation/results/wappalyzer"  # Fallback für lokale Nutzung
+)
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 def save_as_json(data: dict, filename: str):

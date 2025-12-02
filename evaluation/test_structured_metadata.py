@@ -40,8 +40,11 @@ async def evaluate_structured_metadata(url: str, runs: int = 10):
     parsed = urlparse(url)
     domain = parsed.netloc.replace("www.", "")
 
-    save_path = f"app/evaluation/results/structured_metadata/{domain}.json"
-    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    # Speicherpfad (containerfähig)
+    OUT_DIR = os.getenv("TEST_STRUCTURED_METADATA_OUTPUT_DIR", "app/evaluation/results/structured_metadata")
+    os.makedirs(OUT_DIR, exist_ok=True)
+
+    save_path = os.path.join(OUT_DIR, f"{domain}.json")
 
     print(f"\n🌐 Starte Structured-Metadata-Analyse für: {url}")
     print(f"🧪 Durchläufe: {runs}\n")

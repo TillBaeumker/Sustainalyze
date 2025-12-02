@@ -37,7 +37,13 @@ from app.core.config import settings
 # 🔧 Speicherpfad
 # ============================================================
 
-BASE_DIR = "/home/till/sustainability_checker/app/evaluation/results/LLM_repro"
+BASE_DIR = os.getenv("LLM_REPRO_OUTPUT_DIR")
+
+if not BASE_DIR:
+    raise RuntimeError(
+        "LLM_REPRO_OUTPUT_DIR fehlt! Bitte in der .env setzen."
+    )
+
 os.makedirs(BASE_DIR, exist_ok=True)
 
 

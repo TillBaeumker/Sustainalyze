@@ -160,7 +160,7 @@ def analyze_iso_static(url: str):
     # 6) Ausgabe speichern
     # ------------------------------------------------------------
     hostname = urlparse(url).hostname or "unknown"
-    out_dir = "app/evaluation/results/iso_stat"
+    out_dir = os.getenv("EVAL_OUTPUT_DIR", "app/evaluation/results/iso_stat")
     os.makedirs(out_dir, exist_ok=True)
 
     out_file = os.path.join(out_dir, f"{hostname}.json")

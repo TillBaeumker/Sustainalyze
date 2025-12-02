@@ -79,10 +79,10 @@ async def compare_link_extraction(url: str, runs: int = 15):
     print()
 
     # Speicherpfad
-    save_path = (
-        f"/home/till/sustainability_checker/app/evaluation/results/links/"
-        f"stability_{domain}.json"
-    )
+    OUT_DIR = os.getenv("TEST_LINK_OUTPUT_DIR", "app/evaluation/results/links")
+    os.makedirs(OUT_DIR, exist_ok=True)
+
+    save_path = os.path.join(OUT_DIR, f"stability_{domain}.json")
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
 
     data = {
