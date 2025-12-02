@@ -4,24 +4,33 @@
   <header class="report-header">
     <h2 class="report-title">Analyse: {{ report.project_name|e }}</h2>
 
+    {% set total_score = report.total.score if report.total.score is not none else 0 %}
+    {% set total_band  = report.total.band if report.total.band is not none else '–' %}
+
     <div class="report-meta">
       <span class="badge">📄 <strong>{{ report.valid_pages }}</strong> Seite(n)</span>
 
       <span class="badge">🧮 Score:
-        <strong>{{ report.total.score if report.total.score is not none else '–' }}</strong>
-        · Bewertung: {{ report.total.band|e }}
+        <strong>{{ total_score }}</strong>
+        · Bewertung: {{ total_band }}
       </span>
 
       <span class="badge">🌐 Hosting:
-        <strong>{{ report.hosting_country|e }}</strong>
-        ({{ report.hosting_org|e }})
+        <strong>{{ report.hosting_country|e if report.hosting_country else '–' }}</strong>
+        ({{ report.hosting_org|e if report.hosting_org else '–' }})
       </span>
     </div>
 
-    <div class="report-scorebar" style="--score: {{ report.total.score or 0 }}">
+    <div class="report-scorebar" style="--score: {{ total_score }}">
       <div class="score-line">
         <span>Gesamtscore</span>
-        <span>{{ report.total.score if report.total.score is not none else 'nicht bewertbar' }}</span>
+        <span>
+          {% if report.total.score is not none %}
+            {{ report.total.score }}
+          {% else %}
+            nicht bewertbar
+          {% endif %}
+        </span>
       </div>
 
       <div class="scorebar"></div>
@@ -32,15 +41,15 @@
       </p>
 
       <!-- Nachhaltigkeits-Einschätzung -->
-      {% if report.total.score >= 75 %}
+      {% if total_score >= 75 %}
         <p class="score-note" style="margin-top: 0.6rem;">
           🌿 Der gecrawlte Ausschnitt zeigt deutliche Indizien einer nachhaltigen Editionspraxis.
         </p>
-      {% elif report.total.score >= 50 %}
+      {% elif total_score >= 50 %}
         <p class="score-note" style="margin-top: 0.6rem;">
           🌱 Der gecrawlte Ausschnitt weist mehrere Hinweise auf nachhaltige Editionsmerkmale auf.
         </p>
-      {% elif report.total.score >= 25 %}
+      {% elif total_score >= 25 %}
         <p class="score-note" style="margin-top: 0.6rem;">
           ⚠️ Der gecrawlte Ausschnitt zeigt nur wenige Hinweise auf nachhaltige Editionsmerkmale.
         </p>
@@ -49,10 +58,8 @@
           ❗ Der gecrawlte Ausschnitt enthält kaum oder keine Hinweise auf nachhaltige Editionspraxis.
         </p>
       {% endif %}
-
     </div>
   </header>
-
 
   <!-- TABELLE -->
   <section class="report-table-section">
@@ -86,7 +93,6 @@
     </div>
   </section>
 
-
   <!-- STÄRKEN -->
   <section class="report-section">
     <h3 class="section-title">Stärken</h3>
@@ -114,7 +120,7 @@
   <!-- FAZIT -->
   <section class="report-section">
     <h3 class="section-title">Zusammenfassung (KI-generiert)</h3>
-    <p class="muted">{{ report.conclusion|e }}</p>
+    <p class="muted">{{ report.conclusion|e if report.conclusion else '–' }}</p>
   </section>
 
 </section>
