@@ -35,9 +35,6 @@ litellm==1.80.7
 # --- Repo Analysis ---
 PyGithub==2.7.0
 
-# --- FUJI (GitHub editable install) ---
--e git+https://github.com/pangaea-data-publisher/fuji.git@a935c66259285d970ed2e2f05d89d0cdef15ca52#egg=fuji
-
 # --- JSON-LD / RDF / Schema ---
 rdflib==7.1.4
 jsonschema==4.25.1
