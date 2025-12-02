@@ -1,6 +1,0 @@
-[submodule "fuji"]
-	path = fuji
-	url = https://github.com/pangaea-data-publisher/fuji.git
-[submodule "wappalyzer"]
-	path = wappalyzer
-	url = https://github.com/tomnomnom/wappalyzer.git

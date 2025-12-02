@@ -198,12 +198,12 @@
 
 		var $this = $(this);
 
-		// Close button – disabled
-		$('<div class="close">Close</div>')
-			.appendTo($this)
-			.on('click', function() {
-				// Disabled: prevent closing the article
-			});
+		$('<div class=\'close\'>&times;</div>')
+    .appendTo($this)
+    .on('click', function() {
+        window.location.href = window.location.origin + window.location.pathname;
+
+});
 
 		$this.on('click', function(event) {
 			event.stopPropagation();

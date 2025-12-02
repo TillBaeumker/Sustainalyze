@@ -938,6 +938,13 @@ table {
     border-collapse: collapse;
 }
 
+table {
+    table-layout: fixed;
+}
+
+thead th:nth-child(1) { width: 23% !important; }
+thead th:nth-child(2) { width: 22% !important; }
+thead th:nth-child(3) { width: 55% !important; }
 
 
 /* ================================================
@@ -1665,3 +1672,38 @@ table td a {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+/* =======================================
+   🔥 TABLE OVERRIDES – UNSCHLAGBAR
+   ======================================= */
+
+/* 1. Spaltenüberschriften: nie umbrechen, nie zwei Zeilen */
+#report table thead th {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: clip !important;
+}
+
+/* 2. Normale Zellen: NIEMALS mitten im Wort umbrechen */
+#report table td {
+    white-space: normal !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+}
+
+/* 3. ABER: URLs dürfen umbrechen (sonst geht der View kaputt) */
+#report table td a {
+    overflow-wrap: anywhere !important;
+    word-break: break-all !important;
+}
+
+/* 4. Fixierte Spaltenbreiten */
+#report table thead th:nth-child(1) { width: 27% !important; }
+#report table thead th:nth-child(2) { width: 21% !important; }
+#report table thead th:nth-child(3) { width: 52% !important; }
+
+/* 5. Optional: Mindestbreiten, damit nichts gequetscht wird */
+#report table thead th {
+    min-width: 150px !important;
+}

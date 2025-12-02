@@ -206,7 +206,6 @@ details summary::-webkit-details-marker {
     border: 2px solid rgba(255,255,255,0.35) !important;
 }
 
-/* Verhindert, dass lange URLs oder Strings über den Rand laufen */
 .breakable,
 td,
 th,
@@ -216,14 +215,34 @@ div {
     word-break: break-word;
 }
 
-
 #analysis-result li a,
 #analysis-result ul li a,
 .evidence-list li a {
     display: inline-block;
-    max-width: 70%;      /* oder 450px, oder 60%, wie du willst */
+    max-width: 70%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     vertical-align: middle;
 }
+
+/* ===========================
+   SCROLL-BUTTON (falls genutzt)
+   =========================== */
+
+.scroll-button {
+    display: inline-block;
+    margin-top: 1.2rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #4fc3f7;
+    border-radius: 6px;
+    color: #4fc3f7 !important;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.scroll-button:hover {
+    background: rgba(79,195,247,0.15);
+}
+

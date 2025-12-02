@@ -291,30 +291,44 @@ def generate_conclusion(scoring: Dict[str, Any], report: Dict[str, Any]) -> str:
     )
 
     if not _client:
-        return f"{project}: Gesamtscore {score}, Band {band}. (Kein LLM verfügbar.)"
+        return f"{project}: Zusammenfassung nicht verfügbar (kein LLM)."
 
     try:
         res = _client.chat.completions.create(
             model=GPT_MODEL,
             messages=[
-                {"role": "system", "content": "Kurz und sachlich schreiben."},
+                {
+                    "role": "system",
+                    "content": (
+                        "Erstelle eine kurze, klar verständliche Zusammenfassung des Projekts. "
+                        "Keine Listen, kein Markdown, keine Symbole, keine Fettschrift. "
+                        "Schreibe in 3 bis maximal 5 Sätzen. "
+                        "Nenne Titel, Herausgeber, Institution, Förderhinweise und zentrale technische Merkmale, "
+                        "wenn sie eindeutig aus den Daten hervorgehen. "
+                        "Nicht spekulieren. "
+                        "Der letzte Satz MUSS lauten: "
+                        "'Die Einschätzung bezieht sich ausschließlich auf den im Rahmen der geprüften Seiten sichtbaren Ausschnitt.'"
+                    )
+                },
                 {
                     "role": "user",
                     "content": (
-                        f"Erstelle eine kurze Zusammenfassung:\n"
-                        f"Projekt: {project}\n"
+                        f"Projektname: {project}\n"
                         f"Score: {score} (Band: {band})\n"
                         f"Hosting: {host_country} ({host_org})\n"
-                        f"Seiten: {pages}\n\n"
-                        f"LLM-Daten:\n{llm_data}"
-                    ),
+                        f"Analysierte Seiten: {pages}\n\n"
+                        f"LLM-Daten (Projektinfos, Herausgeber, institutionelle Daten, Jahresangaben, Repositories, Dokumentation, APIs usw.):\n"
+                        f"{llm_data}\n\n"
+                        "Formuliere eine saubere, kurze Zusammenfassung."
+                    )
                 },
             ],
-            temperature=0,
+            temperature=0.1,
         )
         return res.choices[0].message.content.strip()
+
     except Exception as e:
-        return f"{project}: Fazit konnte nicht erstellt werden ({e})."
+        return f"{project}: Zusammenfassung konnte nicht erstellt werden ({e})."
 
 
 # -------------------------------------------------------------------

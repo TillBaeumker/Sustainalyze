@@ -3,7 +3,7 @@ set -euo pipefail
 
 echo
 echo "=============================================================="
-echo "🚀 Starte Sustainalyze Setup"
+echo "🚀 Starte Sustainalyze Setup (lokale FUJI + Wappalyzer)"
 echo "=============================================================="
 echo
 
@@ -13,9 +13,8 @@ echo "📁 Projektverzeichnis: $PROJECT_ROOT"
 echo
 
 # ------------------------------------------------------------
-# 1) Sicherstellen, dass Python 3.12 installiert ist
+# 1) Python 3.12 sicherstellen
 # ------------------------------------------------------------
-
 if command -v python3.12 &>/dev/null; then
     PY=python3.12
 else
@@ -29,9 +28,8 @@ echo "✔ Python gefunden: $($PY --version)"
 echo
 
 # ------------------------------------------------------------
-# 2) Systempakete installieren
+# 2) Systempakete
 # ------------------------------------------------------------
-
 echo "==> Installiere Systempakete..."
 sudo apt-get install -y \
     git curl wget unzip \
@@ -44,9 +42,8 @@ echo "✔ Systempakete OK"
 echo
 
 # ------------------------------------------------------------
-# 3) Node.js + Yarn installieren
+# 3) Node.js + Yarn
 # ------------------------------------------------------------
-
 echo "==> Prüfe Node.js"
 if ! command -v node &>/dev/null; then
     echo "📦 Installiere Node.js 20.x"
@@ -60,14 +57,12 @@ echo "npm:  $(npm -v)"
 if ! command -v yarn &>/dev/null; then
     sudo npm install -g yarn
 fi
-
 echo "Yarn: $(yarn -v)"
 echo
 
 # ------------------------------------------------------------
-# 4) Python venv neu erstellen
+# 4) Python venv + Hauptdependencies
 # ------------------------------------------------------------
-
 echo "==> Baue Python venv..."
 
 rm -rf venv
@@ -79,43 +74,44 @@ pip install --upgrade pip setuptools wheel
 echo "📦 Installiere requirements.txt…"
 pip install -r "$PROJECT_ROOT/requirements.txt"
 
+echo "📦 Installiere FUJI lokal..."
+pip install -e "$PROJECT_ROOT/fuji"
+
+echo "📦 Installiere Crawl4AI (erneut sicherheitshalber)..."
+pip install crawl4ai
+
 deactivate
 
 echo "✔ Python venv OK"
 echo
 
 # ------------------------------------------------------------
-# 5) FUJI vorbereiten
+# 5) FUJI (lokal, kein Submodul, kein clone)
 # ------------------------------------------------------------
+echo "==> Prüfe FUJI..."
 
-echo "==> FUJI vorbereiten..."
-
-if [ -d fuji ]; then
-    cd fuji
-    rm -rf fuji-venv
-    $PY -m venv fuji-venv
-    source fuji-venv/bin/activate
-    pip install --upgrade pip setuptools wheel
-    deactivate
-    cd "$PROJECT_ROOT"
+if [ -d "$PROJECT_ROOT/fuji" ]; then
+    echo "✔ Lokaler FUJI-Ordner gefunden"
 else
-    echo "⚠️ Warnung: Ordner 'fuji' fehlt!"
+    echo "❌ FEHLER: Ordner 'fuji/' fehlt!"
+    exit 1
 fi
 
 echo "✔ FUJI OK"
 echo
 
 # ------------------------------------------------------------
-# 6) Wappalyzer installieren
+# 6) Wappalyzer lokal installieren
 # ------------------------------------------------------------
+echo "==> Wappalyzer installieren…"
 
-echo "==> Wappalyzer installieren..."
-
-if [ ! -d wappalyzer ]; then
-    git clone https://github.com/tomnomnom/wappalyzer.git wappalyzer
+if [ ! -d "$PROJECT_ROOT/wappalyzer" ]; then
+    echo "❌ FEHLER: Ordner 'wappalyzer/' fehlt!"
+    echo "Bitte Repository vollständig klonen."
+    exit 1
 fi
 
-cd wappalyzer
+cd "$PROJECT_ROOT/wappalyzer"
 yarn install --ignore-engines
 cd "$PROJECT_ROOT"
 
@@ -123,14 +119,13 @@ echo "✔ Wappalyzer OK"
 echo
 
 # ------------------------------------------------------------
-# 7) Chromium prüfen
+# 7) Chromium prüfen (für Playwright)
 # ------------------------------------------------------------
-
 CHROME_PATH="$(command -v chromium-browser || command -v chromium || true)"
 if [[ -n "$CHROME_PATH" ]]; then
     echo "✔ Chromium gefunden: $CHROME_PATH"
 else
-    echo "⚠️ Chromium NICHT gefunden!"
+    echo "⚠️ Chromium NICHT gefunden! (Playwright nutzt dann eigenen Build)"
 fi
 
 echo

@@ -45,9 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const result = document.getElementById("analysis-result");
 
     if (result && result.innerHTML.trim().length > 0) {
-        // HTML5UP braucht Zeit um sich zu initialisieren
         setTimeout(() => {
             location.hash = "#analyse";
         }, 150);
     }
 });
+
+

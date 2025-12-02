@@ -9,7 +9,7 @@
 
       <span class="badge">🧮 Score:
         <strong>{{ report.total.score if report.total.score is not none else '–' }}</strong>
-        · Band: {{ report.total.band|e }}
+        · Bewertung: {{ report.total.band|e }}
       </span>
 
       <span class="badge">🌐 Hosting:
@@ -26,9 +26,30 @@
 
       <div class="scorebar"></div>
 
+      <!-- Hinweis -->
       <p class="score-note">
         Hinweis: Der Score basiert auf den gecrawlten Seiten und den dort gefundenen Evidenzen.
       </p>
+
+      <!-- Nachhaltigkeits-Einschätzung -->
+      {% if report.total.score >= 75 %}
+        <p class="score-note" style="margin-top: 0.6rem;">
+          🌿 Der gecrawlte Ausschnitt zeigt deutliche Indizien einer nachhaltigen Editionspraxis.
+        </p>
+      {% elif report.total.score >= 50 %}
+        <p class="score-note" style="margin-top: 0.6rem;">
+          🌱 Der gecrawlte Ausschnitt weist mehrere Hinweise auf nachhaltige Editionsmerkmale auf.
+        </p>
+      {% elif report.total.score >= 25 %}
+        <p class="score-note" style="margin-top: 0.6rem;">
+          ⚠️ Der gecrawlte Ausschnitt zeigt nur wenige Hinweise auf nachhaltige Editionsmerkmale.
+        </p>
+      {% else %}
+        <p class="score-note" style="margin-top: 0.6rem;">
+          ❗ Der gecrawlte Ausschnitt enthält kaum oder keine Hinweise auf nachhaltige Editionspraxis.
+        </p>
+      {% endif %}
+
     </div>
   </header>
 
@@ -92,7 +113,7 @@
 
   <!-- FAZIT -->
   <section class="report-section">
-    <h3 class="section-title">Fazit</h3>
+    <h3 class="section-title">Zusammenfassung (KI-generiert)</h3>
     <p class="muted">{{ report.conclusion|e }}</p>
   </section>
 

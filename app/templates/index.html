@@ -22,9 +22,9 @@
                 <p>Wie nachhaltig ist eine digitale Edition? – Finde es heraus!</p>
 
                 <p style="font-size: 0.9em; margin-top: 1.2rem;">
-                    Dieses Tool macht sichtbar, wie nachhaltig digitale Editionen wirklich sind.
-                    Es verbindet etablierte Nachhaltigkeitsstrategien, FAIR-Kriterien,
-                    Open-Source-Indikatoren und technische Robustheitsmerkmale zu einer automatisierten Bewertung.
+                    Dieses prototypische Tool prüft digitale Editionswebseiten automatisch auf nachhaltige Strukturen,
+                    indem es theoretisch definierte Nachhaltigkeitsmerkmale in algorithmisch überprüfbare
+                    Indikatoren überführt.
                     <br><br>
                     Entwickelt von <strong>Till Bäumker</strong>
                     (<a href="mailto:till.baeumker@gmx.de">till.baeumker@gmx.de</a>).
@@ -75,6 +75,7 @@
 
                 </div>
 
+                <!-- BUTTON -->
                 <ul class="actions">
                     <li>
                         <input type="submit" id="analyseButton"
@@ -82,6 +83,17 @@
                                value="Start Analyse" />
                     </li>
                 </ul>
+
+                <!-- Hinweis nur anzeigen, wenn Ergebnis vorhanden -->
+                {% if result %}
+                    <p class="analysis-hint">
+                        Analyse abgeschlossen. <a href="#analysis-result">Zu den Analyseergebnissen springen</a>.
+                    </p>
+                {% else %}
+                    <p class="analysis-hint muted">
+                        Die Analyseergebnisse werden unter diesem Formular angezeigt.
+                    </p>
+                {% endif %}
             </form>
 
             {% if error %}
@@ -91,7 +103,7 @@
             <!-- ========================================================= -->
             <!--   ANALYSERESULTATE                                      -->
             <!-- ========================================================= -->
-            <div id="analysis-result">
+            <div id="analysis-result" {% if result %}data-has-result="true"{% endif %}>
                 {% if result %}
 
                     <div style="border: 1px solid #444; padding: 10px; margin: 15px 0;
@@ -145,3 +157,4 @@
 
 </body>
 </html>
+
