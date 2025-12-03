@@ -43,19 +43,19 @@
     <div id="main">
         <article id="analyse">
 
-            <h2 class="major">URL eingeben</h2>
+            <h2 class="major">Editions-URL (Startseite) eingeben</h2>
 
             <form id="analyseForm" method="post" action="/analyse#analyse">
                 <div class="fields">
 
                     <div class="field">
-                        <label for="url">Website URL</label>
+                        <label for="url">Editions-URL (Startseite)</label>
                         <input type="text" name="url" id="url"
                                placeholder="https://example.com" required />
                     </div>
 
                     <div class="field">
-                        <label for="max_pages">Maximale Anzahl Seiten</label>
+                        <label for="max_pages">Zu analysierende Seitenanzahl</label>
                         <select name="max_pages" id="max_pages">
                             <option value="1" selected>1</option>
                             <option value="2">2</option>
@@ -69,7 +69,7 @@
                         <label for="fair_mode">FAIR-Check</label>
                         <select name="fair_mode" id="fair_mode">
                             <option value="start_only" selected>Nur Startseite (FAIR-Checker)</option>
-                            <option value="fuji">Startseite + Datensätze (FUJI)</option>
+                            <option value="fuji">Startseite (Fair-Checker) + potenzielle externe Datensätze (FUJI)</option>
                         </select>
                     </div>
 
@@ -157,4 +157,3 @@
 
 </body>
 </html>
-
