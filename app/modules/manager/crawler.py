@@ -78,22 +78,36 @@ def domain_of(url: str) -> str:
 
 def is_probably_html(url: str) -> bool:
     """
-    Schließt Ressourcen aus, die nicht auf HTML hinweisen.
-    Wird eingesetzt, um Nicht-HTML-Links frühzeitig zu filtern.
+    Robustere HTML-Heuristik:
+    - erlaubt HTML-Seiten ohne Dateiendung (z.B. /kiernan/resume, /ebeo4.0)
+    - blockiert typische Asset-Dateien
+    - erlaubt .html, .htm und fehlende Endungen
     """
     if not is_http_url(url):
         return False
 
-    ext = ""
     path = urlparse(url).path
-    if "." in path:
-        ext = path.rsplit(".", 1)[-1].lower()
 
+    # 1) Keine Dateiendung → wahrscheinlich HTML
+    if "." not in path.strip("/"):
+        return True
+
+    # 2) Dateiendung ermitteln
+    ext = path.rsplit(".", 1)[-1].lower()
+
+    # 3) Typische Asset-Endungen ausschließen
     non_html_ext = {
         "jpg", "jpeg", "png", "gif", "svg", "webp",
         "ico", "css", "js", "pdf", "zip", "json",
-        "mp3", "mp4", "wav", "xml", "tei", "woff", "woff2",
+        "mp3", "mp4", "wav", "woff", "woff2",
+        # "xml", "tei",   # wenn du XML analysieren willst → rausnehmen
     }
+
+    # 4) HTML-Endungen immer akzeptieren
+    if ext in {"html", "htm"}:
+        return True
+
+    # 5) Sonst alles akzeptieren, was kein Asset ist
     return ext not in non_html_ext
 
 

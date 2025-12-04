@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+
+  fuji:
+    container_name: fuji
+    build: ./fuji
+    ports:
+      - "1071:1071"
+    restart: unless-stopped
+
+  wappalyzer:
+    container_name: wappalyzer
+    build: ./wappalyzer
+    command: sleep infinity
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+  app:
+    container_name: sustainability_app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - fuji
+      - wappalyzer
+    environment:
+      FUJI_HOST: http://fuji:1071
+      FUJI_USERNAME: ""
+      FUJI_PASSWORD: ""
+
+      WAPPALYZER_URL: http://wappalyzer:3000
+      USE_WAPPALYZER_DOCKER: "true"
+      WAPPALYZER_CONTAINER: "wappalyzer"
+
+      SHODAN_API_KEY: ${SHODAN_API_KEY}
+      GITHUB_TOKEN: ${GITHUB_TOKEN}
+      GITLAB_TOKEN: ${GITLAB_TOKEN}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+    restart: unless-stopped

@@ -495,24 +495,24 @@ def score_wappalyzer_open_closed(result: Dict[str, Any]) -> Dict[str, Any]:
     if denom == 0 and not llm_hints:
         # Keine Daten → konservativ als proprietär gewertet
         score = 0
-        bewertung = "Keine Hinweise auf Open Source erkannt (Standardannahme: Closed Source)"
+        bewertung = "Keine Hinweise auf Open-Source-Technologien erkannt"
 
     elif denom == 0 and llm_hints:
         score = 50
-        bewertung = "Semantische Hinweise auf Open Source (nur LLM)"
+        bewertung = "Hinweise auf Open-Source-Technologien (LLM-Analyse)"
 
     else:
         # Verhältniswertung: Anteil Open Source
         score = int(round(100 * (pos / denom)))
 
         if score == 100:
-            bewertung = "Hinweise auf Open Source"
+            bewertung = "Hinweise auf Open-Source-Technologien"
         elif score == 0:
             bewertung = "Hinweise auf proprietäre / Closed-Source-Technologien"
         elif score > 50:
-            bewertung = "Open Source überwiegt"
+            bewertung = "Hinweise auf Open-Source-Technologien überwiegen"
         elif score < 50:
-            bewertung = "Closed Source überwiegt"
+            bewertung = "Hinweise auf Closed-Source-Technologien überwiegen"
         else:
             bewertung = "Gemischte Hinweise"
 
@@ -617,15 +617,15 @@ def score_global_isolation(result: Dict[str, Any]) -> Dict[str, Any]:
     # -------------------------------------------------
     if has_technical and clean_llm_hints:
         score = 100
-        bewertung = "Technische und semantische Evidenz für Isolation vorhanden"
+        bewertung = "Hinweise auf isolierte Ausführungsumgebung gefunden"
 
     elif has_technical:
         score = 100
-        bewertung = "Technische Hinweise auf isolierte Umgebung vorhanden"
+        bewertung = "Hinweise auf isolierte Ausführungsumgebung gefunden"
 
     elif clean_llm_hints:
         score = 50
-        bewertung = "Semantische Hinweise auf eine isolierte Umgebung (LLM)"
+        bewertung = "Hinweise auf isolierte Ausführungsumgebung gefunden (LLM-Analyse)"
 
     else:
         score = None
@@ -719,26 +719,26 @@ def score_static_technologies(result: Dict[str, Any]) -> Dict[str, Any]:
     # -------------------------------------------------
     if denom == 0 and not clean_llm_hints:
         score = None
-        bewertung = "Keine Hinweise auf statische oder dynamische Architektur gefunden"
+        bewertung = "Keine Hinweise auf statische oder dynamische Technologien gefunden"
 
     elif denom == 0 and clean_llm_hints:
         score = 50
-        bewertung = "Semantische Hinweise auf statische Architektur (nur LLM)"
+        bewertung = "Hinweise auf statische Technologien gefunden (LLM-Analyse)"
 
     else:
         ratio = pos / denom
         score = int(round(100 * ratio))
 
         if score >= 80:
-            bewertung = "Hinweise auf statische Architektur"
+            bewertung = "Hinweise auf statische Technologien gefunden"
         elif score >= 60:
-            bewertung = "Statische Technologien überwiegen"
+            bewertung = "Hinweise auf statische Technologien überwiegen"
         elif score >= 40:
-            bewertung = "Gemischte oder hybride Architektur"
+            bewertung = "Hinweise auf statische und dynamische Technologien gefunden"
         elif score >= 20:
-            bewertung = "Dynamische Technologien überwiegen leicht"
+            bewertung = "Hinweise auf dynamische Technologien überwiegen leicht"
         else:
-            bewertung = "Hinweise auf dynamische Architektur"
+            bewertung = "Hinweise auf dynamische Architektur gefunden"
 
     # -------------------------------------------------
     # 5️⃣ Hinweise formatiert zurückgeben
@@ -974,13 +974,13 @@ def score_pages_documentation(result: Dict[str, Any]) -> Dict[str, Any]:
     # -----------------------------------------------------
     if collected:
         score = 100
-        bewertung = "Hinweise auf Dokumentation vorhanden"
+        bewertung = "Hinweise auf Dokumentation gefunden"
 
         parts = ["LLM-Analyse: " + "<br>".join(sorted(collected))]
         hinweise = format_hints(parts)
     else:
         score = None
-        bewertung = "Keine Hinweise auf Dokumentation"
+        bewertung = "Keine Hinweise auf Dokumentation gefunden"
         hinweise = ""
 
     return {
@@ -1058,9 +1058,9 @@ def score_pages_structured_metadata(result: Dict[str, Any]) -> Dict[str, Any]:
     elif avg_score == 75:
         bewertung = "Strukturierte Metadaten gefunden"
     elif avg_score == 50:
-        bewertung = "LLM-Hinweise auf strukturierte Metadaten"
+        bewertung = "strukturierte Metadaten gefunden (LLM-Analyse)"
     else:
-        bewertung = "Keine Hinweise auf strukturierte Metadaten"
+        bewertung = "Keine Hinweise auf strukturierte Metadaten gefunden"
 
     # Hinweise zusammenstellen
     hint_parts = []
@@ -1141,20 +1141,20 @@ def score_pages_normdata_presence(result: Dict[str, Any]) -> Dict[str, Any]:
     if norm_sources:
         return {
             "score": 100,
-            "bewertung": "Hinweise auf Normdaten gefunden",
+            "bewertung": "Normdatenverknüpfungen gefunden",
             "hinweise": hinweise,
         }
 
     if llm_hints:
         return {
             "score": 50,
-            "bewertung": "Nur LLM-Hinweise auf Normdaten gefunden",
+            "bewertung": "Hinweise auf Normdatenverknüpfungen gefunden (LLM-Analyse)",
             "hinweise": hinweise,
         }
 
     return {
         "score": None,
-        "bewertung": "Keine Hinweise auf Normdaten gefunden",
+        "bewertung": "Keine Hinweise auf Normdatenverknüpfungen gefunden",
         "hinweise": "",
     }
 
@@ -1247,7 +1247,7 @@ def score_downloads_presence(result: Dict[str, Any]) -> Dict[str, Any]:
     if total_count > 0:
         return {
             "score": 100,
-            "bewertung": "Downloads gefunden",
+            "bewertung": "Downloadlinks gefunden",
             "hinweise": hinweise,
             "urls": sorted(set(all_download_urls)),
             "count": total_count,
@@ -1256,7 +1256,7 @@ def score_downloads_presence(result: Dict[str, Any]) -> Dict[str, Any]:
     if llm_hints:
         return {
             "score": 50,
-            "bewertung": "Nur LLM-Hinweise auf Downloads gefunden",
+            "bewertung": "Hinweise auf Downloads gefunden (LLM-Analyse)",
             "hinweise": hinweise,
             "urls": [],
             "count": 0,
@@ -1264,7 +1264,7 @@ def score_downloads_presence(result: Dict[str, Any]) -> Dict[str, Any]:
 
     return {
         "score": None,
-        "bewertung": "Keine Hinweise auf Downloads",
+        "bewertung": "Keine Hinweise auf Downloadlinks gefunden",
         "hinweise": "",
         "urls": [],
         "count": 0,
@@ -1356,7 +1356,7 @@ def score_api_presence(result: Dict[str, Any]) -> Dict[str, Any]:
     if llm_hints:
         return {
             "score": 50,
-            "bewertung": "Nur Hinweise auf APIs (LLM) gefunden",
+            "bewertung": "Hinweise auf APIs gefunden (LLM-Analyse)",
             "hinweise": hinweise,
             "apis": [],
             "llm_hinweise": sorted(llm_hints),
@@ -1441,7 +1441,7 @@ def score_xml_tei(result: Dict[str, Any]) -> Dict[str, Any]:
     if llm_hints:
         return {
             "score": 50,
-            "bewertung": "Nur LLM-Hinweise auf XML/TEI gefunden",
+            "bewertung": "Hinweise auf XML/TEI gefunden (LLM-Analyse)",
             "hinweise": hinweise,
             "urls": [],
             "llm_hinweise": sorted(llm_hints),
@@ -1530,7 +1530,7 @@ def score_repositories(result: Dict[str, Any]) -> Dict[str, Any]:
     if tech_links:
         return {
             "score": 100,
-            "bewertung": "Echte GitHub/GitLab-Repositories gefunden",
+            "bewertung": "GitHub/GitLab-Repositories gefunden",
             "hinweise": hinweise,
             "repos": {
                 "github": github_repos,
@@ -1541,7 +1541,7 @@ def score_repositories(result: Dict[str, Any]) -> Dict[str, Any]:
     if cleaned_llm_hints:
         return {
             "score": 50,
-            "bewertung": "Nur Hinweise auf Repositories (LLM-Fallback) gefunden",
+            "bewertung": "Hinweise auf Repositories gefunden (LLM-Analyse)",
             "hinweise": hinweise,
             "repos": {"github": [], "gitlab": []},
         }
@@ -1766,7 +1766,7 @@ def score_persistent_ids(result: Dict[str, Any]) -> Dict[str, Any]:
     if llm_hints:
         return {
             "score": 50,
-            "bewertung": "Semantische Hinweise auf persistente Identifier (LLM)",
+            "bewertung": "Hinweise auf persistente Identifier gefunden (LLM-Analyse)",
             "hinweise": hinweise,
             "technische_hinweise": [],
             "llm_hinweise": llm_hints,
@@ -1950,9 +1950,9 @@ def score_open_license(result: Dict[str, Any]) -> Dict[str, Any]:
     # 5️⃣ Bewertungstext
     # ------------------------------------------------
     if score == 100:
-        bewertung = "Offene Lizenz gefunden (technische Evidenz)"
+        bewertung = "Offene Lizenz gefunden"
     elif score == 50:
-        bewertung = "Offene Lizenz laut institutioneller/LLM-Angabe"
+        bewertung = "Offene Lizenz gefunden (LLM-Analyse)"
     elif score == 0:
         bewertung = "Proprietäre Lizenz gefunden"
     else:

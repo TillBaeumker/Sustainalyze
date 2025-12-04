@@ -59,28 +59,38 @@ FIELDS_UI: Dict[str, List[str]] = {
 # -------------------------------------------------------------------
 # Lesbare Bezeichnungen für Indikatoren
 # -------------------------------------------------------------------
-INDICATOR_LABELS: Dict[str, str] = {
-    "wappalyzer_open_closed": "Open-Source-Technologien",
-    "fair_overall": "FAIR-Checker",
-    "isolation": "Isolation",
-    "staticization": "Statisierung",
-    "link_functionality": "Link-Funktionalität",
-    "tei_xml_presence": "TEI-Präsenz",
-    "downloads_presence": "Downloads verfügbar",
-    "f2ab_combined": "strukturierte Metadaten & Vokabulare",
-    "normdata_presence": "Normdaten-Verknüpfungen",
-    "repos_oss_practice": "Repository verfügbar",
-    "institution_present": "Institution vorhanden",
-    "roles_responsibilities_present": "Rollen & Verantwortlichkeiten",
-    "funding_present": "Förderung angegeben",
-    "continuation_archiving_preservation_present": "Strategie zur Fortführung/Sicherung",
-    "contact_info_present": "Kontaktinformationen",
-    "community_present": "Community / Beteiligung",
-    "pi_documentation": "Dokumentation",
-    "api_presence": "Technische API",
-    "open_license": "Offene Lizenz",
-    "persistent_ids": "Persistente Identifier",
+INDICATOR_LABELS = {
+    # Institution & Governance
+    "institution_present": "Sind die verantwortlichen Institutionen klar benannt?",
+    "roles_responsibilities_present": "Sind Rollen und Verantwortlichkeiten dokumentiert?",
+    "funding_present": "Sind Hinweise auf Finanzierung oder Förderung vorhanden?",
+    "continuation_archiving_preservation_present": "Sind Hinweise zur Fortführung oder Sicherung der Edition vorhanden?",
+    "contact_info_present": "Sind Kontaktinformationen angegeben?",
+    "community_present": "Gibt es Hinweise auf Community-Beteiligung oder Vernetzungsmöglichkeiten?",
+
+    # Standardisierung & Interoperabilität
+    "tei_xml_presence": "Sind TEI/XML-Daten vorhanden?",
+    "f2ab_combined": "Gibt es strukturierte Metadaten und kontrollierte Vokabulare?",
+    "normdata_presence": "Sind Normdaten-Verknüpfungen vorhanden?",
+    "api_presence": "Gibt es eine technische API?",
+    "pi_documentation": "Ist eine technische/inhaltliche Dokumentation vorhanden?",
+
+    # Offenheit von Code, Daten & Software
+    "repos_oss_practice": "Stehen Repositories für Code/Daten bereit?",
+    "wappalyzer_open_closed": "Nutzt die Website Open-Source-Technologien?",
+    "open_license": "Ist eine offene Lizenz angegeben?",
+    "downloads_presence": "Sind Downloads oder Datendateien verfügbar?",
+
+    # Infrastruktur & Qualität
+    "isolation": "Gibt es Hinweise auf isolierte Ausführungsumgebungen?",
+    "staticization": "Ist die Seite statisch oder dynamisch ausgeliefert?",
+    "link_functionality": "Sind die internen Links funktionsfähig?",
+    "persistent_ids": "Gibt es persistente Identifikatoren?",
+
+    # FAIR
+    "fair_overall": "FAIR-Checker-Gesamtbewertung"
 }
+
 
 
 # -------------------------------------------------------------------

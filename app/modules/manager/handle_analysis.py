@@ -96,7 +96,8 @@ from app.modules.analysis.wappalyzer import analyze_technologies_with_wappalyzer
 
 # FAIR + FUJI
 from app.modules.analysis.fair_checker_client import run_fair_checker_once
-from app.modules.analysis.fuji_client import run_fuji_for_dataset, find_fuji_dataset_links
+from app.modules.analysis.fuji_client import run_fuji_for_dataset, find_fuji_dataset_links, extract_fuji_summary
+
 
 
 # -------------------------------------------------------------------
@@ -417,13 +418,14 @@ async def handle_analysis(
             aggregated_fuji_list = []
             for url_ds in unique_ds_links:
                 fr = fuji_results[url_ds] or {}
-                summary = fr.get("summary") or {}
+
+                fuji_summary = fr.get("fuji_summary") or {}
 
                 aggregated_fuji_list.append({
                     "url": url_ds,
                     "page_url": page_origin.get(url_ds),
-                    "summary": summary,
-                    "raw": fr
+                    "fuji_summary": fuji_summary,  # <- direkt die enthaltenen Scores nutzen
+                    "raw_fuji_json": fr  # optional für Debugging
                 })
 
             # Diese globale Liste ins context packen
@@ -542,7 +544,14 @@ async def handle_analysis(
             **aggregated,
             "page_sections": aggregated.get("page_data", []),
             "report": report,
-            **context,
+
+
+            "fuji_all": context.get("fuji_all", []),
+            "fair_mode": fair_mode,
+
+            "url": url,
+            "max_pages": max_pages,
+            "warnings": context.get("warnings", []),
         }
 
     except Exception as ex:

@@ -192,7 +192,7 @@ def find_fuji_dataset_links(links: list[str], base_domain: str) -> dict:
 
 async def test_with_fuji(url: str) -> dict:
     """Führt eine FUJI-Bewertung für die übergebene URL aus."""
-    api_url = f"{FUJI_HOST}/v1/evaluate"
+    api_url = f"{FUJI_HOST}/fuji/api/v1/evaluate"
     payload = {"object_identifier": url}
 
     print("=======================================================")

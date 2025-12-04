@@ -2,7 +2,7 @@
 
   <!-- HEADER -->
   <header class="report-header">
-    <h2 class="report-title">Analyse: {{ report.project_name|e }}</h2>
+    <h2 id="toc-report" class="report-title">Analyse: {{ report.project_name|e }}</h2>
 
     {% set total_score = report.total.score if report.total.score is not none else 0 %}
     {% set total_band  = report.total.band if report.total.band is not none else '–' %}
@@ -67,9 +67,9 @@
       <table class="report-table">
         <thead>
           <tr>
-            <th>🔍 Was wurde geprüft</th>
-            <th>⭐ Ergebnis</th>
-            <th>📎 Hinweise & Evidenzen</th>
+            <th>Was wurde geprüft</th>
+            <th>Ergebnis</th>
+            <th>Hinweise & Evidenzen</th>
           </tr>
         </thead>
 

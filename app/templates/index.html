@@ -55,7 +55,7 @@
                     </div>
 
                     <div class="field">
-                        <label for="max_pages">Zu analysierende Seitenanzahl</label>
+                        <label for="max_pages">Maximale Anzahl Seiten</label>
                         <select name="max_pages" id="max_pages">
                             <option value="1" selected>1</option>
                             <option value="2">2</option>
@@ -84,7 +84,6 @@
                     </li>
                 </ul>
 
-                <!-- Hinweis nur anzeigen, wenn Ergebnis vorhanden -->
                 {% if result %}
                     <p class="analysis-hint">
                         Analyse abgeschlossen. <a href="#analysis-result">Zu den Analyseergebnissen springen</a>.

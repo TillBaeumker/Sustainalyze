@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  fuji:
+    image: ghcr.io/pangaea-data-publisher/fuji:latest
+    container_name: fuji
+    ports:
+      - "1071:1071"
+    environment:
+      FUJI_USERNAME: admin
+      FUJI_PASSWORD: admin

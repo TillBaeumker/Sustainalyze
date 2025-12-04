@@ -27,80 +27,178 @@ import os
 from typing import Optional, Dict, List
 
 
-def analyze_technologies_with_wappalyzer(
-    url: str,
-    max_retries: int = 3,
-) -> Optional[Dict]:
+import subprocess
+import json
+import os
+from typing import Optional, Dict, List
+
+# ============================================================
+# KONFIGURATION
+# ============================================================
+
+USE_WAPPALYZER_DOCKER = os.getenv("USE_WAPPALYZER_DOCKER", "false").lower() == "true"
+WAPPALYZER_CONTAINER = os.getenv("WAPPALYZER_CONTAINER", "wappalyzer")
+
+print(f"🐳 [Wappalyzer] Docker-Modus: {USE_WAPPALYZER_DOCKER}")
+print(f"🐳 [Wappalyzer] Container-Name: {WAPPALYZER_CONTAINER}")
+
+
+# ============================================================
+# DOCKER-MODUS
+# ============================================================
+
+def _run_wappalyzer_docker(url: str, max_retries: int = 3) -> Optional[Dict]:
     """
-    Führt eine stabile Technologieanalyse mit der Wappalyzer-CLI durch.
-    Nutzt einen CLI-Pfad aus der Umgebungsvariable WAPPALYZER_CLI_PATH.
+    Führt Wappalyzer innerhalb des Docker-Containers aus.
+    """
+    print(f"🐳 [Wappalyzer] Starte Docker-Analyse für: {url}")
+
+    for attempt in range(1, max_retries + 1):
+        print(f"🐳 [Docker] Versuch {attempt}/{max_retries}")
+
+        try:
+            result = subprocess.run(
+                [
+                    "docker", "exec", WAPPALYZER_CONTAINER,
+                    "node", "/app/src/drivers/npm/cli.js", url
+                ],
+                capture_output=True,
+                text=True,
+                timeout=120,
+            )
+
+            output = result.stdout.strip()
+
+            if not output:
+                print("⚠️ [Docker] Leere Ausgabe – erneuter Versuch")
+                continue
+
+            try:
+                data = json.loads(output)
+                print("✅ [Docker] Analyse erfolgreich!")
+                return data
+            except json.JSONDecodeError:
+                print("❌ [Docker] JSON-Parsing fehlgeschlagen!")
+                print("RAW OUTPUT:")
+                print(output)
+                continue
+
+        except subprocess.TimeoutExpired:
+            print("❌ [Docker] Timeout")
+        except Exception as e:
+            print(f"❌ [Docker] Fehler: {e}")
+
+    print("❌ [Docker] Alle Versuche fehlgeschlagen.")
+    return {"technologies": [], "error": "Docker-Analyse fehlgeschlagen"}
+
+
+# ============================================================
+# LOKALER FALLBACK (CLI)
+# ============================================================
+
+def _run_wappalyzer_local(url: str, max_retries: int = 3) -> Optional[Dict]:
+    """
+    Fallback: Lokale Wappalyzer-CLI nutzen.
     """
 
     cli_path = os.getenv("WAPPALYZER_CLI_PATH")
+
+    # Falls kein Pfad gesetzt → automatisch den Projektpfad verwenden
     if not cli_path:
-        raise RuntimeError(
-            "WAPPALYZER_CLI_PATH fehlt! Bitte in der .env korrekt setzen."
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.abspath(os.path.join(base_dir, "..", "..", ".."))
+
+        cli_path = os.path.join(
+            project_root,
+            "wappalyzer",
+            "src",
+            "drivers",
+            "npm",
+            "cli.js"
         )
 
-    print(f"🧪 [Wappalyzer] Starte Technologieanalyse für URL: {url}")
-    print(f"🔄 [Wappalyzer] CLI-Pfad: {cli_path}")
+        print(f"⚠️ [Wappalyzer] Nutze relativen CLI-Pfad: {cli_path}")
+
+    if not os.path.isfile(cli_path):
+        print(f"❌ Wappalyzer CLI nicht gefunden: {cli_path}")
+        return {"technologies": [], "error": "CLI fehlt"}
 
     for attempt in range(1, max_retries + 1):
+        print(f"🖥️ [Local CLI] Versuch {attempt}/{max_retries}")
+
         try:
             result = subprocess.run(
                 ["xvfb-run", "node", cli_path, url],
                 capture_output=True,
                 text=True,
                 check=True,
-                timeout=100,
+                timeout=120,
             )
 
             output = result.stdout.strip()
+
             if not output:
-                print(f"⚠️ [Wappalyzer] Leere Ausgabe (Versuch {attempt}/{max_retries})")
+                print("⚠️ [Local CLI] Leere Ausgabe")
                 continue
 
             try:
                 data = json.loads(output)
-            except json.JSONDecodeError:
-                print(f"❌ [Wappalyzer] Ungültiges JSON (Versuch {attempt}/{max_retries})")
-                continue
-
-            technologies = data.get("technologies", [])
-            if technologies:
-                print("✅ [Wappalyzer] Analyse erfolgreich.")
-                print(f"🔍 [Wappalyzer] Gefundene Technologien: {len(technologies)}")
+                print("✅ [Local CLI] Analyse erfolgreich!")
                 return data
-
-            print(f"⚠️ [Wappalyzer] 0 Technologien erkannt (Versuch {attempt}/{max_retries})")
+            except json.JSONDecodeError:
+                print("❌ [Local CLI] Ungültiges JSON")
+                print(output)
 
         except subprocess.TimeoutExpired:
-            print(f"❌ [Wappalyzer] Timeout bei Versuch {attempt}/{max_retries}")
+            print("❌ [Local CLI] Timeout")
         except subprocess.CalledProcessError as e:
-            err_msg = e.stderr.strip() if e.stderr else str(e)
-            print(f"❌ [Wappalyzer] CLI-Fehler (Versuch {attempt}/{max_retries}): {err_msg}")
+            err = e.stderr.strip() if e.stderr else str(e)
+            print(f"❌ [Local CLI] Fehler: {err}")
 
-        if attempt < max_retries:
-            print("🔁 [Wappalyzer] Erneuter Versuch...\n")
+    print("❌ [Local CLI] Alle Versuche fehlgeschlagen.")
+    return {"technologies": [], "error": "Lokale Analyse fehlgeschlagen"}
 
-    print("❌ [Wappalyzer] Alle Versuche fehlgeschlagen.")
-    return {"technologies": [], "error": "Keine Technologien erkannt oder Fehler"}
 
+# ============================================================
+# ÖFFENTLICHE FUNKTION
+# ============================================================
+
+def analyze_technologies_with_wappalyzer(
+    url: str,
+    max_retries: int = 3,
+) -> Optional[Dict]:
+    """
+    Führt die Technologieanalyse entweder über Docker oder lokal aus.
+    """
+
+    if USE_WAPPALYZER_DOCKER:
+        return _run_wappalyzer_docker(url, max_retries)
+
+    return _run_wappalyzer_local(url, max_retries)
+
+
+# ============================================================
+# PARSING
+# ============================================================
 
 def parse_wappalyzer_result(result: Dict) -> List[Dict]:
     """
-    Formatiert die rohe Wappalyzer-Ausgabe für das Scoring/Frontend.
+    Formatiert rohe Wappalyzer-Daten in ein einheitliches Format.
     """
+
     parsed: List[Dict] = []
+
     for tech in result.get("technologies", []):
         categories = tech.get("categories", [{}])
-        cat = (categories[0] or {}).get("name")
+        category_name = (categories[0] or {}).get("name")
+
         parsed.append({
             "name": tech.get("name"),
             "version": tech.get("version"),
-            "category": cat,
+            "category": category_name,
             "description": tech.get("description"),
             "website": tech.get("website"),
             "oss": tech.get("oss"),
         })
+
     return parsed

@@ -942,9 +942,9 @@ table {
     table-layout: fixed;
 }
 
-thead th:nth-child(1) { width: 23% !important; }
-thead th:nth-child(2) { width: 22% !important; }
-thead th:nth-child(3) { width: 55% !important; }
+thead th:nth-child(1) { width: 35% !important; }
+thead th:nth-child(2) { width: 20% !important; }
+thead th:nth-child(3) { width: 45% !important; }
 
 
 /* ================================================
@@ -953,7 +953,7 @@ thead th:nth-child(3) { width: 55% !important; }
 table thead th {
     background-color: #1f2326 !important;  /* leicht abgesetzt */
     font-weight: 700 !important;
-    text-align: center !important;
+    text-align: left !important;
     vertical-align: middle !important;
     height: 3.2rem !important;
     line-height: 3.2rem !important;
@@ -979,7 +979,7 @@ table tbody tr.cluster-row td {
     background-color: #181a1c !important;      /* dunkler als alles andere */
     font-weight: 700 !important;
     text-align: center !important;
-    padding: 1.2rem 0 !important;
+    padding: 0.6rem 0 !important;
     border-top: 2px solid #ffffff !important;
     border-bottom: 2px solid #ffffff !important;
     letter-spacing: 0.05rem;
@@ -1557,7 +1557,7 @@ table td a {
 			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
 			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
 			position: relative;
-			width: 50rem;
+			width: 65rem;
 			max-width: 100%;
 			background-color: rgba(27, 31, 34, 0.85);
 			border-radius: 4px;
@@ -1688,8 +1688,8 @@ table td a {
 /* 2. Normale Zellen: NIEMALS mitten im Wort umbrechen */
 #report table td {
     white-space: normal !important;
-    word-break: normal !important;
-    overflow-wrap: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: break-word !important;
 }
 
 /* 3. ABER: URLs dürfen umbrechen (sonst geht der View kaputt) */
@@ -1699,8 +1699,8 @@ table td a {
 }
 
 /* 4. Fixierte Spaltenbreiten */
-#report table thead th:nth-child(1) { width: 27% !important; }
-#report table thead th:nth-child(2) { width: 21% !important; }
+#report table thead th:nth-child(1) { width: 25% !important; }
+#report table thead th:nth-child(2) { width: 23% !important; }
 #report table thead th:nth-child(3) { width: 52% !important; }
 
 /* 5. Optional: Mindestbreiten, damit nichts gequetscht wird */
