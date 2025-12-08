@@ -951,16 +951,22 @@ thead th:nth-child(3) { width: 45% !important; }
    1) SPALTENÜBERSCHRIFTEN — PERFECT CENTER
    ================================================ */
 table thead th {
-    background-color: #1f2326 !important;  /* leicht abgesetzt */
-    font-weight: 700 !important;
-    text-align: left !important;
-    vertical-align: middle !important;
-    height: 3.2rem !important;
-    line-height: 3.2rem !important;
-    padding: 0 !important;  /* HTML5UP überschreibt sonst */
-    border-bottom: 2px solid #ffffff !important;
-}
+    background-color: #16191d !important;
+    font-weight: 600 !important;
+    font-size: .85rem !important;
+    text-transform: uppercase;
+    letter-spacing: .12rem;
+    color: #d3dae2 !important;
 
+    text-align: center !important;
+    vertical-align: middle !important;
+    padding: .5rem .6rem !important;
+
+    border-bottom: 2px solid #3a3f47 !important;
+
+    /* Rahmen oben – gibt Struktur */
+    border-top: 2px solid #2a2f34 !important;
+}
 /* ================================================
    2) ZEBRA – normale Zeilen
    ================================================ */

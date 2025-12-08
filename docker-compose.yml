@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.8"
 
 services:
 
@@ -27,17 +27,11 @@ services:
     depends_on:
       - fuji
       - wappalyzer
+    env_file:
+      - .env
     environment:
       FUJI_HOST: http://fuji:1071
-      FUJI_USERNAME: ""
-      FUJI_PASSWORD: ""
-
       WAPPALYZER_URL: http://wappalyzer:3000
       USE_WAPPALYZER_DOCKER: "true"
       WAPPALYZER_CONTAINER: "wappalyzer"
-
-      SHODAN_API_KEY: ${SHODAN_API_KEY}
-      GITHUB_TOKEN: ${GITHUB_TOKEN}
-      GITLAB_TOKEN: ${GITLAB_TOKEN}
-      OPENAI_API_KEY: ${OPENAI_API_KEY}
     restart: unless-stopped

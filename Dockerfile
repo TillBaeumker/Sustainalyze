@@ -2,7 +2,6 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# System libs für Playwright/Chromium etc.
 RUN apt-get update && apt-get install -y \
     git curl wget unzip \
     libasound2t64 libatk1.0-0t64 libatk-bridge2.0-0t64 \
@@ -13,12 +12,11 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
-RUN pip install --upgrade pip && pip install -r requirements.txt
 
-# Playwright installieren (für Crawl4AI notwendig)
-RUN pip install playwright && playwright install --with-deps chromium
+RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
-# App-Code kopieren
-COPY app ./app
+RUN playwright install --with-deps chromium
+
+COPY . .
 
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

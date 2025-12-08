@@ -22,10 +22,6 @@
                 <p>Wie nachhaltig ist eine digitale Edition? – Finde es heraus!</p>
 
                 <p style="font-size: 0.9em; margin-top: 1.2rem;">
-                    Dieses prototypische Tool prüft digitale Editionswebseiten automatisch auf nachhaltige Strukturen,
-                    indem es theoretisch definierte Nachhaltigkeitsmerkmale in algorithmisch überprüfbare
-                    Indikatoren überführt.
-                    <br><br>
                     Entwickelt von <strong>Till Bäumker</strong>
                     (<a href="mailto:till.baeumker@gmx.de">till.baeumker@gmx.de</a>).
                 </p>
@@ -43,7 +39,28 @@
     <div id="main">
         <article id="analyse">
 
-            <h2 class="major">Editions-URL (Startseite) eingeben</h2>
+            <h2 class="major">Sustainalyze</h2>
+
+            <!-- Mini-Anleitung -->
+            <p><strong>So funktioniert’s:</strong></p>
+            <ul style="font-size:0.9em;">
+              <li>Gib die Startseite der Edition als URL ein.</li>
+              <li>Wähle, wie viele Unterseiten analysiert werden sollen (1–5).</li>
+              <li>Standard: FAIR-Check nur auf der Startseite.</li>
+              <li>Optional: potenzielle Datensätze zusätzlich mit FUJI prüfen (dauert länger).</li>
+              <li>Klicke auf <em>Start Analyse</em> und warte kurz.</em>
+            </ul>
+
+            <!-- HINWEIS (NUR HIER GETAUSCHT) -->
+            {% if result %}
+            <p class="analysis-hint" style="font-size: 0.8em; margin-top: 1rem;">
+                Analyse abgeschlossen. <a href="#analysis-result">Zu den Ergebnissen</a>.
+            </p>
+            {% else %}
+            <p class="analysis-hint muted" style="font-size: 0.8em; margin-top: 1rem;">
+                Die Analyseergebnisse erscheinen unter diesem Formular.
+            </p>
+            {% endif %}
 
             <form id="analyseForm" method="post" action="/analyse#analyse">
                 <div class="fields">
@@ -75,7 +92,6 @@
 
                 </div>
 
-                <!-- BUTTON -->
                 <ul class="actions">
                     <li>
                         <input type="submit" id="analyseButton"
@@ -84,15 +100,6 @@
                     </li>
                 </ul>
 
-                {% if result %}
-                    <p class="analysis-hint">
-                        Analyse abgeschlossen. <a href="#analysis-result">Zu den Analyseergebnissen springen</a>.
-                    </p>
-                {% else %}
-                    <p class="analysis-hint muted">
-                        Die Analyseergebnisse werden unter diesem Formular angezeigt.
-                    </p>
-                {% endif %}
             </form>
 
             {% if error %}
@@ -100,14 +107,12 @@
             {% endif %}
 
             <!-- ========================================================= -->
-            <!--   ANALYSERESULTATE                                      -->
-            <!-- ========================================================= -->
             <div id="analysis-result" {% if result %}data-has-result="true"{% endif %}>
                 {% if result %}
 
                     <div style="border: 1px solid #444; padding: 10px; margin: 15px 0;
                                 border-radius: 5px; font-size: 0.9em;">
-                        <strong>Analyse speichern oder herunterladen:</strong><br><br>
+                        <strong>Analyse speichern:</strong><br><br>
                         Strg+P / ⌘+P → „Als PDF speichern“
                     </div>
 
@@ -136,18 +141,13 @@
 
     <!-- FOOTER -->
     <footer id="footer">
-        <p class="copyright">
-            &copy; Till Bäumker. Design:
-            <a href="https://html5up.net">HTML5 UP</a>.
-        </p>
+        <p>&copy; Till Bäumker. Design:
+            <a href="https://html5up.net">HTML5 UP</a>.</p>
     </footer>
 
 </div>
 
-<!-- Custom JS -->
 <script src="/static/assets/js/custom.js"></script>
-
-<!-- HTML5 UP -->
 <script src="/static/assets/js/jquery.min.js"></script>
 <script src="/static/assets/js/browser.min.js"></script>
 <script src="/static/assets/js/breakpoints.min.js"></script>
