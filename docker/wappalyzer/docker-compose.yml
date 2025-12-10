@@ -1,9 +1,0 @@
-version: "3.9"
-
-services:
-  wappalyzer:
-    image: wappalyzer/cli:latest
-    container_name: wappalyzer
-    command: --server --port 3000
-    ports:
-      - "3000:3000"

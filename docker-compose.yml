@@ -4,21 +4,15 @@ services:
 
   fuji:
     container_name: fuji
-    build: ./fuji
+    build:
+      context: ./fuji        
+      dockerfile: Dockerfile 
     ports:
       - "1071:1071"
     restart: unless-stopped
 
-  wappalyzer:
-    container_name: wappalyzer
-    build: ./wappalyzer
-    command: sleep infinity
-    ports:
-      - "3000:3000"
-    restart: unless-stopped
-
   app:
-    container_name: sustainability_app
+    container_name: sustainalyze_app
     build:
       context: .
       dockerfile: Dockerfile
@@ -26,12 +20,8 @@ services:
       - "8000:8000"
     depends_on:
       - fuji
-      - wappalyzer
     env_file:
       - .env
     environment:
       FUJI_HOST: http://fuji:1071
-      WAPPALYZER_URL: http://wappalyzer:3000
-      USE_WAPPALYZER_DOCKER: "true"
-      WAPPALYZER_CONTAINER: "wappalyzer"
     restart: unless-stopped

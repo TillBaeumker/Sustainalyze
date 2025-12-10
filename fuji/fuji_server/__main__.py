@@ -39,6 +39,12 @@ def main():
     # logger.info('Total metrics defined: {}'.format(preproc.get_total_metrics()))
 
     isDebug = config.getboolean("SERVICE", "debug_mode")
+    if isDebug:
+        print("FUJI DEBUG MODE: skip preprocessors 🚀")
+        app = create_app(config)
+        Limiter(get_remote_address, app=app.app, default_limits=[str(config["SERVICE"]["rate_limit"])])
+        app.run(host=config["SERVICE"]["service_host"], port=int(config["SERVICE"]["service_port"]))
+        return
     preproc.retrieve_licenses(isDebug)
     preproc.retrieve_datacite_re3repos()
 

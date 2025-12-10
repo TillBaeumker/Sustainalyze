@@ -17,8 +17,7 @@
       Metadaten:
       {% if fs.get('has_structured_metadata') is sameas true %}ja
       {% elif fs.get('has_structured_metadata') is sameas false %}nein
-      {% else %}unbekannt{% endif %},
-      Vokabulare:
+      {% else %}unbekannt{% endif %}, Vokabulare:
       {% if fs.get('uses_shared_vocabularies') is sameas true %}ja
       {% elif fs.get('uses_shared_vocabularies') is sameas false %}nein
       {% else %}unklar{% endif %}

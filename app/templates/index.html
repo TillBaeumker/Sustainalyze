@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     {% include "partials/head.html" %}
     <link rel="stylesheet" href="/static/assets/css/custom.css">
@@ -19,7 +18,12 @@
             <div class="inner">
                 <h1>Automatisierte Analyse digitaler Editionen auf digitale Nachhaltigkeit – Sustainalyze</h1>
 
-                <p>Wie nachhaltig ist eine digitale Edition? – Finde es heraus!</p>
+                <p>
+                    Digitale Editionen sollen langfristig nutzbar sein – sind es aber oft nicht.
+                    Sustainalyze crawlt und analysiert Editionswebseiten automatisch und prüft
+                    zentrale Nachhaltigkeitsindikatoren. So wird sichtbar, wie nachhaltig ein
+                    Projekt tatsächlich aufgebaut ist.
+                </p>
 
                 <p style="font-size: 0.9em; margin-top: 1.2rem;">
                     Entwickelt von <strong>Till Bäumker</strong>
@@ -44,24 +48,24 @@
             <!-- Mini-Anleitung -->
             <p><strong>So funktioniert’s:</strong></p>
             <ul style="font-size:0.9em;">
-              <li>Gib die Startseite der Edition als URL ein.</li>
-              <li>Wähle, wie viele Unterseiten analysiert werden sollen (1–5).</li>
-              <li>Standard: FAIR-Check nur auf der Startseite.</li>
-              <li>Optional: potenzielle Datensätze zusätzlich mit FUJI prüfen (dauert länger).</li>
-              <li>Klicke auf <em>Start Analyse</em> und warte kurz.</em>
+                <li>Gib die Startseite der Edition als URL ein.</li>
+                <li>Wähle, wie viele Unterseiten analysiert werden sollen (1–5).</li>
+                <li>Standard: FAIR-Check nur auf der Startseite.</li>
+                <li>Optional: potenzielle Datensätze zusätzlich mit FUJI prüfen (experimentell).</li>
+                <li>Klicke auf <em>Start Analyse</em> und warte kurz.</li>
             </ul>
 
-            <!-- HINWEIS (NUR HIER GETAUSCHT) -->
             {% if result %}
-            <p class="analysis-hint" style="font-size: 0.8em; margin-top: 1rem;">
-                Analyse abgeschlossen. <a href="#analysis-result">Zu den Ergebnissen</a>.
-            </p>
+                <p class="analysis-hint" style="font-size: 0.8em; margin-top: 1rem;">
+                    Analyse abgeschlossen. <a href="#analysis-result">Zu den Ergebnissen</a>.
+                </p>
             {% else %}
-            <p class="analysis-hint muted" style="font-size: 0.8em; margin-top: 1rem;">
-                Die Analyseergebnisse erscheinen unter diesem Formular.
-            </p>
+                <p class="analysis-hint muted" style="font-size: 0.8em; margin-top: 1rem;">
+                    Die Analyseergebnisse erscheinen unter diesem Formular.
+                </p>
             {% endif %}
 
+            <!-- FORM -->
             <form id="analyseForm" method="post" action="/analyse#analyse">
                 <div class="fields">
 
@@ -99,41 +103,50 @@
                                value="Start Analyse" />
                     </li>
                 </ul>
-
             </form>
 
             {% if error %}
                 <p style="color: red; margin-top: 1rem;">Fehler: {{ error }}</p>
             {% endif %}
 
-            <!-- ========================================================= -->
             <div id="analysis-result" {% if result %}data-has-result="true"{% endif %}>
-                {% if result %}
+            {% if result %}
 
-                    <div style="border: 1px solid #444; padding: 10px; margin: 15px 0;
-                                border-radius: 5px; font-size: 0.9em;">
-                        <strong>Analyse speichern:</strong><br><br>
-                        Strg+P / ⌘+P → „Als PDF speichern“
-                    </div>
+                <div style="border: 1px solid #444; padding: 10px; margin: 15px 0;
+                            border-radius: 5px; font-size: 0.9em;">
+                    <strong>Analyse speichern:</strong><br><br>
+                    Strg+P / ⌘+P → „Als PDF speichern“
+                </div>
 
-                    {% if report %}
-                    <div id="report">
-                        {% include "partials/report.html" %}
-                    </div>
-                    {% endif %}
-
-                    {% include "partials/fuji_results.html" %}
-                    {% include "partials/wappalyzer.html" %}
-                    {% include "partials/shodan_overview.html" %}
-                    {% include "partials/fair_checker.html" %}
-
-                    {% if result.page_sections %}
-                        {% for page in result.page_sections %}
-                            {% include "partials/page_block.html" %}
-                        {% endfor %}
-                    {% endif %}
-
+                {# --- KI-Gesamtbericht --- #}
+                {% if report %}
+                <div id="report">
+                    {% include "partials/report.html" %}
+                </div>
                 {% endif %}
+
+                <!-- Projektweite Analyse -->
+                <section class="report-section">
+                    <h3 class="section-title">Projektweite Analyse</h3>
+                </section>
+
+                {% include "partials/fuji_results.html" %}
+                {% include "partials/wappalyzer.html" %}
+                {% include "partials/shodan_overview.html" %}
+                {% include "partials/fair_checker.html" %}
+
+                <!-- Einzelne Seiten -->
+                <section class="report-section">
+                    <h3 class="section-title">Analyse einzelner Unterseiten</h3>
+                </section>
+
+                {% if result.page_sections %}
+                    {% for page in result.page_sections %}
+                        {% include "partials/page_block.html" %}
+                    {% endfor %}
+                {% endif %}
+
+            {% endif %}
             </div>
 
         </article>

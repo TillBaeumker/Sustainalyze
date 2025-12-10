@@ -36,8 +36,8 @@ class Preprocessor:
     schema_org_creativeworks = []
     all_licenses = []
     license_names = []
-    metadata_standards = {}  # key=subject,value =[standards name]
-    metadata_standards_uris = {}  # some additional namespace uris and all uris from above as key
+    metadata_standards = {}
+    metadata_standards_uris = {}
     all_file_formats = {}
     science_file_formats = {}
     long_term_file_formats = {}
@@ -52,7 +52,7 @@ class Preprocessor:
     identifiers_org_data = {}
     google_data_dois = []
     google_data_urls = []
-    fuji_server_dir = Path(__file__).parent.parent  # project_root
+    fuji_server_dir = Path(__file__).parent.parent
     data_dir = fuji_server_dir / "data"
     header = {"Accept": "application/json"}
     logger = logging.getLogger(__name__)
@@ -77,7 +77,6 @@ class Preprocessor:
             for mime_type, mime_data in mimes.items():
                 if mime_data.get("extensions"):
                     for ext in mime_data.get("extensions"):
-                        # if '.' + ext not in mimetypes.types_map:
                         mimetypes.add_type(mime_type, "." + ext, strict=True)
             print("MIME TYPES: ", len(mimetypes.types_map))
         except Exception:
@@ -102,9 +101,7 @@ class Preprocessor:
 
     @classmethod
     def set_verify_pids(cls, verify):
-        # if str(verify).lower in self.bool_string:
         cls.verify_pids = cls.bool_string.get(str(verify).lower)
-        # cls.verify_pids = verify
 
     @classmethod
     def set_google_custom_search_info(cls, search_id, api_key, web_search):
@@ -198,8 +195,6 @@ class Preprocessor:
     @classmethod
     def retrieve_metrics_yaml(cls, yaml_metric_path):
         cls.METRIC_YML_PATH = yaml_metric_path
-        # cls.data_files_limit = limit
-        # cls.metric_specification = specification_uri
         stream = open(cls.METRIC_YML_PATH, encoding="utf8")
         try:
             specification = yaml.load(stream, Loader=yaml.FullLoader)
@@ -208,24 +203,15 @@ class Preprocessor:
         cls.all_metrics_list = specification["metrics"]
         cls.total_metrics = len(cls.all_metrics_list)
 
-        # expected output format of http://localhost:1071/uji/api/v1/metrics
-        # unwanted_keys = ['question_type']
         cls.formatted_specification["total"] = cls.total_metrics
-        # temp_list = []
-        # for dictm in cls.all_metrics_list:
-        # temp_dict = {k: v for k, v in dictm.items() if k not in unwanted_keys}
-        # temp_list.append(dictm)
-        # cls.formatted_specification['metrics'] = temp_list
         cls.formatted_specification["metrics"] = cls.all_metrics_list
 
     @classmethod
     def retrieve_datacite_re3repos(cls):
-        # retrieve all client id and re3data doi from datacite
         isDebugMode = True
         re3dict_path = cls.data_dir / "repodois.yaml"
         repolistdate = re3dict_path.stat().st_mtime
         try:
-            # update once a day
             if time.time() - repolistdate >= 86400:
                 isDebugMode = False
         except:
@@ -246,7 +232,6 @@ class Preprocessor:
                     for r in response["data"]:
                         cls.re3repositories[r["id"]] = r["attributes"]["re3data"]
                     raw["links"] = response["links"]
-                # fix wrong entry
                 cls.re3repositories["bl.imperial"] = "http://doi.org/10.17616/R3K64N"
                 with open(re3dict_path, "w") as f2:
                     yaml.safe_dump(cls.re3repositories, f2)
@@ -266,15 +251,18 @@ class Preprocessor:
 
     @classmethod
     def retrieve_licenses(cls, isDebugMode):
+
+        # 🔥 our only change:
+        # short-circuit EVERYTHING if debug flag is true
+        if isDebugMode:
+            return
+
         data = None
         path = cls.data_dir / "licenses.yaml"
-        # The repository can be found at https://github.com/spdx/license-list-data
-        # https://spdx.org/spdx-license-list/license-list-overview
-        if isDebugMode:  # use local file instead of downloading the file online
+        if isDebugMode:
             with open(path) as f:
                 data = yaml.safe_load(f)
         else:
-            # cls.SPDX_URL = license_path
             try:
                 r = requests.get(cls.SPDX_URL)
                 try:
@@ -282,18 +270,18 @@ class Preprocessor:
                         resp = r.json()
                         data = resp["licenses"]
                         for d in data:
-                            d["name"] = d["name"].lower()  # convert license name to lowercase
+                            d["name"] = d["name"].lower()
                         with open(path, "w") as f:
                             yaml.safe_dump(data, f)
                 except yaml.YAMLError as exc1:
                     cls.logger.error(exc1)
             except requests.exceptions.RequestException as exc2:
                 cls.logger.error(exc2)
+
         if data:
             cls.all_licenses = data
             for licenceitem in cls.all_licenses:
                 seeAlso = licenceitem.get("seeAlso")
-                # some cleanup to add modified licence URLs
                 for licenceurl in seeAlso:
                     if "http:" in licenceurl:
                         altURL = licenceurl.replace("http:", "https:")
@@ -306,9 +294,6 @@ class Preprocessor:
                         seeAlso.append(altURL)
             cls.total_licenses = len(data)
             cls.license_names = [d["name"] for d in data if "name" in d]
-            # referenceNumber = [r['referenceNumber'] for r in data if 'referenceNumber' in r]
-            # seeAlso = [s['seeAlso'] for s in data if 'seeAlso' in s]
-            # cls.license_urls = dict(zip(referenceNumber, seeAlso))
 
     @classmethod
     def retrieve_metadata_standards_uris(cls):
@@ -321,11 +306,8 @@ class Preprocessor:
 
     @classmethod
     def retrieve_metadata_standards(cls):
-        # cls.retrieve_metadata_standards_uris()
         data = {}
         std_path = cls.data_dir / "metadata_standards.yaml"
-        # The original repository can be retrieved via https://rdamsc.bath.ac.uk/api/m
-        # or at https://github.com/rd-alliance/metadata-catalog-dev
         with open(std_path) as f:
             data = yaml.safe_load(f)
         if data:
@@ -361,7 +343,7 @@ class Preprocessor:
         if not cls.all_file_formats:
             cls.retrieve_all_file_formats()
         for file in cls.all_file_formats.values():
-            if "long term format" in file.get("reason"):
+            if "long long term format" in file.get("reason"):
                 domain = None
                 if file.get("domain"):
                     domain = file.get("domain")[0]
@@ -399,7 +381,6 @@ class Preprocessor:
         ns = []
         ns_file_path = cls.data_dir / "default_namespaces.txt"
         with open(ns_file_path) as f:
-            # ns = [line.split(':',1)[1].strip() for line in f]
             ns = [line.rstrip().rstrip("/#") for line in f]
         if ns:
             cls.default_namespaces = ns
@@ -415,7 +396,7 @@ class Preprocessor:
         lov_helper = LinkedVocabHelper()
         lov_helper.set_linked_vocab_index()
         cls.linked_vocabs = list(set(lov_helper.namespaces))
-        cls.linked_vocab_index = lov_helper.linked_vocab_index
+        cls.linked_vocab_index = linked_vocab_index = lov_helper.linked_vocab_index
 
     @staticmethod
     def uri_validator(u):
@@ -433,10 +414,8 @@ class Preprocessor:
                 r = requests.head(url)
                 if not (400 <= r.status_code < 600):
                     isActive = True
-            except requests.exceptions.RequestException as e:
-                cls.logger.error(e)
-            except requests.exceptions.ConnectionError as e1:
-                cls.logger.error(e1)
+            except:
+                pass
         return isActive
 
     @classmethod
@@ -453,9 +432,6 @@ class Preprocessor:
 
     @classmethod
     def getLinkedVocabs(cls):
-        # if not cls.linked_vocabs:
-        # cls.retrieve_linkedvocabs(cls.LOV_API, cls.LOD_CLOUDNET, cls.BIOPORTAL_API, cls.BIOPORTAL_KEY, True)
-        # cls.retrieve_linkedvocabs(cls.LOV_API, cls.LOD_CLOUDNET, True)
         return cls.linked_vocabs
 
     @classmethod
@@ -463,14 +439,6 @@ class Preprocessor:
         if not cls.default_namespaces:
             cls.retrieve_default_namespaces()
         return cls.default_namespaces
-
-    """@classmethod
-    def get_metrics(cls):
-        return cls.formatted_specification
-
-    @classmethod
-    def get_total_metrics(cls):
-        return cls.total_metrics"""
 
     @classmethod
     def get_total_licenses(cls):
@@ -486,37 +454,37 @@ class Preprocessor:
         return new_dict
 
     @classmethod
-    def get_metadata_standards_uris(cls) -> object:
+    def get_metadata_standards_uris(cls):
         if not cls.metadata_standards_uris:
             cls.retrieve_metadata_standards_uris()
         return cls.metadata_standards_uris
 
     @classmethod
-    def get_metadata_standards(cls) -> object:
+    def get_metadata_standards(cls):
         if not cls.metadata_standards:
             cls.retrieve_metadata_standards()
         return cls.metadata_standards
 
     @classmethod
-    def get_science_file_formats(cls) -> object:
+    def get_science_file_formats(cls):
         if not cls.science_file_formats:
             cls.retrieve_science_file_formats(True)
         return cls.science_file_formats
 
     @classmethod
-    def get_long_term_file_formats(cls) -> object:
+    def get_long_term_file_formats(cls):
         if not cls.long_term_file_formats:
             cls.retrieve_long_term_file_formats(True)
         return cls.long_term_file_formats
 
     @classmethod
-    def get_open_file_formats(cls) -> object:
+    def get_open_file_formats(cls):
         if not cls.open_file_formats:
             cls.retrieve_open_file_formats(True)
         return cls.open_file_formats
 
     @classmethod
-    def get_standard_protocols(cls) -> object:
+    def get_standard_protocols(cls):
         if not cls.standard_protocols:
             cls.retrieve_standard_protocols(True)
         return cls.standard_protocols

@@ -53,7 +53,7 @@ details summary::-webkit-details-marker {
 
 
 /* ===========================
-   3. PRE / DEBUG BOXEN
+   3. PRE / DEBUG
    =========================== */
 
 #analysis-result pre,
@@ -115,20 +115,30 @@ details summary::-webkit-details-marker {
     font-size: .95rem;
 }
 
+/* Hintergrund: heller */
 .scorebar {
-    height: 10px;
-    background: #1a1d23;
+    height: 14px;
+    background: rgba(255,255,255,0.25) !important;
     border-radius: 999px;
     overflow: hidden;
     position: relative;
 }
 
-.scorebar::after {
-    content: "";
-    position: absolute;
-    inset: 0;
+/* Balken: Gradient – sichtbar */
+.scorebar-fill {
+    height: 100%;
     width: calc(var(--score) * 1%);
-    background: linear-gradient(90deg,#ef4444,#f97316,#eab308,#84cc16,#22c55e,#2dd4bf);
+    background: linear-gradient(
+        90deg,
+        #ef4444,
+        #f97316,
+        #eab308,
+        #84cc16,
+        #22c55e,
+        #2dd4bf
+    ) !important;
+    border-radius: inherit;
+    box-shadow: 0 0 6px rgba(255,255,255,0.25);
 }
 
 .score-note {
@@ -139,7 +149,7 @@ details summary::-webkit-details-marker {
 
 
 /* ===========================
-   7. LISTS & FAZIT
+   7. LISTS
    =========================== */
 
 .report-section {
@@ -201,6 +211,10 @@ details summary::-webkit-details-marker {
 }
 
 
+/* ===========================
+   TABLE
+   =========================== */
+
 #report table th,
 #report table td {
     border: 2px solid rgba(255,255,255,0.35) !important;
@@ -226,8 +240,9 @@ div {
     vertical-align: middle;
 }
 
+
 /* ===========================
-   SCROLL-BUTTON (falls genutzt)
+   SCROLL BUTTON
    =========================== */
 
 .scroll-button {
@@ -245,4 +260,3 @@ div {
 .scroll-button:hover {
     background: rgba(79,195,247,0.15);
 }
-

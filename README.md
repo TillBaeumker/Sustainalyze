@@ -1,59 +1,55 @@
 ﻿# Sustainalyze
 
-Automated sustainability analysis for digital scholarly editions.  
-Sustainalyze crawls, evaluates and summarizes edition-websites using repository data, semantic metadata, external dataset analysis via FUJI, LLM-based summaries, and more.
+Automated sustainability analysis for digital scholarly editions.
 
-## 🚀 Schnellstart (mit Docker)
+Sustainalyze crawls and evaluates edition websites. Es nutzt Repository-Daten, semantische Metadaten, FAIR-Dataset-Analysen über FUJI und LLM-basierte Zusammenfassungen.
 
-Voraussetzungen:  
-- Docker & Docker Compose (lokal installiert)  
-- Ein .env mit API-Keys (optional, aber empfohlen)
+## 🚀 Schnellstart (Docker)
+
+### Voraussetzungen
+- Docker
+- Docker Compose
+- `.env` mit optionalen API-Keys
+
+### Installation & Start
 
 ```bash
-git clone https://github.com/TillBaeumker/Sustainalyze.git  
-cd Sustainalyze  
-cp .env.example .env            # Environment-Variablen konfigurieren  
-docker compose up               # startet alle Services: FUJI, Wappalyzer, App  
+git clone https://github.com/TillBaeumker/Sustainalyze.git
+cd Sustainalyze
+cp .env.example .env      # Werte anpassen
+docker compose up --build
 ```
 
-Dann im Browser öffnen: `http://localhost:8000`
+### Browser öffnen
 
----
+Gehe zu: [http://localhost:8000](http://localhost:8000)
 
-## 🔧 Optional: Entwicklung lokal (ohne Docker)
+Alle Services starten automatisch (FUJI, Wappalyzer, App).
 
-Wenn du lokal entwickeln willst, kannst du — je nach Bedarf — deine alten Setup-Skripte nutzen. Diese sind **nicht** für Produktions-Deploy gedacht.
+## 🔧 Lokale Entwicklung (ohne Docker)
+Optional für Entwicklung oder Experimente.
+*Nicht für Produktion gedacht.*
 
----
+## 📁 Struktur
 
-## 📁 Repository Struktur
+- **`app/`** – FastAPI-Code, Frontend, Module
+- **`fuji/`** – FUJI-Dienst
+- **`wappalyzer/`** – Wappalyzer-Dienst
+- **`docker-compose.yml`** – Services Definition
+- **`.env.example`** – Template für Umgebungsvariablen
+- **`requirements.txt`** – Python-Abhängigkeiten
 
-- `app/` — Hauptcode der Anwendung (FastAPI, Web-Front, Modules…)  
-- `fuji/` — FUJI-Service als Docker-Subprojekt  
-- `wappalyzer/` — Wappalyzer als Docker-Subprojekt  
-- `docker-compose.yml` — definiert Zusammenspiel aller Dienste  
-- `.env.example` — Template für Umgebungsvariablen (API-Keys etc.)  
-- `requirements.txt` — Python-Abhängigkeiten  
+## ⚠ Hinweise
 
----
+- **Nicht committen:** `.env`, `venv/`, `node_modules`, Download-Ordner
+- `.env.example` als Vorlage verwenden
+- Dummy-Keys erlauben den Start, deaktivieren aber externe Services (z.B. LLM-API)
 
-## 🛑 Wichtige Hinweise
+## 🧪 Weiterentwickeln
 
-- **Nicht** committen: `.env`, `venv/`, Node-Modules, Download-Ordner, temporäre Files  
-- Verwende `.env.example` als Vorlage für Konfiguration  
-- Wenn du Dummy-API-Keys nutzt: Die App startet, aber externe Dienste funktionieren ggf. nicht  
-
----
-
-## 📝 Weiterentwickeln
-
-Wenn du neue Funktionen entwickelst:  
-- Code in `app/` ändern  
-- (Optional) `docker compose up --build` ausführen  
-- Änderungen testen  
-
----
+1. Code in `app/` ändern
+2. `docker compose up --build` ausführen, wenn nötig
+3. Testen im Browser
 
 ## 📄 Lizenz
-
-MIT License — siehe `LICENSE`
+MIT – siehe `LICENSE` Datei.
