@@ -35,26 +35,24 @@ Alle Services starten automatisch.
 
 ## Lizenz
 
-Dieses Projekt steht unter der MIT-License (siehe LICENSE).
+Dieses Projekt steht unter der **MIT-License** (siehe `LICENSE`).
 
-Bitte beachte: Das Repository enthält zusätzlich Komponenten von Drittanbietern. Diese Teile stehen nicht unter der MIT-Lizenz, sondern unter den jeweiligen Original-Lizenzen der Projekte. Die MIT-Lizenz gilt ausschließlich für den eigenen Code von Till in diesem Repository.
+Bitte beachte: Das Repository enthält zusätzlich Komponenten von Drittanbietern. Diese Teile stehen **nicht** unter der MIT-Lizenz, sondern unter den jeweiligen Original-Lizenzen der Projekte. Die MIT-Lizenz gilt ausschließlich für den eigenen Code von Till in diesem Repository.
 
-Enthaltene Dritt-Lizenzen
+---
 
-Wappalyzer
+### Enthaltene Dritt-Lizenzen
 
-Der Ordner app/wappalyzer enthält Code und Daten aus dem Projekt Wappalyzer
+#### Wappalyzer
+- Der Ordner `app/wappalyzer` enthält Code und Daten aus dem Projekt *Wappalyzer*
+- Der enthaltene Code unterliegt den Lizenzbedingungen des ursprünglichen Projekts
+- Siehe die Lizenzen im Verzeichnis `app/wappalyzer/`
 
-Der enthaltene Code unterliegt den Lizenzbedingungen des ursprünglichen Projekts
+#### HTML5 UP Template
+- Das Frontend basiert auf einem Template von *HTML5 UP*
+- Das Template unterliegt der ursprünglichen Lizenz von HTML5 UP
+- Attribution gemäß Lizenz erfolgt im Footer
 
-Siehe die Lizenzen im Verzeichnis app/wappalyzer/
-
-HTML5 UP Template
-
-Das Frontend basiert auf einem Template von HTML5 UP
-
-Das Template unterliegt der ursprünglichen Lizenz von HTML5 UP
-
-Attribution gemäß Lizenz erfolgt im Footer
+---
 
 Weitere verwendete Assets oder Bibliotheken behalten jeweils ihre eigene Lizenz. Falls du fremden Code weiterverwendest, modifizierst, veröffentlichst oder weitergibst, musst du die Bedingungen der ursprünglichen Lizenz einhalten.
