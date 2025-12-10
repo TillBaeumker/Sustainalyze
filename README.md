@@ -1,8 +1,8 @@
-﻿# Sustainalyze
+# Sustainalyze
 
 Automated sustainability analysis for digital scholarly editions.
 
-Sustainalyze crawls and evaluates edition websites. Sustainalyze ist ein Web-Tool zur automatisierten Analyse von Webauftritten mit Fokus auf digitale Editionen Die Anwendung crawlt eine Website, sammelt technische und inhaltliche Hinweise auf digitale Nachhaltigkeit und erzeugt eine strukturierte Auswertung inklusive Bericht und LLM-gestützter Zusammenfassung.
+Sustainalyze crawls and evaluates edition websites. Sustainalyze ist ein Web-Tool zur automatisierten Analyse von Webauftritten mit Fokus auf digitale Editionen. Die Anwendung crawlt eine Website, sammelt technische und inhaltliche Hinweise auf digitale Nachhaltigkeit und erzeugt eine strukturierte Auswertung inklusive Bericht und LLM-gestützter Zusammenfassung. [web:2]
 
 
 ## 🚀 Schnellstart (Docker)
