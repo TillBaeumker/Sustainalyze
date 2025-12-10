@@ -55,4 +55,4 @@ RUN npm install --global yarn \
 # ==================================================================
 #   START FASTAPI
 # ==================================================================
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD sh -c "cd /app/app/wappalyzer && yarn start & uvicorn app.main:app --host 0.0.0.0 --port 8000"

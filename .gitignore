@@ -40,26 +40,34 @@ pytest_cache/
 tmp/
 temp/
 
+
 # ============================================================
 # APP OUTPUT / TEMP DATA
 # ============================================================
 tei_downloads/
 reports/
 app/downloads/
+
 crawl4ai_cache/
 crawl4ai_output/
 crawl4ai_logs/
+
 output/
-data/
 tmp_analysis/
 
+# nur root/data ignorieren
+/data/
+!fuji/fuji_server/data/
+
+
 # ============================================================
-# FUJI – IGNORIERE NUR TEMP-DATEN, NICHT DEN CODE
+# FUJI (nur tmp, nicht code!)
 # ============================================================
 fuji/fuji-venv/
 fuji/fuji_server/tmp/
 fuji/fuji_server/__pycache__/
 fuji/fuji_server/logs/
+
 
 # ============================================================
 # NODE / WAPPALYZER / PLAYWRIGHT
@@ -67,22 +75,25 @@ fuji/fuji_server/logs/
 node_modules/
 npm-debug.log
 
-# Playwright Browser Downloads
+# Playwright browser downloads
 playwright/.local-browsers/
 
+
 # ============================================================
-# DOCKER (lokale Overrides)
+# DOCKER local overrides
 # ============================================================
 docker-compose.override.yml
 
+
 # ============================================================
-# LOKALE ENTWICKLUNGSSKRIPTE (nicht committen)
+# LOCAL SCRIPTS
 # ============================================================
 reset_all.sh
 setup.sh
 start_all.sh
 status.sh
 stop_all.sh
+
 
 # ============================================================
 # IDE / OS
@@ -93,8 +104,9 @@ stop_all.sh
 Thumbs.db
 .ipynb_checkpoints/
 
+
 # ============================================================
-# SECRETS (nur lokale Konfigurationen)
+# SECRETS
 # ============================================================
 *.key
 *.pem
