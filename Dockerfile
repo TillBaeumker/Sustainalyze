@@ -5,6 +5,8 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
+RUN echo 'APT::Sandbox::User "root";' >/etc/apt/apt.conf
+
 # ==================================================================
 #   SYSTEM DEPENDENCIES + CHROMIUM (WICHTIG!!!)
 # ==================================================================
@@ -21,7 +23,6 @@ RUN apt-get update && apt-get install -y \
     fonts-liberation ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
-# Puppeteer braucht diese ENV Variablen
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
 ENV PUPPETEER_ARGS="--no-sandbox --disable-setuid-sandbox"
 
