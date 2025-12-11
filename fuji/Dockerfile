@@ -2,6 +2,8 @@ FROM python:3.12-slim
 
 WORKDIR /fuji
 
+RUN echo 'APT::Sandbox::User "root";' >/etc/apt/apt.conf
+
 RUN apt-get update && apt-get install -y \
     libmagic1 \
     wget \
