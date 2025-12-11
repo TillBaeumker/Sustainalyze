@@ -5,13 +5,13 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-
 # ==================================================================
-#   SYSTEM DEPENDENCIES (Node, Chromium, Puppeteer requirements)
+#   SYSTEM DEPENDENCIES + CHROMIUM (WICHTIG!!!)
 # ==================================================================
 RUN apt-get update && apt-get install -y \
     git curl wget unzip \
     nodejs npm \
+    chromium \
     libasound2 libatk1.0-0 libatk-bridge2.0-0 \
     libcups2 libxcomposite1 libxdamage1 libxrandr2 \
     libgbm1 libpango-1.0-0 libpangocairo-1.0-0 \
@@ -21,29 +21,28 @@ RUN apt-get update && apt-get install -y \
     fonts-liberation ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
+# Puppeteer braucht diese ENV Variablen
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
+ENV PUPPETEER_ARGS="--no-sandbox --disable-setuid-sandbox"
 
 # ==================================================================
 #   PYTHON DEPENDENCIES
 # ==================================================================
-COPY requirements.txt ./
+COPY requirements.txt ./ 
 RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
-
 # ==================================================================
-#   PLAYWRIGHT
+#   PLAYWRIGHT (für dein Crawling)
 # ==================================================================
 RUN playwright install chromium
 
-
 # ==================================================================
-#   COPY CODE (erst danach, damit Cache erhalten bleibt)
+#   COPY CODE
 # ==================================================================
 COPY . /app
 
-
 # ==================================================================
-#   WAPPALYZER INSTALLATION (yarn, puppeteer, build)
-#   --> IMPORTANT: ignore yarn.lock, install puppeteer, build bundle
+#   WAPPALYZER INSTALLATION (yarn + puppeteer)
 # ==================================================================
 RUN npm install --global yarn \
     && cd /app/app/wappalyzer \
@@ -51,8 +50,10 @@ RUN npm install --global yarn \
     && npm install puppeteer --legacy-peer-deps \
     && yarn build || true
 
-
 # ==================================================================
-#   START FASTAPI
+#   STARTUP COMMAND
 # ==================================================================
-CMD sh -c "cd /app/app/wappalyzer && yarn start & uvicorn app.main:app --host 0.0.0.0 --port 8000"
+CMD sh -c "cd /app/app/wappalyzer && \
+           PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium \
+           yarn start --no-sandbox --disable-setuid-sandbox & \
+           uvicorn app.main:app --host 0.0.0.0 --port 8000"
