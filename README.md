@@ -17,7 +17,7 @@ Dieses Repository enthält den vollständigen Code des Prototyps Sustainalyze. D
   - **manager/** – Orchestrierung der Analyseprozesse, Steuerung des Crawls und Aggregation der Ergebnisse  
   - **results/** – Module zur Berichtserstellung, Scoring-Logik und Heuristiken  
 
-### 2. Frontend (`templates/` & `static/`)
+#### 2. Frontend (`templates/` & `static/`)
 - **`templates/`**  
   HTML-Templates für das Webfrontend (basierend auf einem HTML5-UP-Theme).  
 - **`static/`**  
