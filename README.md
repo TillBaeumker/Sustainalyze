@@ -2,39 +2,42 @@
 
 Automated sustainability analysis for digital scholarly editions.
 
-Sustainalyze crawls and evaluates edition websites. Sustainalyze ist ein Web-Tool zur automatisierten Analyse von Webauftritten mit Fokus auf digitale Editionen. Die Anwendung crawlt eine Website, sammelt technische und inhaltliche Hinweise auf digitale Nachhaltigkeit und erzeugt eine strukturierte Auswertung inklusive Bericht und LLM-gestützter Zusammenfassung. [web:2]
+Sustainalyze ist ein Web-Tool zur automatisierten Analyse von digitalen Editionen. Die Anwendung crawlt eine Website, sammelt technische und inhaltliche Hinweise auf digitale Nachhaltigkeit und erzeugt eine strukturierte Auswertung inklusive Bericht und LLM-gestützter Zusammenfassung. [web:2]
 
 ## Projektstruktur (Überblick)
 
 Dieses Repository enthält den vollständigen Code des Prototyps *Sustainalyze*. Die wichtigsten Bereiche sind:
 
-### `app/` – Hauptanwendung
-Hier befindet sich der gesamte **eigene Code** des Projekts.
+### 1. Anwendungscode (`app/`)
+Hier befindet sich der gesamte **eigene Code** von Sustainalyze.
 
 - **`modules/`**  
-  Kern der Anwendung: alle Analysekomponenten wie  
-  Crawling, Link-Analyse, API-Erkennung, Download-Detector, Shodan-Check, FAIR-Checker-Anbindung, Wappalyzer-Wrapper, Repository-Analyse, LLM-Auswertung, Metadatenextraktion etc.
-
-- **`manager/`**  
-  Steuert den Crawl-Ablauf, aggregiert Ergebnisse und erzeugt strukturierte Output-Daten.
-
-- **`templates/`**  
-  HTML-Templates des Frontends (HTML5 UP Theme).
-
-- **`static/`**  
-  CSS-, JS-Dateien und Assets für das Webfrontend.
+  Enthält die zentralen Funktionsbereiche der Anwendung:  
+  - **analysis/** – alle selbst entwickelten Analyse-Module zur Datenextraktion  
+    (Crawling, Link-Analyse, API-Erkennung, Shodan, Wappalyzer-Wrapper, FAIR-Checks, Repo-Analyse, LLM-Auswertung, Metadaten usw.)  
+  - **manager/** – Orchestrierung der Analyseprozesse, Steuerung des Crawls und Aggregation der Ergebnisse  
+  - **results/** – Module zur Berichtserstellung, Scoring-Logik und Heuristiken  
 
 - **`utils/`**  
-  Hilfsfunktionen, die modulübergreifend genutzt werden.
+  Kleine Hilfsfunktionen, die modulübergreifend genutzt werden.
 
-### `evaluation/` – Evaluationscode
-Enthält alle Skripte, Datensätze und Ergebnisse (z. B. LLM-Reproduzierbarkeit, ISO-Statistiken, Linkstabilität, Structured-Data-Extraktion), die zur **wissenschaftlichen Evaluation** genutzt wurden.
+### 2. Frontend (`templates/` & `static/`)
+- **`templates/`**  
+  HTML-Templates für das Webfrontend (basierend auf einem HTML5-UP-Theme).  
+- **`static/`**  
+  CSS-, JavaScript- und Bilddateien für die Oberfläche.
 
-### `fuji/` – FUJI FAIR-Checker (Third-Party)
-Eine vollständige Kopie der FAIR-Checker-Software, lokal einsetzbar und über eine API in den Prototyp integriert.
+### 3. Fremdmodule
+- **`app/wappalyzer/`**  
+  Enthält das vollständige Wappalyzer-Modul zur Technologieerkennung (Third-Party).
+- **`fuji/`**  
+  Vollständige Installation des FAIR-Checker-Tools FUJI (Third-Party), angebunden über die interne API.
 
-### `app/wappalyzer/` – Wappalyzer (Third-Party)
-Enthält die Technologie-Datenbank und die notwendige Logik zur Technologieerkennung auf Webseiten.
+### 4. Evaluation (`evaluation/`)
+Enthält alle Skripte, Datensätze und Ergebnisse, die zur wissenschaftlichen Evaluation genutzt wurden  
+(z. B. LLM-Reproduzierbarkeit, ISO-Tests, Linkstabilität, Structured-Metadata-Auswertung).
+
+---
 
 ## Schnellstart (Docker)
 
