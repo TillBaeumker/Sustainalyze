@@ -43,7 +43,6 @@ Enthält Skripte und Rohdaten der wissenschaftlichen Evaluation
 ### Systemvoraussetzungen
 
 Sustainalyze läuft vollständig in Docker-Containern.  
-Es müssen daher **keine zusätzlichen Python-, Node- oder Playwright-Installationen** lokal vorgenommen werden.
 
 ### Windows
 - **Docker Desktop**
@@ -77,7 +76,7 @@ Für den Betrieb von Sustainalyze werden einige optionale API-Keys unterstützt.
   Ohne Tokens erfolgt nur eine rudimentäre Link-Erkennung.
 
 - **FUJI (`FUJI_USERNAME`, `FUJI_PASSWORD`) – optional, Standard = leer**  
-  Diese Variablen dienen ausschließlich dazu, FUJI in Umgebungen mit Authentifizierung anzusprechen.  
+  Diese Variablen dienen ausschließlich dazu, FUJI bei technisch abgesicherten Endpunkten (z. B. Basic Auth) anzusprechen.  
 
 Sustainalyze lädt keine API-Keys mit Git aus; du musst Werte ausschließlich lokal in der `.env` eintragen.
 
