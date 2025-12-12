@@ -58,11 +58,7 @@ Es müssen daher **keine zusätzlichen Python-, Node- oder Playwright-Installati
 ### weitere Voraussetzungen
 - `.env` mit optionalen API-Keys
 
-<<<<<<< HEAD
-#### 🔑 Hinweise zu benötigten API-Keys
-=======
 ### 🔑 Hinweise zu benötigten API-Keys
->>>>>>> 05a25e5 (Update project)
 
 Für den Betrieb von Sustainalyze werden einige optionale API-Keys unterstützt. Die Anwendung funktioniert grundsätzlich auch ohne diese, allerdings stehen dann bestimmte Analysefunktionen nicht zur Verfügung.
 
