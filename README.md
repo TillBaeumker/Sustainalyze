@@ -29,7 +29,7 @@ Die wichtigsten Bereiche sind:
   Enthält das vollständige Wappalyzer-Modul zur Technologieerkennung (Third-Party).
 
 - **`fuji/`**  
-  Vollständige Installation des FAIR-Checker-Tools FUJI (Third-Party), angebunden über die interne API.
+  Vollständige Installation des FAIR-Checker-Tools FUJI (Third-Party).
 
 ### 3. Evaluation (`evaluation/`)
 
