@@ -75,13 +75,7 @@ Für den Betrieb von Sustainalyze werden einige optionale API-Keys unterstützt.
 
 - **FUJI (`FUJI_USERNAME`, `FUJI_PASSWORD`) – optional, Standard = leer**  
   Diese Variablen dienen ausschließlich dazu, FUJI in Umgebungen mit Authentifizierung anzusprechen.  
-<<<<<<< HEAD
-  
-=======
-  Die mitgelieferte lokale FUJI-Installation benötigt **keine Zugangsdaten**.  
-  Die Platzhalter sind nur aus Gründen der Dokumentation vorhanden.
 
->>>>>>> 05a25e5 (Update project)
 Sustainalyze lädt keine API-Keys mit Git aus; du musst Werte ausschließlich lokal in der `.env` eintragen.
 
 ### Installation & Start
