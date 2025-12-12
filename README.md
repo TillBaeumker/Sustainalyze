@@ -6,31 +6,34 @@ Sustainalyze ist ein Web-Tool zur automatisierten Analyse digitaler Editionen. D
 
 ## Projektstruktur (Überblick)
 
-Dieses Repository enthält den vollständigen Code des Prototyps *Sustainalyze*. Die wichtigsten Bereiche sind:
+Dieses Repository enthält den vollständigen Code des Prototyps *Sustainalyze*.  
+Die wichtigsten Bereiche sind:
 
 ### 1. Anwendungscode (`app/`)
-Dieses Repository enthält den vollständigen Code des Prototyps Sustainalyze. Die wichtigsten Bereiche sind:
 
 - **`modules/`**  
-  Enthält die zentralen Funktionsbereiche der Anwendung:  
-  - **analysis/** – alle selbst entwickelten Analyse-Module zur Datenextraktion   
-  - **manager/** – Orchestrierung der Analyseprozesse, Steuerung des Crawls und Aggregation der Ergebnisse  
-  - **results/** – Module zur Berichtserstellung, Scoring-Logik und Heuristiken  
+  Zentrale Funktionsbereiche der Anwendung:  
+  - **`analysis/`** – selbst entwickelte Analyse-Module zur Datenextraktion  
+  - **`manager/`** – Orchestrierung der Analyseprozesse, Steuerung des Crawls und Aggregation der Ergebnisse  
+  - **`results/`** – Module zur Berichtserstellung, Scoring-Logik und Heuristiken  
 
-#### 2. Frontend (`templates/` & `static/`)
 - **`templates/`**  
-  HTML-Templates für das Webfrontend (basierend auf einem HTML5-UP-Theme).  
+  HTML-Templates für das Webfrontend (basierend auf einem HTML5-UP-Theme).
+
 - **`static/`**  
   CSS-, JavaScript- und Bilddateien für die Oberfläche (basierend auf einem HTML5-UP-Theme).
 
-### 3. Fremdmodule
+### 2. Fremdmodule
+
 - **`app/wappalyzer/`**  
   Enthält das vollständige Wappalyzer-Modul zur Technologieerkennung (Third-Party).
+
 - **`fuji/`**  
   Vollständige Installation des FAIR-Checker-Tools FUJI (Third-Party), angebunden über die interne API.
 
-### 4. Evaluation (`evaluation/`)
-Enthält alle Skripte, Datensätze und Ergebnisse, die zur wissenschaftlichen Evaluation genutzt wurden  
+### 3. Evaluation (`evaluation/`)
+
+Enthält Skripte, Datensätze und Ergebnisse der wissenschaftlichen Evaluation  
 (z. B. LLM-Reproduzierbarkeit, ISO-Tests, Linkstabilität, Structured-Metadata-Auswertung).
 
 ---
