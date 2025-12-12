@@ -34,13 +34,13 @@ Die wichtigsten Bereiche sind:
 ### 3. Evaluation (`evaluation/`)
 
 Enthält Skripte und Rohdaten der wissenschaftlichen Evaluation  
-(z. B. Untersuchungen zur Konsitenz von LLM-Ausgaben, Tests zur korrekten Technologieerkennung, Analysen der Linkstabilität sowie Auswertungen strukturierter Metadaten).
+(z. B. Untersuchungen zur Konsistenz von LLM-Ausgaben, Tests zur korrekten Technologieerkennung, Analysen der Linkstabilität sowie Auswertungen strukturierter Metadaten).
 
 ---
 
 ## Installation und Ausführung (Docker)
 
-## Systemvoraussetzungen
+### Systemvoraussetzungen
 
 Sustainalyze läuft vollständig in Docker-Containern.  
 Es müssen daher **keine zusätzlichen Python-, Node- oder Playwright-Installationen** lokal vorgenommen werden.
