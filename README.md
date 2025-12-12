@@ -4,6 +4,37 @@ Automated sustainability analysis for digital scholarly editions.
 
 Sustainalyze crawls and evaluates edition websites. Sustainalyze ist ein Web-Tool zur automatisierten Analyse von Webauftritten mit Fokus auf digitale Editionen. Die Anwendung crawlt eine Website, sammelt technische und inhaltliche Hinweise auf digitale Nachhaltigkeit und erzeugt eine strukturierte Auswertung inklusive Bericht und LLM-gestützter Zusammenfassung. [web:2]
 
+## Projektstruktur (Überblick)
+
+Dieses Repository enthält den vollständigen Code des Prototyps *Sustainalyze*. Die wichtigsten Bereiche sind:
+
+### `app/` – Hauptanwendung
+Hier befindet sich der gesamte **eigene Code** des Projekts.
+
+- **`modules/`**  
+  Kern der Anwendung: alle Analysekomponenten wie  
+  Crawling, Link-Analyse, API-Erkennung, Download-Detector, Shodan-Check, FAIR-Checker-Anbindung, Wappalyzer-Wrapper, Repository-Analyse, LLM-Auswertung, Metadatenextraktion etc.
+
+- **`manager/`**  
+  Steuert den Crawl-Ablauf, aggregiert Ergebnisse und erzeugt strukturierte Output-Daten.
+
+- **`templates/`**  
+  HTML-Templates des Frontends (HTML5 UP Theme).
+
+- **`static/`**  
+  CSS-, JS-Dateien und Assets für das Webfrontend.
+
+- **`utils/`**  
+  Hilfsfunktionen, die modulübergreifend genutzt werden.
+
+### `evaluation/` – Evaluationscode
+Enthält alle Skripte, Datensätze und Ergebnisse (z. B. LLM-Reproduzierbarkeit, ISO-Statistiken, Linkstabilität, Structured-Data-Extraktion), die zur **wissenschaftlichen Evaluation** genutzt wurden.
+
+### `fuji/` – FUJI FAIR-Checker (Third-Party)
+Eine vollständige Kopie der FAIR-Checker-Software, lokal einsetzbar und über eine API in den Prototyp integriert.
+
+### `app/wappalyzer/` – Wappalyzer (Third-Party)
+Enthält die Technologie-Datenbank und die notwendige Logik zur Technologieerkennung auf Webseiten.
 
 ## Schnellstart (Docker)
 
