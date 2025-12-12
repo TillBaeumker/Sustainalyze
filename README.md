@@ -14,8 +14,15 @@ Die wichtigsten Bereiche sind:
 - **`modules/`**  
   Zentrale Funktionsbereiche der Anwendung:  
   - **`analysis/`** – selbst entwickelte Analyse-Module zur Datenextraktion  
+  (`api_detector.py`, `detect_persistent_links.py`, `download_detector.py`,  
+  `fair_checker_client.py`, `fuji_client.py`, `github_client.py`, `gitlab_client.py`,  
+  `link_checker.py`, `link_extractor.py`, `llm_analysis.py`, `normdata.py`,  
+  `repo_analyzer.py`, `shodan_client.py`, `structured_metadata.py`,  
+  `wappalyzer.py`, `xml_handler.py`)  
   - **`manager/`** – Orchestrierung der Analyseprozesse, Steuerung des Crawls und Aggregation der Ergebnisse  
+  (`crawler.py`, `handle_analysis.py`, `page_info_extractor.py`, `aggregator.py`)  
   - **`results/`** – Module zur Berichtserstellung, Scoring-Logik und Heuristiken  
+  (`report_builder.py`, `scoring.py`, `heuristics.py`)  
 
 - **`templates/`**  
   HTML-Templates für das Webfrontend (basierend auf einem HTML5-UP-Theme).
