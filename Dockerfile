@@ -8,7 +8,7 @@ WORKDIR /app
 RUN echo 'APT::Sandbox::User "root";' >/etc/apt/apt.conf
 
 # ==================================================================
-#   SYSTEM DEPENDENCIES + CHROMIUM (WICHTIG!!!)
+#   SYSTEM DEPENDENCIES + CHROMIUM
 # ==================================================================
 RUN apt-get update && apt-get install -y \
     git curl wget unzip \
@@ -33,7 +33,7 @@ COPY requirements.txt ./
 RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
 # ==================================================================
-#   PLAYWRIGHT (für dein Crawling)
+#   PLAYWRIGHT 
 # ==================================================================
 RUN playwright install chromium
 
