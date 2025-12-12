@@ -1,4 +1,4 @@
-# Sustainalyze
+﻿# Sustainalyze
 
 Automated sustainability analysis for digital scholarly editions.
 
@@ -58,7 +58,11 @@ Es müssen daher **keine zusätzlichen Python-, Node- oder Playwright-Installati
 ### weitere Voraussetzungen
 - `.env` mit optionalen API-Keys
 
+<<<<<<< HEAD
 #### 🔑 Hinweise zu benötigten API-Keys
+=======
+### 🔑 Hinweise zu benötigten API-Keys
+>>>>>>> 05a25e5 (Update project)
 
 Für den Betrieb von Sustainalyze werden einige optionale API-Keys unterstützt. Die Anwendung funktioniert grundsätzlich auch ohne diese, allerdings stehen dann bestimmte Analysefunktionen nicht zur Verfügung.
 
@@ -75,7 +79,13 @@ Für den Betrieb von Sustainalyze werden einige optionale API-Keys unterstützt.
 
 - **FUJI (`FUJI_USERNAME`, `FUJI_PASSWORD`) – optional, Standard = leer**  
   Diese Variablen dienen ausschließlich dazu, FUJI in Umgebungen mit Authentifizierung anzusprechen.  
+<<<<<<< HEAD
   
+=======
+  Die mitgelieferte lokale FUJI-Installation benötigt **keine Zugangsdaten**.  
+  Die Platzhalter sind nur aus Gründen der Dokumentation vorhanden.
+
+>>>>>>> 05a25e5 (Update project)
 Sustainalyze lädt keine API-Keys mit Git aus; du musst Werte ausschließlich lokal in der `.env` eintragen.
 
 ### Installation & Start
