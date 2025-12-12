@@ -13,19 +13,15 @@ Hier befindet sich der gesamte **eigene Code** von Sustainalyze.
 
 - **`modules/`**  
   Enthält die zentralen Funktionsbereiche der Anwendung:  
-  - **analysis/** – alle selbst entwickelten Analyse-Module zur Datenextraktion  
-    (Crawling, Link-Analyse, API-Erkennung, Shodan, Wappalyzer-Wrapper, FAIR-Checks, Repo-Analyse, LLM-Auswertung, Metadaten usw.)  
+  - **analysis/** – alle selbst entwickelten Analyse-Module zur Datenextraktion   
   - **manager/** – Orchestrierung der Analyseprozesse, Steuerung des Crawls und Aggregation der Ergebnisse  
   - **results/** – Module zur Berichtserstellung, Scoring-Logik und Heuristiken  
-
-- **`utils/`**  
-  Kleine Hilfsfunktionen, die modulübergreifend genutzt werden.
 
 ### 2. Frontend (`templates/` & `static/`)
 - **`templates/`**  
   HTML-Templates für das Webfrontend (basierend auf einem HTML5-UP-Theme).  
 - **`static/`**  
-  CSS-, JavaScript- und Bilddateien für die Oberfläche.
+  CSS-, JavaScript- und Bilddateien für die Oberfläche (basierend auf einem HTML5-UP-Theme).
 
 ### 3. Fremdmodule
 - **`app/wappalyzer/`**  
