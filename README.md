@@ -2,14 +2,14 @@
 
 Automated sustainability analysis for digital scholarly editions.
 
-Sustainalyze ist ein Web-Tool zur automatisierten Analyse von digitalen Editionen. Die Anwendung crawlt eine Website, sammelt technische und inhaltliche Hinweise auf digitale Nachhaltigkeit und erzeugt eine strukturierte Auswertung inklusive Bericht und LLM-gestützter Zusammenfassung. [web:2]
+Sustainalyze ist ein Web-Tool zur automatisierten Analyse digitaler Editionen. Die Anwendung crawlt eine Website, sammelt technische und inhaltliche Evidenzen für digitale Nachhaltigkeit und erzeugt eine strukturierte Auswertung inklusive Bericht und LLM-gestützter Zusammenfassung.
 
 ## Projektstruktur (Überblick)
 
 Dieses Repository enthält den vollständigen Code des Prototyps *Sustainalyze*. Die wichtigsten Bereiche sind:
 
 ### 1. Anwendungscode (`app/`)
-Hier befindet sich der gesamte **eigene Code** von Sustainalyze.
+Dieses Repository enthält den vollständigen Code des Prototyps Sustainalyze. Die wichtigsten Bereiche sind:
 
 - **`modules/`**  
   Enthält die zentralen Funktionsbereiche der Anwendung:  
