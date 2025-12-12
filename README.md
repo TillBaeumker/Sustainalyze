@@ -37,10 +37,46 @@ Enthält alle Skripte, Datensätze und Ergebnisse, die zur wissenschaftlichen Ev
 
 ## Schnellstart (Docker)
 
-### Voraussetzungen
-- Docker
-- Docker Compose
+## Systemvoraussetzungen
+
+Sustainalyze läuft vollständig in Docker-Containern.  
+Es müssen daher **keine zusätzlichen Python-, Node- oder Playwright-Installationen** lokal vorgenommen werden.
+
+### Windows
+- **Docker Desktop**
+- **WSL 2 (Windows Subsystem for Linux)**  
+  (Docker Desktop richtet WSL 2 automatisch ein.)
+
+### macOS
+- **Docker Desktop**  
+  Keine weiteren Anforderungen.
+
+### Linux
+- **Docker Engine**
+- **Docker Compose**
+
+### weitere Voraussetzungen
 - `.env` mit optionalen API-Keys
+
+#### 🔑 Hinweise zu benötigten API-Keys
+
+Für den Betrieb von Sustainalyze werden einige optionale API-Keys unterstützt. Die Anwendung funktioniert grundsätzlich auch ohne diese, allerdings stehen dann bestimmte Analysefunktionen nicht zur Verfügung.
+
+- **OpenAI (`OPENAI_API_KEY`) – erforderlich für LLM-gestützte Zusammenfassungen**  
+  Ohne diesen Key wird keine automatische Bewertung oder LLM-Zusammenfassung erzeugt.
+
+- **Shodan (`SHODAN_API_KEY`) – optional**  
+  Aktiviert sicherheitsrelevante Abfragen zur Serverkonfiguration und offenen Ports.  
+  Ohne Key wird dieser Teil der Analyse übersprungen.
+
+- **GitHub / GitLab (`GITHUB_API_TOKEN`, `GITLAB_API_TOKEN`) – optional**  
+  Erlaubt erweiterte Repository-Analysen wie Lizenzprüfung, letzte Commits, Contributor-Zahlen etc.  
+  Ohne Tokens erfolgt nur eine rudimentäre Link-Erkennung.
+
+- **FUJI (`FUJI_USERNAME`, `FUJI_PASSWORD`) – optional, Standard = leer**  
+  Diese Variablen dienen ausschließlich dazu, FUJI in Umgebungen mit Authentifizierung anzusprechen.  
+  
+Sustainalyze lädt keine API-Keys mit Git aus; du musst Werte ausschließlich lokal in der `.env` eintragen.
 
 ### Installation & Start
 
@@ -86,3 +122,5 @@ Bitte beachte: Das Repository enthält zusätzlich Komponenten von Drittanbieter
 ---
 
 Weitere verwendete Assets oder Bibliotheken behalten jeweils ihre eigene Lizenz. Falls du fremden Code weiterverwendest, modifizierst, veröffentlichst oder weitergibst, musst du die Bedingungen der ursprünglichen Lizenz einhalten.
+
+
