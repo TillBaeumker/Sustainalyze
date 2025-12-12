@@ -33,12 +33,12 @@ Die wichtigsten Bereiche sind:
 
 ### 3. Evaluation (`evaluation/`)
 
-Enthält Skripte, Datensätze und Ergebnisse der wissenschaftlichen Evaluation  
-(z. B. LLM-Reproduzierbarkeit, ISO-Tests, Linkstabilität, Structured-Metadata-Auswertung).
+Enthält Skripte und Rohdaten der wissenschaftlichen Evaluation  
+(z. B. Untersuchungen zur Konsitenz von LLM-Ausgaben, Tests zur korrekten Technologieerkennung, Analysen der Linkstabilität sowie Auswertungen strukturierter Metadaten).
 
 ---
 
-## Schnellstart (Docker)
+## Installation und Ausführung (Docker)
 
 ## Systemvoraussetzungen
 
