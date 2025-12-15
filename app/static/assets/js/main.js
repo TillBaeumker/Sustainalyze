@@ -198,12 +198,14 @@
 
 		var $this = $(this);
 
-		$('<div class=\'close\'>&times;</div>')
+$('<div class="close">&times;</div>')
     .appendTo($this)
-    .on('click', function() {
-        window.location.href = window.location.origin + window.location.pathname;
+    .on('click', function (event) {
+        event.stopPropagation();
 
-});
+        // Immer zurück zur Startseite
+        window.location.href = '/';
+    });
 
 		$this.on('click', function(event) {
 			event.stopPropagation();

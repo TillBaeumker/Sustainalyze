@@ -27,7 +27,11 @@
 
                 <p style="font-size: 0.9em; margin-top: 1.2rem;">
                     Entwickelt von <strong>Till Bäumker</strong>
-                    (<a href="mailto:till.baeumker@gmx.de">till.baeumker@gmx.de</a>).
+                    (<a href="mailto:till.baeumker@gmx.de">till.baeumker@gmx.de</a>)<br>
+                    GitHub:
+                    <a href="https://github.com/TillBaeumker/Sustainalyze" target="_blank" rel="noopener noreferrer">
+                        https://github.com/TillBaeumker/Sustainalyze
+                    </a>
                 </p>
             </div>
         </div>
@@ -115,17 +119,15 @@
                 <div style="border: 1px solid #444; padding: 10px; margin: 15px 0;
                             border-radius: 5px; font-size: 0.9em;">
                     <strong>Analyse speichern:</strong><br><br>
-                    Strg+P / ⌘+P → „Als PDF speichern“
+                    Strg+P / ⌘+P → „Als PDF speichern"
                 </div>
 
-                {# --- KI-Gesamtbericht --- #}
                 {% if report %}
                 <div id="report">
                     {% include "partials/report.html" %}
                 </div>
                 {% endif %}
 
-                <!-- Projektweite Analyse -->
                 <section class="report-section">
                     <h3 class="section-title">Projektweite Analyse</h3>
                 </section>
@@ -135,7 +137,6 @@
                 {% include "partials/shodan_overview.html" %}
                 {% include "partials/fair_checker.html" %}
 
-                <!-- Einzelne Seiten -->
                 <section class="report-section">
                     <h3 class="section-title">Analyse einzelner Unterseiten</h3>
                 </section>
